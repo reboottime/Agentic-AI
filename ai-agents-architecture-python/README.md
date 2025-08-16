@@ -31,3 +31,5 @@ For information about the course, please visit [its coursera course profile modu
 - Even though the course marked it as a beginner level tutorial, I saw it captures industry trends and papers more closely than other courses I consulted.
 - I feel some learning curve (2025/08/15). To have a solid theoretical understanding and practical application, I may want to iterate for multiple rounds.
 - After learning the persona pattern, I'm less bothered by my own behavior and thinking patterns and others. If we live in a simulation, we might be conditioned by personas assigned by our creator.
+- Smart method to figure out persona
+> If I have xxx problem, who should I consult with

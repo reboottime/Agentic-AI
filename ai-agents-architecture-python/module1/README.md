@@ -1,26 +1,28 @@
 # Extending AI Agents with Self-Prompting
 
-A person who is
+- A persona  
+  - is armed with tools
+  - has its role in a context. You can see more on the `persona pattern` in notes section.
+  - a tool can also be a pers
 
-- armed with its tools
-- has its role in a context. You can see more on the `persona pattern` in notes section.
+> The persona pattern represents one of the most powerful and efficient abstractions in prompt engineering. When we invoke a persona, we’re not simply providing a collection of static rules or facts - we’re activating a complex, integrated reasoning system that the LLM has internalized through its training.
 
 ## Progress
 
-- [x] **Prompts as Computation**
-- [x] **Self-Prompting & Clean Separation of AI Agent Reasoning**  
-- [x] **Bridging Computer Tools & Unstructured Data with Prompting - the AI Shim**
-- [x] **AI Agent Structured Data Extraction**
-- [x] **An Invoice Processing Agent**
-- [x] **The Persona Pattern and Reasoning - Personas are an efficient programming abstraction**
-- [x] **The Persona Pattern**  
-- [x] **Format of the Persona Pattern**
-- [x] **Simple Multi-Agent Systems with Personas**
-- [x] **Consulting Experts or Simulating with the Persona Pattern**
-- [ ] **The Persona Abstraction & Agents**
-- [x] **Invoice Processing with Experts**
-- [ ] **Using Human Policies for Document-as-Implementation**
-- [ ] **Persona & Self-Prompting Review**
+- [x] Prompts as Computation
+- [x] Self-Prompting & Clean Separation of AI Agent Reasoning  
+- [x] Bridging Computer Tools & Unstructured Data with Prompting - the AI Shim
+- [x] AI Agent Structured Data Extraction
+- [x] An Invoice Processing Agent
+- [x] The Persona Pattern and Reasoning - Personas are an efficient programming abstraction
+- [x] The Persona Pattern  
+- [x] Format of the Persona Pattern
+- [x] Simple Multi-Agent Systems with Personas
+- [x] Consulting Experts or Simulating with the Persona Pattern
+- [ ] The Persona Abstraction & Agents
+- [x] Invoice Processing with Experts
+- [ ] Using Human Policies for Document-as-Implementation
+- [ ] Persona & Self-Prompting Review
 
 ## Address knowledge Gap
 
@@ -81,3 +83,28 @@ A person who is
   - Benefits
     - Implicit Operation Bundling: The persona automatically brings relevant operations without explicit instruction
     - Instead of writing extensive rules and instructions, a few tokens ("act as X") activate comprehensive behavioral patterns the model already understands from training data.
+- [x] Simple Multiple-Agent Systems with Personas
+  - keywords: `action`, `goals`. `At each step, you output must be an action to take`
+  - example
+  
+    ```markdown
+
+    I'd like to simulate an Al agent that I'm designing. The agent willbe built these components:
+
+    Goals: Document all of the code in the project 
+    Actions:
+        - get_project_directory()
+        - list_files(fully_qualified_path)-read _file(fully_qualified _path)
+        - ask_documentation_expert_to_write_readme(file_content)- write file(fully_qualified _path, string_contents)
+
+    At each step, your output must be an action to take.
+    Stop and wait and l will type in the result of the action as my next message.
+    Ask me for the first task to perform.
+    ```
+
+- [x] [The Persona Abstraction & Agents](./11.The%20Persona%20Abstraction%20&%20Agents%20_%20Coursera.pdf)
+  - Why this method works well:
+    - activates an extensive cognitive framework that includes: Implicit Domain Knowledge, Methodological Understanding, Contextual Adaptation, Integrated Value Systems.
+    - The persona abstraction works because LLMs have been trained on vast amounts of text that demonstrate how different types of experts think, communicate, and reason. **Learn from the master**
+  - Prompt guide from above perspectives
+  - Mindset shift: The persona pattern represents a fundamental shift in how we conceptualize knowledge within agent systems. Rather than treating expertise as a monolithic entity that must be encoded entirely within an agent’s core prompt, this pattern treats specialized knowledge as a modular resource that can be defined, maintained, and invoked independently.
