@@ -18,6 +18,10 @@
 - [ ] **Using Human Policies for Document-as-Implementation**
 - [ ] **Persona & Self-Prompting Review**
 
+### Address knowledge Gap
+
+- [ ] [`register_tool`](./register-tool.md)
+
 ## Notes
 
 - [Prompts as computation](https://www.coursera.org/learn/ai-agents-architecture-python/lecture/9Nhwf/prompts-as-computation):
