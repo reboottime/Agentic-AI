@@ -18,7 +18,7 @@
 - [ ] **Using Human Policies for Document-as-Implementation**
 - [ ] **Persona & Self-Prompting Review**
 
-### Address knowledge Gap
+## Address knowledge Gap
 
 - [ ] [`register_tool`](./register-tool.md)
 
