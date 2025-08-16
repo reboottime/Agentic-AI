@@ -33,8 +33,9 @@
 
   - > Think about generative AI itself and prompts as a new form of computation. I want you to start thinking of prompts themselves as computation because when you start thinking of prompts as computation, that means you can start building tools for your agent that are based on prompts that you create.
   - Questions?:
-    - [ ] Would we think about role first?
-    - [ ] Would their role define the prompt then define the tools?
+    - [x] Would we think about role first?
+    - [x] Would their role define the prompt then define the tools?
+  - Answer: yes it is. The lecturer did not present well. **more accurately, the persona defined by the prompt is the computation block**
 - Self-Prompting & Clean Separation of AI Agent Reasoning
 - [Agents bridge the gap between unstructured real-world data and computing systems that require structured data](https://www.coursera.org/learn/ai-agents-architecture-python/lecture/e6ijz/bridging-computer-tools-unstructured-data-with-prompting-the-ai-shim). It makes senses to think that prompts as a computation as a prompt (with the help of LLMs) can convert unstructured real world data into structured data.
   - > **Clean Architecture**: [The agent's primary job is to coordinate actions and achieve goals, not to become entangled in domain specific reasoning. Hence, we need to maintain a clear separation between the agent's  strategic thinking and the specialized analytical capabilities](./self-prompting-agents.md#the-challenge-of-clean-architecture)
