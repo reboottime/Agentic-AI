@@ -21,6 +21,12 @@
 ## Address knowledge Gap
 
 - [ ] [`register_tool`](./register-tool.md)
+- [ ] [Principles in design Agent Tool](./design-agent-tools.md)
+- [ ] Should we apply the tool design principle when designing an Agent?
+
+## Learnings
+
+- expectation control: each small practical lesson (the reading material with code) takes me about 30 minutes
 
 ## Notes
 
@@ -52,3 +58,4 @@
           - field validation
         - improved prompts
 - [x] **An Invoice Processing Agent**
+  - Tool design principles: **single responsibility, proper error handling, clear interfaces, and composability**. These align with general software engineering best practices but with **additional considerations for AI agent systems**.
