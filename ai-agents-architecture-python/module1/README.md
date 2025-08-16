@@ -15,10 +15,10 @@ A person who is
 - [x] **The Persona Pattern and Reasoning - Personas are an efficient programming abstraction**
 - [x] **The Persona Pattern**  
 - [x] **Format of the Persona Pattern**
-- [ ] **Simple Multi-Agent Systems with Personas**
-- [ ] **Consulting Experts or Simulating with the Persona Pattern**
+- [x] **Simple Multi-Agent Systems with Personas**
+- [x] **Consulting Experts or Simulating with the Persona Pattern**
 - [ ] **The Persona Abstraction & Agents**
-- [ ] **Invoice Processing with Experts**
+- [x] **Invoice Processing with Experts**
 - [ ] **Using Human Policies for Document-as-Implementation**
 - [ ] **Persona & Self-Prompting Review**
 
