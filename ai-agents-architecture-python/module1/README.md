@@ -64,3 +64,14 @@
     - Code Practice Perspective: better code Maintainability and Adaptability
     - build modular, adaptable systems that grow through the addition of specialized tools.
     > 主帅有谋目标明确，单兵精干可插拔。队伍精干可灵活应变。
+- [x] [persona pattern](https://www.coursera.org/learn/ai-agents-architecture-python/lecture/glo9H/the-persona-pattern-and-reasoning-personas-are-an-efficient-programming)
+  - > Pattern: Act as <Persona_Name> whenever you produce an output, produce the outputs that persona would produce.
+  - A programming abstraction that assigns the AI a specific role or identity (e.g., "act as a speech-language pathologist").
+  - > Pattern: Act as <Persona_Name> whenever you produce an output, produce the outputs that persona would produce.
+  - LLM understands a persona with aspects below:
+    - Domain knowledge - What that persona knows
+    - Operational capabilities - What that persona does
+    - Behavioral patterns - How that persona acts
+  - Benefits
+    - Implicit Operation Bundling: The persona automatically brings relevant operations without explicit instruction
+    - Instead of writing extensive rules and instructions, a few tokens ("act as X") activate comprehensive behavioral patterns the model already understands from training data.
