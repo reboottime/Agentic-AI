@@ -7,10 +7,9 @@
 - [x] **Bridging Computer Tools & Unstructured Data with Prompting - the AI Shim**
 - [x] **AI Agent Structured Data Extraction**
 - [x] **An Invoice Processing Agent**
-
-- [ ] **The Persona Pattern and Reasoning - Personas are an efficient programming abstraction**
-- [ ] **The Persona Pattern**  
-- [ ] **Format of the Persona Pattern**
+- [x] **The Persona Pattern and Reasoning - Personas are an efficient programming abstraction**
+- [x] **The Persona Pattern**  
+- [x] **Format of the Persona Pattern**
 - [ ] **Simple Multi-Agent Systems with Personas**
 - [ ] **Consulting Experts or Simulating with the Persona Pattern**
 - [ ] **The Persona Abstraction & Agents**
@@ -64,10 +63,11 @@
     - Code Practice Perspective: better code Maintainability and Adaptability
     - build modular, adaptable systems that grow through the addition of specialized tools.
     > 主帅有谋目标明确，单兵精干可插拔。队伍精干可灵活应变。
-- [x] [persona pattern](https://www.coursera.org/learn/ai-agents-architecture-python/lecture/glo9H/the-persona-pattern-and-reasoning-personas-are-an-efficient-programming)
+- [x] [The persona pattern](https://www.coursera.org/learn/ai-agents-architecture-python/lecture/glo9H/the-persona-pattern-and-reasoning-personas-are-an-efficient-programming)
   - > Pattern: Act as <Persona_Name> whenever you produce an output, produce the outputs that persona would produce.
-  - A programming abstraction that assigns the AI a specific role or identity (e.g., "act as a speech-language pathologist").
+  - Definition: A programming abstraction that assigns the AI a specific role or identity (e.g., "act as a speech-language pathologist").
   - > Pattern: Act as <Persona_Name> whenever you produce an output, produce the outputs that persona would produce.
+  - > In real world, you don't know how the person you ask for help works, but you know who you will ask for help!
   - LLM understands a persona with aspects below:
     - Domain knowledge - What that persona knows
     - Operational capabilities - What that persona does
