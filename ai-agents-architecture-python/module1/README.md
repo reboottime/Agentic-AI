@@ -59,3 +59,8 @@
         - improved prompts
 - [x] **An Invoice Processing Agent**
   - Tool design principles: **single responsibility, proper error handling, clear interfaces, and composability**. These align with general software engineering best practices but with **additional considerations for AI agent systems**.
+  - [benefits about extracting tools](./05.An_Invoice_Processing_Agent%20_Coursera.md):
+    - Cognitive Perspective: less cognitive burden for human being and the agent
+    - Code Practice Perspective: better code Maintainability and Adaptability
+    - build modular, adaptable systems that grow through the addition of specialized tools.
+    > 主帅有谋目标明确，单兵精干可插拔。队伍精干可灵活应变。
