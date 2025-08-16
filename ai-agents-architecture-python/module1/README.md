@@ -1,5 +1,10 @@
 # Extending AI Agents with Self-Prompting
 
+A person who is
+
+- armed with its tools
+- has its role in a context. You can see more on the `persona pattern` in notes section.
+
 ## Progress
 
 - [x] **Prompts as Computation**
