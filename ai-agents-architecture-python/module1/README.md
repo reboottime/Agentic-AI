@@ -1,5 +1,25 @@
 # Extending AI Agents with Self-Prompting
 
+## Progress
+
+- [x] **Prompts as Computation**
+- [x] **Self-Prompting & Clean Separation of AI Agent Reasoning**  
+- [x] **Bridging Computer Tools & Unstructured Data with Prompting - the AI Shim**
+- [x] **AI Agent Structured Data Extraction**
+- [x] **An Invoice Processing Agent**
+
+- [ ] **The Persona Pattern and Reasoning - Personas are an efficient programming abstraction**
+- [ ] **The Persona Pattern**  
+- [ ] **Format of the Persona Pattern**
+- [ ] **Simple Multi-Agent Systems with Personas**
+- [ ] **Consulting Experts or Simulating with the Persona Pattern**
+- [ ] **The Persona Abstraction & Agents**
+- [ ] **Invoice Processing with Experts**
+- [ ] **Using Human Policies for Document-as-Implementation**
+- [ ] **Persona & Self-Prompting Review**
+
+## Notes
+
 - [Prompts as computation](https://www.coursera.org/learn/ai-agents-architecture-python/lecture/9Nhwf/prompts-as-computation):
 
   - > Think about generative AI itself and prompts as a new form of computation. I want you to start thinking of prompts themselves as computation because when you start thinking of prompts as computation, that means you can start building tools for your agent that are based on prompts that you create.
@@ -19,7 +39,7 @@
     - Create reusable, well-defined interfaces for common analytical tasks
   - [AI agent structured data extraction](./04.AI%20Agent%20Structured%20Data%20Extraction.md)
     - How
-      - [ ] At the first example, why ask LLM to give json file in markdown?
+      - [ ] At the first example, why do we ask LLM to give json file in markdown?
       - [ ] `action_context` (I see this in `[Openai Agentic AI Python SDK](https://openai.github.io/openai-agents-python/)`)
     - Classic tradeoff: Flexibility and reliability
       - [x] How the upgraded solution provides better guarantees?
@@ -27,3 +47,4 @@
           - required fields
           - field validation
         - improved prompts
+- [x] **An Invoice Processing Agent**
