@@ -22,10 +22,37 @@ Please be aware the last update of the course is at March, 2025.
   - [x] Invoice Processing with Experts
   - [x] Using Human Policies for Document-as-Implementation
   - [x] Persona & Self-Prompting Review
-- [ ] AI Agent Design Principles & Safety
-- [ ]  Multi-Agent Systems
-- [ ] Dependency Injection for Tools
-- [ ]  Approaches to Improving AI Agent Reasoning
+
+- [x] Module 2: AI Agent Design Principles & Safety
+  - [x] The MATE Design Principles for AI Agents
+  - [x] MATE Design Principles in Code
+  - [x] AI Agents & Environment Safety
+    - [ ] I'm not convinced by the solution code in pattern 4.
+
+- [ ] Module 3: Multi-Agent Systems
+  - [ ] Introduction to Multi-Agent Systems
+  - [ ] Building Multi-Agent Systems: Agent-to-Agent Communication
+  - [ ] Agent Interaction & Memory
+  - [ ] Agent Interaction Patterns with Memory
+  - [ ] Removing Noise: Focusing Agent Attention
+  - [ ] Advanced Agent Interaction
+  - [ ] Providing Agentic AI Information About the World
+  - [ ] Agent Interaction Architectures
+
+- [ ] Module 4: Dependency Injection for Tools
+  - [ ] Isolating Agents from Accidental Complexity
+  - [ ] Clean AI Tools with Dependency Injection
+  - [ ] Clean Tool Dependency Injection with the Environment
+
+- [ ] Module 5: Approaches to Improving AI Agent Reasoning
+  - [ ] Improving AI Agent Reasoning with In-Context Learning
+  - [ ] Improving AI Agent Reasoning with Up-front Planning & Chain of Thought
+  - [ ] The Capability Architectural Pattern
+  - [ ] Ahead of Time Planning for Improving Agent Reasoning
+  - [ ] Improving AI Agent Reasoning with In-loop Planning
+  - [ ] Intermediate Planning: Tracking Progress in the Agent Loop
+  - [ ] The Great Agent Trade-off: Ahead of Time vs. Dynamic
+
 
 ## Findings
 
