@@ -19,7 +19,7 @@
 - [x] Format of the Persona Pattern
 - [x] Simple Multi-Agent Systems with Personas
 - [x] Consulting Experts or Simulating with the Persona Pattern
-- [ ] The Persona Abstraction & Agents
+- [ ] The Persona Abstraction & Agents: The Persona as an Agent Building Block
 - [x] Invoice Processing with Experts
 - [ ] Using Human Policies for Document-as-Implementation
 - [ ] Persona & Self-Prompting Review
@@ -103,8 +103,28 @@
     ```
 
 - [x] [The Persona Abstraction & Agents](./11.The%20Persona%20Abstraction%20&%20Agents%20_%20Coursera.pdf)
-  - Why this method works well:
-    - activates an extensive cognitive framework that includes: Implicit Domain Knowledge, Methodological Understanding, Contextual Adaptation, Integrated Value Systems.
-    - The persona abstraction works because LLMs have been trained on vast amounts of text that demonstrate how different types of experts think, communicate, and reason. **Learn from the master**
-  - Prompt guide from above perspectives
-  - Mindset shift: The persona pattern represents a fundamental shift in how we conceptualize knowledge within agent systems. Rather than treating expertise as a monolithic entity that must be encoded entirely within an agent’s core prompt, this pattern treats specialized knowledge as a modular resource that can be defined, maintained, and invoked independently.
+  - [x] Notes:
+    - The Persona as an Agent Building Block
+      - Why this method works well:
+        - activates an extensive cognitive framework that includes: Implicit Domain Knowledge, Methodological Understanding, Contextual Adaptation, Integrated Value Systems.
+        - The persona abstraction works because LLMs have been trained on vast amounts of text that demonstrate how different types of experts think, communicate, and reason. **Learn from the master**
+      - Prompt guide from above perspectives: Be Specific But Concise,Leverage Established Roles, **Enhance Rather Than Override**, and Test for Activation.
+      - Mindset shift: The persona pattern represents a fundamental shift in how we conceptualize knowledge within agent systems. Rather than treating expertise as a monolithic entity that must be encoded entirely within an agent's core prompt, this pattern treats specialized knowledge as a modular resource that can be defined, maintained, and invoked independently.
+    - Expertise as a Modular Resource
+    - [Metacognition](https://en.wikipedia.org/wiki/Metacognition) Through Role-Switching: By having the LLM adopt different personas, the system can approach problems from multiple cognitive frameworks, each with its own set of priorities, assumptions, and methodologies.
+    - Dynamic vs. Static Expertise
+      - Static Expertise :Pre-defined Persona Tools
+      - Dynamic Expertise: On-the-fly Persona Creation. A persona expert creates needed person dynamically, see the [solution here](./toolsets.py)
+  - [x] Recap
+    - [x] why
+      - The Persona as an Agent Building Block
+        - boosts resource efficiency (information is compressed by persona) and capability effectiveness(persona based cognitive framework)
+        - supports integrate with multiple personas then multiple perspectives -> avoid cognitive problems (bias and conflicts)
+        - support chain of expertise
+        - brings better modularity and maintainability in artifacts
+        - **better deterministic**
+    - [x] how
+      - prompt engineering: e Specific But Concise, leverage established roles, enhance rather than override then test persona Activation with preliminary questions
+      - solution code:
+        - [consult persona expert to get persona profile](./codebase.md#consult-persona-expert-to-get-persona-profile). Find expert through expertise domain and problem description -> get reply from that expert
+        - [example of chain of expertise](./codebase.md#chain-of-expertise-example)
