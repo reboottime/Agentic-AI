@@ -1,6 +1,6 @@
 # Code base
 
-## Prompt Expert
+## Ask  Expert Agent for help
 
 ```python
 
@@ -30,7 +30,7 @@ def prompt_expert(action_context: ActionContext, description_of_expert: str, pro
 
 ```
 
-## consult persona expert to get persona profile
+## create an expert agent then ask the expert agent for help
 
 The function creates a specialized expert persona and then consults that persona to get domain-specific insights and recommendations for solving a given problem.
 

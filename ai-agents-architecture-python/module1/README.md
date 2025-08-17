@@ -19,7 +19,7 @@
 - [x] Format of the Persona Pattern
 - [x] Simple Multi-Agent Systems with Personas
 - [x] Consulting Experts or Simulating with the Persona Pattern
-- [ ] The Persona Abstraction & Agents: The Persona as an Agent Building Block
+- [x] The Persona Abstraction & Agents: The Persona as an Agent Building Block
 - [x] Invoice Processing with Experts
 - [ ] Using Human Policies for Document-as-Implementation
 - [ ] Persona & Self-Prompting Review
@@ -122,9 +122,9 @@
         - supports integrate with multiple personas then multiple perspectives -> avoid cognitive problems (bias and conflicts)
         - support chain of expertise
         - brings better modularity and maintainability in artifacts
-        - **better deterministic**
+                 - **better deterministic**
     - [x] how
       - prompt engineering: e Specific But Concise, leverage established roles, enhance rather than override then test persona Activation with preliminary questions
       - solution code:
-        - [consult persona expert to get persona profile](./codebase.md#consult-persona-expert-to-get-persona-profile). Find expert through expertise domain and problem description -> get reply from that expert
+        - [Create an expert agent then ask that expert agent for help](./codebase.md#create-an-expert-agent-then-ask-the-expert-agent-for-help)
         - [example of chain of expertise](./codebase.md#chain-of-expertise-example)
