@@ -7,7 +7,7 @@ Please be aware the last update of the course is at March, 2025.
 
 ## Course Modules
 
-- [ ] Module 1: Extending AI Agent with Self Prompting
+- [x] Module 1: Extending AI Agent with Self Prompting
   - [x] Prompts as Computation
   - [x] Self-Prompting & Clean Separation of AI Agent Reasoning  
   - [x] Bridging Computer Tools & Unstructured Data with Prompting - the AI Shim
@@ -20,8 +20,8 @@ Please be aware the last update of the course is at March, 2025.
   - [x] Consulting Experts or Simulating with the Persona Pattern
   - [x] The Persona Abstraction & Agents
   - [x] Invoice Processing with Experts
-  - [ ] Using Human Policies for Document-as-Implementation
-  - [ ] Persona & Self-Prompting Review
+  - [x] Using Human Policies for Document-as-Implementation
+  - [x] Persona & Self-Prompting Review
 - [ ] AI Agent Design Principles & Safety
 - [ ]  Multi-Agent Systems
 - [ ] Dependency Injection for Tools

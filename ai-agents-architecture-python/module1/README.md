@@ -7,6 +7,8 @@
 
 > The persona pattern represents one of the most powerful and efficient abstractions in prompt engineering. When we invoke a persona, we’re not simply providing a collection of static rules or facts - we’re activating a complex, integrated reasoning system that the LLM has internalized through its training.
 
+- Engineering  practice, see [codebase.md](./codebase.md)
+
 ## Progress
 
 - [x] Prompts as Computation
@@ -20,9 +22,9 @@
 - [x] Simple Multi-Agent Systems with Personas
 - [x] Consulting Experts or Simulating with the Persona Pattern
 - [x] The Persona Abstraction & Agents: The Persona as an Agent Building Block
-- [x] Invoice Processing with Experts
-- [ ] Using Human Policies for Document-as-Implementation
-- [ ] Persona & Self-Prompting Review
+- [x] [Invoice Processing with Experts](https://www.coursera.org/learn/ai-agents-architecture-python/ungradedWidget/ZjyJ5/invoice-processing-with-experts)
+- [x] [Using Human Policies for Document-as-Implementation](https://www.coursera.org/learn/ai-agents-architecture-python/ungradedWidget/MViKk/using-human-policies-for-document-as-implementation)
+- [x] Persona & Self-Prompting Review
 
 ## Address knowledge Gap
 
@@ -128,3 +130,8 @@
       - solution code:
         - [Create an expert agent then ask that expert agent for help](./codebase.md#create-an-expert-agent-then-ask-the-expert-agent-for-help)
         - [example of chain of expertise](./codebase.md#chain-of-expertise-example)
+- [x] [Using Human Policies for Document-as-Implementation](https://www.coursera.org/learn/ai-agents-architecture-python/ungradedWidget/MViKk/using-human-policies-for-document-as-implementation)
+  - avoid information loss and discrepancies in workflow
+  - ensure traceability
+  - improve collaboration
+  - use multiple resources with reconciliation
