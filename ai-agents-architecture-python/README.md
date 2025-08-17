@@ -24,8 +24,8 @@ Please be aware the last update of the course is at March, 2025.
   - [x] Persona & Self-Prompting Review
 
 - [ ] Module 2: AI Agent Design Principles & Safety
-  - [ ] The MATE Design Principles for AI Agents
-  - [ ] MATE Design Principles in Code
+  - [x] The MATE Design Principles for AI Agents
+  - [x] MATE Design Principles in Code
   - [ ] AI Agents & Environment Safety
 
 - [ ] Module 3: Multi-Agent Systems
