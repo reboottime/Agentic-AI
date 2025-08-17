@@ -1,0 +1,78 @@
+>> One of the things that people
+overestimate when they start working with generative AI is how much generative
+AI knows because it's so convincing. They often assume knowledge
+that it doesn't actually have. They assume that it knows all kinds
+of surrounding information about what they're doing. And also we tend to
+underestimate how much context is actually needed in
+order to perform a task. Well, I want you to go back and
+think about it. When you're building a genetic AI is think
+about if you tried to get an intern to do something for you. It's day one, they've shown up, they've
+been at your workplace like one minute, they know nothing about your culture,
+they know nothing about the layout of your office, they know nothing about
+your systems in particular. They just have lots of general knowledge
+about the world, but not about your stuff, not about how you do things,
+not about your computer systems, not about your goals in life, not about what gas station you stopped
+at when you were driving to work and what your favorite food is and what you
+like and don't like, and travel planning. All these things are missing. There's so much information that
+is fundamentally missing, and it's really critical that we fill that
+information in whenever we go and get a genetic AI to perform a task. So I want to just kind of give you a sense
+of like the wealth of information that we need to provide in
+order to perform a task. So the other day my son came in and he had
+found this old Nintendo Wii that we had in the closet, and he said, hey,
+I want to hook this up to the TV. And we pulled this thing out of the box,
+and lo and behold, it doesn't have an HDMI hookup. And I thought,
+what on earth am I going to do? I don't even know if my tv can
+accept these types of inputs. And now I go and I try to get to my TV and
+it's mounted on the wall, and I feel behind it and I feel more than one of those inputs,
+there's more than three of them. So now I've got a problem
+because I feel five. There's only three cables and
+I'm trying to reach behind blindly and figure out what to do. So finally I broke down and
+I reached out, I took my phone in, I took a picture behind it, and
+now I've got information about the tv. Now, I then decided, okay,
+let's see if I can get ChatGPT to go and solve this problem with planning. And I said, explain how to plug these
+into the TV using the ChatGPT app. And then it came back and it said,
+okay, here's where they go. So it built a plan for me to go and
+connect cable by cable into the tv. Now, the key behind this was that I
+gave it information about the world. I didn't just say ATV, I didn't say my tv,
+because my tv is not specific enough unless it knows my tv and has information,
+detailed information about it. And even if I said my tv and model,
+I'd still have to know that it even had information about what
+the panel looked like and the layout of all of those inputs. There's so much information that's
+needed to accomplish that task. I also have to show it what I'm
+working with in terms of wires and the exact colors and how many. And there's so much information that's
+required in order to perform the task. Now, in this case, I'm giving it really specific
+information about the world around it. And that's the thing, is, it needs to
+know the information about the world, the system it's working with,
+the problem it's solving. It needs a wealth of
+information to do a good job. Just like that intern on day zero needs
+information to go and solve the problem. Now, let's think about this coffee maker. Explain to me, step by step,
+how to use this. Now, if I just said a keurig,
+it may be able to solve it. If I say, explain to me how to
+use this coffee maker, well, coffee maker is not enough if
+I don't give it the photo. But the photo is really rich information. One, it says Keurig
+across the front of it. Two, it's got information
+about the shape of this thing, what may be the options to use it. And it goes in and breaks it down,
+and it says, here's what you do. You plug it in, you power it on,
+it's planning, it's taking in information about the state of the world,
+then it's deciding what to do. And whenever we begin building these
+systems, we have to think very carefully about, are we giving the system enough
+information to perform the task? Does the agent really know all
+the details and complexities and nuances in order to get to
+where we want it to go? And we also have to think about
+when things don't go right. How do we update its knowledge of the
+state of the world or something changes? How do we update its knowledge
+of the state of the world? And all of this has to go into it,
+because as it's going and executing a plan or
+telling us to execute a plan, something in the world may change
+that may force its plan to adapt. And if we're not feeding it in information
+continuously to make sure that it's aware of what's happening around it,
+it will go and make incorrect decisions. So, if you tell it to go create a travel
+reservation, and then simultaneously, your wife goes and creates a travel
+reservation independently and you don't update it, it may go and create a
+duplicate, and that's not what you wanted. And so you have to think
+about it like that, intern. You have to not only tell it enough
+information to go and solve the task, but you have to keep it up to date with
+all the information that it needs. And that means continuously updating
+it throughout the process so that it knows what it needs to do,
+but also it needs to know what happened that may
+affect what it's currently planning to do.
