@@ -4,7 +4,8 @@
 
 - [x] The MATE Design Principles for AI Agents
 - [x] MATE Design Principles in Code
-- [ ] AI Agents & Environment Safety
+- [x] AI Agents & Environment Safety
+  - [ ] I'm not convinced by the sample code in pattern 4
 
 ## Question List
 
