@@ -175,3 +175,6 @@ config/secrets.json
 # Logs
 logs/
 *.log
+
+# cursor rules
+.cursor
