@@ -23,10 +23,11 @@ Please be aware the last update of the course is at March, 2025.
   - [x] Using Human Policies for Document-as-Implementation
   - [x] Persona & Self-Prompting Review
 
-- [ ] Module 2: AI Agent Design Principles & Safety
+- [x] Module 2: AI Agent Design Principles & Safety
   - [x] The MATE Design Principles for AI Agents
   - [x] MATE Design Principles in Code
-  - [ ] AI Agents & Environment Safety
+  - [x] AI Agents & Environment Safety
+    - [ ] I'm not convinced by the solution code in pattern 4.
 
 - [ ] Module 3: Multi-Agent Systems
   - [ ] Introduction to Multi-Agent Systems
