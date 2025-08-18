@@ -5,6 +5,8 @@ For information about the course, please visit [its coursera course profile modu
 
 Please be aware the last update of the course is at March, 2025.
 
+And this course doesn't discuss how Agent can learn from its experiences.
+
 ## Course Modules
 
 - [x] Module 1: Extending AI Agent with Self Prompting
@@ -30,11 +32,11 @@ Please be aware the last update of the course is at March, 2025.
     - [ ] I'm not convinced by the solution code in pattern 4.
 
 - [ ] Module 3: Multi-Agent Systems
-  - [ ] Introduction to Multi-Agent Systems
-  - [ ] Building Multi-Agent Systems: Agent-to-Agent Communication
-  - [ ] Agent Interaction & Memory
-  - [ ] Agent Interaction Patterns with Memory
-  - [ ] Removing Noise: Focusing Agent Attention
+  - [x] Introduction to Multi-Agent Systems
+  - [x] Building Multi-Agent Systems: Agent-to-Agent Communication
+  - [x] Agent Interaction & Memory
+  - [x] Agent Interaction Patterns with Memory
+  - [x] Removing Noise: Focusing Agent Attention
   - [ ] Advanced Agent Interaction
   - [ ] Providing Agentic AI Information About the World
   - [ ] Agent Interaction Architectures
