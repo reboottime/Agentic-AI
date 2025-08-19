@@ -38,8 +38,8 @@ And this course doesn't discuss how Agent can learn from its experiences.
   - [x] Agent Interaction Patterns with Memory
   - [x] Removing Noise: Focusing Agent Attention
   - [x] Advanced Agent Interaction
-  - [ ] Providing Agentic AI Information About the World
-  - [ ] Agent Interaction Architectures
+  - [x] Providing Agentic AI Information About the World
+  - [ ] Agent Interaction Architectures (homework)
 
 - [ ] Module 4: Dependency Injection for Tools
   - [ ] Isolating Agents from Accidental Complexity
