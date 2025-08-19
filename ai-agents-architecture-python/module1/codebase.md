@@ -5,7 +5,7 @@
 ```python
 
 @register_tool()
-def prompt_expert(action_context: ActionContext, description_of_expert: str, prompt: str) -> str:
+def get_expert_response(action_context: ActionContext, description_of_expert: str, prompt: str) -> str:
     """
     Generate a response from an expert persona.
     
@@ -84,7 +84,7 @@ def create_and_consult_expert(action_context: ActionContext,
     ]))
     
     # Step 3: Consult the dynamically created persona
-    return prompt_expert(
+    return get_expert_response(
         action_context=action_context,
         description_of_expert=persona_description,
         prompt=consultation_prompt

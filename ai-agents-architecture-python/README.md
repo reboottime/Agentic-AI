@@ -5,6 +5,8 @@ For information about the course, please visit [its coursera course profile modu
 
 Please be aware the last update of the course is at March, 2025.
 
+And this course doesn't discuss how Agent can learn from its experiences.
+
 ## Course Modules
 
 - [x] Module 1: Extending AI Agent with Self Prompting
@@ -30,14 +32,14 @@ Please be aware the last update of the course is at March, 2025.
     - [ ] I'm not convinced by the solution code in pattern 4.
 
 - [ ] Module 3: Multi-Agent Systems
-  - [ ] Introduction to Multi-Agent Systems
-  - [ ] Building Multi-Agent Systems: Agent-to-Agent Communication
-  - [ ] Agent Interaction & Memory
-  - [ ] Agent Interaction Patterns with Memory
-  - [ ] Removing Noise: Focusing Agent Attention
-  - [ ] Advanced Agent Interaction
-  - [ ] Providing Agentic AI Information About the World
-  - [ ] Agent Interaction Architectures
+  - [x] Introduction to Multi-Agent Systems
+  - [x] Building Multi-Agent Systems: Agent-to-Agent Communication
+  - [x] Agent Interaction & Memory
+  - [x] Agent Interaction Patterns with Memory
+  - [x] Removing Noise: Focusing Agent Attention
+  - [x] Advanced Agent Interaction
+  - [x] Providing Agentic AI Information About the World
+  - [ ] Agent Interaction Architectures (homework)
 
 - [ ] Module 4: Dependency Injection for Tools
   - [ ] Isolating Agents from Accidental Complexity
@@ -52,7 +54,6 @@ Please be aware the last update of the course is at March, 2025.
   - [ ] Improving AI Agent Reasoning with In-loop Planning
   - [ ] Intermediate Planning: Tracking Progress in the Agent Loop
   - [ ] The Great Agent Trade-off: Ahead of Time vs. Dynamic
-
 
 ## Findings
 
