@@ -2,7 +2,7 @@
 
 ## Progress
 
-- [x] 01. Introduction to Multi-Agent Systems: brain, coordination and share information. Decomposition and conquer => more predictable and easier to maintain
+- [x] 01. Introduction to Multi-Agent Systems: brain, coordination and share information. divide and conquer => more predictable and easier to maintain
 - [x] 02. Building Multi-Agent Systems: Agent-to-Agent Communication
   - [x] [how agent registry and action context works](./codebase.md#how-to-do-agent-discovery)
   - diagram
@@ -43,20 +43,20 @@
 - [x] 06. Advanced Agent Interaction
 - [x] 07. Providing Agentic AI Information About the World
   > Treat AI like a highly capable but completely uninformed intern who needs comprehensive context about your specific situation, systems, and goals to perform effectively.
-- [ ] 08. Agent Interaction Architectures
+- [x] 08. Agent Interaction Architectures
 
 ## Recap of the Four Memory Sharing Patterns
 
 Each of these patterns serves a different purpose in agent collaboration:
 
-Message passing keeps interactions simple and focused
-Memory reflection helps agents learn from each other’s processes
-Memory handoff enables seamless continuation of complex tasks
-Selective memory sharing provides relevant context while reducing noise
+- Message passing keeps interactions simple and focused
+- Memory reflection helps agents learn from each other’s processes
+- Memory handoff enables seamless continuation of complex tasks
+- Selective memory sharing provides relevant context while reducing noise
+
 The choice of pattern depends on your specific needs:
 
-How much context does the second agent need?
-Does the first agent need to understand the second agent’s process?
-Should the conversation history be preserved?
-Is there sensitive information that should be filtered?
-By understanding these patterns, you can design agent interactions that effectively balance information sharing with task focus, leading to more efficient and capable multi-agent systems.
+- How much context does the second agent need?
+- Does the first agent need to understand the second agent's process?
+- Should the conversation history be preserved?
+- Is there sensitive information that should be filtered?
