@@ -1,7 +1,7 @@
 # AI Agents and Agentic AI Architecture in Python
 
 A course by [Dr. Jules White](https://engineering.vanderbilt.edu/bio/?pid=jules-white).
-For information about the course, please visit [its coursera course profile module introduction section](https://www.coursera.org/learn/ai-agents-architecture-python#modules).
+For information about the course, please visit [its Coursera course profile module introduction section](https://www.coursera.org/learn/ai-agents-architecture-python#modules).
 
 Please be aware the last update of the course is at March, 2025.
 
@@ -42,9 +42,9 @@ And this course doesn't discuss how Agent can learn from its experiences.
   - [x] Agent Interaction Architectures (homework)
 
 - [ ] Module 4: Dependency Injection for Tools
-  - [ ] Isolating Agents from Accidental Complexity
-  - [ ] Clean AI Tools with Dependency Injection
-  - [ ] Clean Tool Dependency Injection with the Environment
+  - [x] Isolating Agents from Accidental Complexity
+  - [x] Clean AI Tools with Dependency Injection
+  - [] Clean Tool Dependency Injection with the Environment
 
 - [ ] Module 5: Approaches to Improving AI Agent Reasoning
   - [ ] Improving AI Agent Reasoning with In-Context Learning
@@ -54,6 +54,12 @@ And this course doesn't discuss how Agent can learn from its experiences.
   - [ ] Improving AI Agent Reasoning with In-loop Planning
   - [ ] Intermediate Planning: Tracking Progress in the Agent Loop
   - [ ] The Great Agent Trade-off: Ahead of Time vs. Dynamic
+
+## coding task
+
+- [ ] make diagram about how related code entities are glued together
+- [ ] Test `OpenAI Agentic Python SDK` to consolidate understanding about the python architecture part
+- [ ] Orchestration
 
 ## Findings
 
