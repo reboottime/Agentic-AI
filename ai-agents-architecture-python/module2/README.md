@@ -7,8 +7,6 @@
 - [x] AI Agents & Environment Safety
   - [ ] I'm not convinced by the sample code in pattern 4
 
-## Question List
-
 ## Notes
 
 - [x] discussing principles from software engineer practice perspective
