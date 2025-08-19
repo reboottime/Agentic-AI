@@ -55,6 +55,11 @@ And this course doesn't discuss how Agent can learn from its experiences.
   - [ ] Intermediate Planning: Tracking Progress in the Agent Loop
   - [ ] The Great Agent Trade-off: Ahead of Time vs. Dynamic
 
+## coding task
+
+- [ ] make diagram about how related code entities are glued together
+- [ ] Test `OpenAI Agentic Python SDK` to consolidate understanding about the python architecture part
+
 ## Findings
 
 - Even though the course marked it as a beginner level tutorial, I saw it captures industry trends and papers more closely than other courses I consulted.
