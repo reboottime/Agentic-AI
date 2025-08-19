@@ -29,9 +29,9 @@ And this course doesn't discuss how Agent can learn from its experiences.
   - [x] The MATE Design Principles for AI Agents
   - [x] MATE Design Principles in Code
   - [x] AI Agents & Environment Safety
-    - [ ] I'm not convinced by the solution code in pattern 4.
+    - [x] I'm not convinced by the solution code in pattern 4. (It's ok at a conceptual level)
 
-- [ ] Module 3: Multi-Agent Systems
+- [x] Module 3: Multi-Agent Systems
   - [x] Introduction to Multi-Agent Systems
   - [x] Building Multi-Agent Systems: Agent-to-Agent Communication
   - [x] Agent Interaction & Memory
@@ -39,7 +39,7 @@ And this course doesn't discuss how Agent can learn from its experiences.
   - [x] Removing Noise: Focusing Agent Attention
   - [x] Advanced Agent Interaction
   - [x] Providing Agentic AI Information About the World
-  - [ ] Agent Interaction Architectures (homework)
+  - [x] Agent Interaction Architectures (homework)
 
 - [ ] Module 4: Dependency Injection for Tools
   - [ ] Isolating Agents from Accidental Complexity
