@@ -6,7 +6,7 @@ A repository to gather learnings about making AI agents. This repository may con
 
 - [AI Agents Architecture Using Python](./ai-agents-architecture-python/)
   - about: The course is mainly architecture
-  - progress: 3/10
+  - progress: 5.5/10
   - status: in progress
 - [Fundamental of AI Agents Using RAG And Langchain](./fundamentals-of-ai-agents-using-rag-and-langchain/)
   - about: learning common skills, including framework solution

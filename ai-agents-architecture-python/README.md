@@ -37,7 +37,7 @@ And this course doesn't discuss how Agent can learn from its experiences.
   - [x] Agent Interaction & Memory
   - [x] Agent Interaction Patterns with Memory
   - [x] Removing Noise: Focusing Agent Attention
-  - [ ] Advanced Agent Interaction
+  - [x] Advanced Agent Interaction
   - [ ] Providing Agentic AI Information About the World
   - [ ] Agent Interaction Architectures
 
@@ -54,7 +54,6 @@ And this course doesn't discuss how Agent can learn from its experiences.
   - [ ] Improving AI Agent Reasoning with In-loop Planning
   - [ ] Intermediate Planning: Tracking Progress in the Agent Loop
   - [ ] The Great Agent Trade-off: Ahead of Time vs. Dynamic
-
 
 ## Findings
 
