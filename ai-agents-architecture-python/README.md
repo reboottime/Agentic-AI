@@ -44,10 +44,10 @@ And this course doesn't discuss how Agent can learn from its experiences.
 - [ ] Module 4: Dependency Injection for Tools
   - [x] Isolating Agents from Accidental Complexity
   - [x] Clean AI Tools with Dependency Injection
-  - [] Clean Tool Dependency Injection with the Environment
+  - [ ] Clean Tool Dependency Injection with the Environment
 
 - [ ] Module 5: Approaches to Improving AI Agent Reasoning
-  - [ ] Improving AI Agent Reasoning with In-Context Learning
+  - [x] Improving AI Agent Reasoning with In-Context Learning
   - [ ] Improving AI Agent Reasoning with Up-front Planning & Chain of Thought
   - [ ] The Capability Architectural Pattern
   - [ ] Ahead of Time Planning for Improving Agent Reasoning
