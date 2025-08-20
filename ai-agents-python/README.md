@@ -24,6 +24,7 @@ This course focuses on building AI agents from the ground up using Python, empha
   - [x] Practicing Programmatic Prompting for Agents (Solution)
   - [x] Adding Structure to AI Agent Outputs
   - [ ] Building Your First Agent
+    - [ ] terminate is also a tool
   - [ ] AI Agent / Environment Interface
   - [ ] AI Agent Feedback and Memory
   - [ ] Learning More & Staying Connected

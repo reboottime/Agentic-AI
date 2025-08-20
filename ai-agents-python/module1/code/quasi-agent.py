@@ -16,7 +16,7 @@ import litellm
 load_dotenv()
 
 
-class AIAgent:
+class QuasiAgent:
     """
     Basic AI Agent class that demonstrates the flipped interaction pattern
     where the AI can guide the conversation and suggest actions.
@@ -43,6 +43,7 @@ class AIAgent:
         or context (e.g., "You will respond in JSON.").
         """
         self.conversation_history = [{"role": "system", "content": system_prompt}]
+        self.name = "Quasi-Agent"
 
     def add_message(self, role: str, content: str) -> None:
         """
