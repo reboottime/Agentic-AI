@@ -2,7 +2,7 @@
 
 ## coding task
 
-- [ ] Building a Quasi-Agent
+- [x] [Building a Quasi-Agent](https://www.coursera.org/learn/ai-agents-python/ungradedWidget/7uXZ1/practicing-programmatic-prompting-for-agents)
 - [x] try out customer support Agent
 - [x] Building Your First Agent
 
@@ -62,4 +62,4 @@
 - [x] 17. Learning More & Staying Connected
   - [x] Stay Up to Date in a Rapidly Changing AI Landscape, join professor's circle community
   - [x] Read the paper: ["Living Software Systems" and the future that AI Agents will make possible](https://arxiv.org/pdf/2408.01768)
-- [ ] 18. Understanding Feedback & Memory (Graded Assignment)
+- [x] 18. Understanding Feedback & Memory (Graded Assignment)

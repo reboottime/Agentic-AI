@@ -11,189 +11,101 @@ import os
 from typing import Optional, Dict, Any
 from dotenv import load_dotenv
 import litellm
+from dataclasses import dataclass
 
+# This is a conceptual code using multiple agents mode
 # Load environment variables
 load_dotenv()
 
+@dataclass(frozen=True)
+class Log:
+    content: str
+    role: str
+    tags: list[str]
+ 
 
-class AIAgent:
-    """
-    Basic AI Agent class that demonstrates the flipped interaction pattern
-    where the AI can guide the conversation and suggest actions.
-    Uses LiteLLM for unified access to multiple LLM providers with async support.
-    """
-
-    def __init__(self, openai_model: str, api_key: str, system_prompt: str):
-        """
-        Initialize the AI Agent with LiteLLM.
-
-        Args:
-            openai_model (str): The model to use (supports OpenAI, Anthropic, Cohere, etc.)
-            api_key (str): API key for the LLM provider
-            system_prompt (str): System prompt to guide the agent's behavior
-        """
-        # Set up LiteLLM with API key
-        litellm.api_key = api_key
-
-        self.model = openai_model
-        """
-        "system": Provides the model with initial instructions, rules, or 
-        configuration for how it should behave throughout the session. 
-        This message is not part of the "conversation" but sets the ground rules
-        or context (e.g., "You will respond in JSON.").
-        """
-        self.conversation_history = [{"role": "system", "content": system_prompt}]
-
-    def add_message(self, role: str, content: str) -> None:
-        """
-        Add a message to the conversation history.
-
-        Args:
-            role (str): The role of the message sender ('user', 'assistant')
-            content (str): The content of the message
-        """
-        self.conversation_history.append({"role": role, "content": content})
-
-    async def get_response(self, user_input: str) -> str:
-        """
-        Get a response from the AI agent.
-
-        Args:
-            user_input (str): The user's input message
-
-        Returns:
-            str: The agent's response
-        """
-        # Add user input to conversation
-        self.add_message("user", user_input)
-
-        try:
-            # Get response using LiteLLM (supports multiple providers)
-            response = await litellm.completion(
-                model=self.model,
-                messages=self.conversation_history,
-                temperature=0.7,
-                max_tokens=1000,
-            )
-
-            # Extract the assistant's response
-            assistant_response = response.choices[0].message.content
-
-            # Add assistant response to conversation history
-            self.add_message("assistant", assistant_response)
-
-            return assistant_response
-
-        except Exception as e:
-            error_msg = f"Error getting response from AI: {str(e)}"
-            print(error_msg)
-            return error_msg
-
-    def reset_conversation(self, system_prompt: str) -> None:
-        """
-        Reset the conversation history and keep system prompt only.
-        
-        Args:
-            system_prompt (str): The system prompt to use for the reset
-        """
-        self.conversation_history = [{"role": "system", "content": system_prompt}]
-
-    def get_conversation_history(self) -> list:
-        """Get the current conversation history."""
-        return self.conversation_history.copy()
-
-
-def main():
-    """
-    Main function to demonstrate the AI Agent functionality.
-    This is where you can implement your homework assignments.
-    """
-    print("🤖 AI Agent Ready for Homework!")
-    print("=" * 50)
-
-    # Check if API key is set
-    if not os.getenv("OPENAI_API_KEY"):
-        print("❌ Error: OPENAI_API_KEY not found in environment variables.")
-        print("Please create a .env file with your OpenAI API key.")
-        return
-
-    api_key = os.getenv('OPENAI_API_KEY')
-    model = os.getenv('OPENAI_MODEL') or 'gpt-4o'
+class Memory:
+    def __init__(self, name:str):
+        self.logs = []
     
-    # Example system prompt for homework context
-    system_prompt = """You are an AI agent that can perform tasks by using available tools.
-
-        Available tools:
-            - list_files() -> List[str]: List all files in the current directory.
-            - read_file(file_name: str) -> str: Read the content of a file.
-            - terminate(message: str): End the agent loop and print a summary to the user.
-
-        Guidelines:
-            - If a user asks about files, list them before reading
-            - If user has used the service more than 3 times, terminate user interactions
-            - Every response MUST have an action, respond in JSON format that matches the standard format
-
-        Action Schema:
-        {
-            "type": "object",
-            "properties": {
-                "tool_name": {
-                    "type": "string"
-                },
-                "args": {
-                    "oneOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ]
-                }
-            },
-            "required": ["tool_name"],
-            "additionalProperties": false
-        }
-    """
-
-    async def run_agent_loop():
-        """Simple async agent loop using asyncio.run pattern"""
-        # Initialize the agent (simple approach)
-        agent = AIAgent(model, api_key, system_prompt)
-        agent.add_message(role="user", content="what files are there in my folder?")
+    def add_log(self, log: Log):
+        self.logs.append(log)
         
-        max_iteration_round = 10
-        iteration_round = 0
+    def find_log_by_tag(self, tag: str) -> list[Log]:
+        result: list[Log] = []
         
-        # here to have max iteration lopp in case user provides eval guide
-        # I had an experience made Claude Chat went into dead loop then terminated itself after rounds of dead loop
-        # the codebase is for demostration
-        # action, prompts belong to - system, user, and assitant. and store messages to keep the context continuity
-        
-        while iteration_round < max_iteration_round:
-            iteration_round += 1
-            
+        for log in self.logs:
             try:
-                # Get agent response
-                response = await agent.get_response("")
-                print(f"\n🤖 Agent (Round {iteration_round}): {response}")
-                
-                # For this demo, we'll break after first response
-                # In a real implementation, you'd parse the JSON response 
-                # and execute the requested tools
-                break
-                
-            except Exception as e:
-                print(f"❌ Error in agent loop: {e}")
-                break
+                log.tags.index(tag)
+                result.append(log)
+            except ValueError:
+                print(f"warning: The searched tag: {tag} doesn't exist in log: {log.content}")
+                pass
+        
+        return result
     
-    # Interactive loop for testing
-    print("Type 'quit' to exit, 'reset' to clear conversation history")
-    print("-" * 50)
+    def clear(self):
+        self.logs = []
+
+class Agent:
+    def __init__(self, goal: str, role: str):
+        self.goal = goal
+        self.role = role
+        self.memory = Memory(role)
+
+    def add_log(self, log: Log):
+        self.memory.add_log(log)
+        
+    def clear_logs(self):
+        self.memory.clear()
+
+    def get_logs(self) -> list[Log]:
+        return self.memory.copy()
+
+class PythonEngineerAgent(Agent):
+    def __init__(self):
+        goal = """
+        You are a python expert helping to write a function. You output code in markdown and the format is below
+
+        ```python
+            {your code}
+        ```
+        You ask user clarification first if you have less than 90% confidence about user requirements.
+        You take actions once you get >= 90% confidence about user requirements
+        """
+        role = 'Staff Python Engineer'
+        super().__init__(goal, role)
     
-    # Run the async agent loop with simple asyncio.run()
-    asyncio.run(run_agent_loop())
+    def write_code (self, user_requirements:list[str]) -> str:
+        pass
+    
+    def get_user_input(self, input:str) -> str:
+        pass
+        
+class QAEngineerAgent(Agent):
+    def __init__(self):
+        goal = """
+        You are QA expert helping write python unit test code for a python function.
+        """
+        role = 'Sr QA Engineer'
+        super().__init__(goal, role)
+
+    def write_unit_test(self, code:str) -> str:
+        pass
+
+class TechnicalWriterAgent(Agent):
+    def __init__(self):
+        goal = """
+         You are a helpful document writer helping write a document for a function. You output documentation in markdown format
+        """
+        role = "Chief Technical Document Writer"
+        super().__init__(goal, role)
+        
+    def write_doc (self, code:str) -> str:
+        pass
 
 
-if __name__ == "__main__":
-    main()
+def run_test():
+    python_engineer_agent = PythonEngineerAgent()
+    qa_engineer_agent = QAEngineerAgent()
+    technical_writer_agent = TechnicalWriterAgent()
