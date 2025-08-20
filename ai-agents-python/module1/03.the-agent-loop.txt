@@ -1,0 +1,5 @@
+The Agent Loop
+
+Video • Duration: 8 minutes
+
+Understanding the core agent loop mechanism and its role in AI agent systems.

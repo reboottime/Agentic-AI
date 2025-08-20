@@ -1,0 +1,5 @@
+Adding Structure to AI Agent Outputs
+
+Video • Duration: 14 minutes
+
+Learning how to structure and format AI agent outputs for better usability and integration.
