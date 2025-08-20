@@ -1,5 +1,132 @@
-Introduction
-
-Video • Duration: 10 minutes
-
-Course introduction covering the fundamentals of AI agents and their applications.
+So what is Agentic AI? Well, I want to take a look at this with
+you and help you give an intuitive sense of what this is all about and
+why it's sort of fascinating. Now, what Agentic AI is, is basically
+AI that can go and act with agency. You think of it as autonomy,
+it can go and try to problem solve and react to different situations. And you've probably already seen it in
+your interaction with generative AI, but you probably weren't
+thinking of it that way. Now, Agentic AI is really putting
+this into practice and creating generative AI or other systems that can
+go and interact with the real world, take actions, see the result of those
+actions, and then respond based on that. So we're going to go and
+simulate this whole process. Well, it's not fully simulating it because
+we're going to kind of build an agentic system that's going to have
+a manual component to it. Meaning that as a human being, I'm going to help the agent accomplish
+actions and respond to situations. And so we're going to build an agentic
+system that has a human in the loop where the human is helping create
+that agency that it needs. It's helping carry out the actions. And that's one of the key things that we
+start seeing when we have these agentic systems as they do things for
+us sort of autonomously. So here's my prompt to get this started. You're going to help me
+cook whatever I need. Since you can't directly lift pots or
+pans or get to the fridge, you will tell me the steps and
+I will perform them. We will go one step at a time,
+ask me for what I want to cook. And this is a prompt that's essentially
+kicking off an agentic system where I'm going to follow the instructions
+that it tells me to follow. And then whenever it tells me there's
+some action that needs to take place, I'm going to take that action and then
+I'm going to tell it what happened and it says, okay, great, let's get started. What would you like to cook today? And I'm going to start off
+with something fairly simple. I'd like to cook a dish that combines
+the flavors of Ethiopia, Uzbekistan, while being keto friendly and
+up and under to 1000 calories. And it says, that sounds like a fun and
+unique challenge. How about we make a keto-friendly
+Ethiopian-Uzbek fusion dish featuring a flavorful marinated meat served
+with a side of spiced vegetables. Here's a plan. And it's starting to build out. Here's how I'm going to go and
+accomplish this. And it says, okay,
+here are the ingredients you will need. Lists all the ingredients. And then I want to draw
+your attention down to. This is instructions at the bottom. This is where it's telling me what to do. Here is the task to go and perform. And it says, marinating the meat. Mix the berbere spice, ground coriander,
+cumin, seeds, turmeric, fenugreek, paprika, etc. Coat the meat with the spice,
+ensure it's covered. Let me know when you have the ingredients
+ready and if you have any questions. So it's telling me, go and
+do this and tell me when it's done. And so I come back to it and
+I say, okay, meat is marinated. I did that. And now what does it do? It responds and it says, okay, great,
+let's move on to the next step, cooking the meat. Heat one tablespoon of olive oil or
+ghee in a skillet over medium heat. Once the oil is hot,
+add the marinated meat to the skillet. Cook for about five to seven minutes. Now it's giving me instructions, it's really telling me a task to go and
+perform. I'm going to go cook the meat is the task,
+but it's breaking that task down into sub
+steps that I'm going to go and perform. But you notice what's happening. It's telling me what to go and do. It's giving me
+the instructions to perform. It has the choice and
+what gets done and when, and I'm carrying out its instructions. That is it having agency,
+it's choice over what's happening. And then it says,
+let me know when the meat is cooked and resting and we can proceed. And so I come back and I want to
+point out the agentic aspect of this, the fact that it can react and
+have agency and choose what to do and respond to all kinds of things, including
+something like, no, it's starting to burn. So I tell it like, hey,
+here's what's happening with the meat, it's starting to burn. And I don't tell it what to do. And it says, if the meat is starting
+to burn, reduce the heat to medium or medium low immediately. You can also add a splash of water or
+broth to the pan to deglaze it and prevent further burning. So it is responding and adapting. Now, I'm simulating all of this. We're not automating it yet. What we're doing is we're seeing and building up intuition about what is about,
+and this is it happening. Except that rather than fully automating
+it as a human being, I'm going and performing its actions. So it's a collaboration between myself and
+the generative AI to get this dish cooked. So it tells me what to do, how to
+handle the potential burning meat, and then it says, let me know when the meat
+is done and resting, and we'll move on. And say, I go back and I say,
+okay, the meat is done. So I'm giving it feedback on its actions. I've completed the action you requested,
+it's ready. It comes back and says, okay,
+let's move on to preparing the vegetables. And again,
+let me know when the vegetables are ready. So it's giving me a task,
+I'm going to performing the task, and then I'm coming back and
+saying, okay, task is done. And then it comes up with the next task. And it says, now, in this case,
+it asked me if I forgot about this, I gave it a little curve ball. It said,
+let me know when the vegetables are ready. And I said, no vegetables,
+but I have durian fruit. So this is a little bit
+of a curve ball for it. How will it respond to,
+no, there's no vegetables? You asked me for vegetables. I don't have any, but
+I do have durian fruit. You have to deal with it. How does it respond? How does the agent handle that? And it comes back and it says, okay, well,
+it's quite different from vegetables, but I'm going to adapt. And so now it tells me how to prepare
+the durian fruit because it says, well, I want a path forward. I want to try to reach this goal
+of having created the dish. I don't have access to
+the resources that I thought. So I'll have to adapt and come up
+with some other way of solving this. So it adapts, says, okay, now here's how
+you're going to prepare the durian fruit. I have no idea if this works. This is not a dish I'm
+cooking in my house. And I tell it, it's done,
+it comes back, and it says, great, now here's how you go and plate the dish. Now, what happened here? Well, we flipped the script, right? We, instead of going into the generative
+AI and telling it, do this, do this, plan this, do this, I said,
+here's what I want you to accomplish. Here is the process you're
+going to use to accomplish this. The process is you're going to go one
+step at a time you're going to tell me what to do. I'm going to carry out the action for
+you and then I'm going to tell you when it's done,
+basically. And then you can go and
+respond and do the next thing. And what we see is, is that as we go and
+change our responses, for example, when we threw at this curveball over
+the durian fruit, it responds and adapts. And that's a critical thing with
+the Agentic AI, is it's nothing fixed. We think of all our computer systems
+that we've built for years and they're very rigid and fixed. Like if you take a computer system and
+you say, no vegetables, durian fruit, it falls apart. It has no idea what to do. And this is where the magic of Agentic AI
+starts to come in, is it sees, okay, I don't have vegetables,
+I've got durian fruit, I will do my best. I'm going to try to figure this out. And that's what we're looking for,
+is that ability to see things and respond to them, and then choose
+the next action based on what happened. Or like when the meat was getting ready to
+burn, adapting the plan and say no, okay, here's what you're going to do instead. You're going to turn down the heat and
+that's okay. Now tell me when you're got,
+you're done with that step. And so it's dynamically altering
+the steps based on the feedback that it's receiving me. And that is the key to agentic AI that
+we're going to be working with is its ability to ask for an action to be performed, because it's
+never going to be directly performing it. It's going to be specifying
+what it wants done. And then either a human being is going to
+go and do it, or an existing software or computer system that we know
+how to build is going to go and take that specification and carry it out. That's the key. Now, does it matter if it's a human being
+or computer system that's doing this? Not fully, the key difference that we're
+gonnasee is that if it's a human being, we are much more error tolerant. If it goes and it gives us the tasks
+that it once performed in many different formats, we can handle that and
+adapt because we're human beings. But computer systems aren't so
+good at doing that. So when it begins interfacing,
+when magenta begins interfacing with all the tools and computer systems
+that we use on a daily basis, if it decides to say, hey,
+yo, go create this recipe. And it says that to a spreadsheet. The spreadsheet is going to say, I have no
+idea what you're talking about because it doesn't work with yo create this recipe. It works in columns and
+numbers and values, and so it's in a much more rigid format. So part of the magic of Agentic AI
+is figuring out how do we bridge this gap between how
+it sort of intuitively and fluidly specifies what it wants done,
+and this rigid world of computer systems that we've built where
+everything has to be exact and perfect. Boy, we know that generative
+AI loves to explain itself and gives us all kinds of remarks and details
+and comments and all those types of things are really problematic when we start
+working with real computer systems. Now, it's fine in this example like I
+have, where I'm acting as the automation, I'm going in and
+listening to what it's saying, and then responding to it because I'm a human
+being and I can adapt as it can adapt. I can adapt to it giving comments,
+I can adapt to it explaining itself. I can adapt when it's short and
+sweet about what it wants. And a lot of what we're going to have to
+do is the prompt engineering around how do we interface our existing computer
+systems with these things that are very talkative and adaptive and
+all of these other things they do and aren't as rigid as we're used to. So I look forward to
+exploring this more with.

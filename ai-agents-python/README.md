@@ -10,7 +10,7 @@ This course focuses on building AI agents from the ground up using Python, empha
 ## Course Modules
 
 - [ ] Module 1: AI Agent Concepts
-  - [ ] Introduction
+  - [x] Introduction
   - [ ] Flipped Interaction Pattern
   - [ ] The Agent Loop
   - [ ] Running the Code Samples in the Course
