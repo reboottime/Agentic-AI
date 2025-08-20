@@ -1,5 +1,0 @@
-Flipped Interaction Pattern
-
-Video • Duration: 7 minutes
-
-Exploring the flipped interaction pattern in AI agent design and implementation.

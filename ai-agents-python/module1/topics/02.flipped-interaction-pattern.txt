@@ -1,0 +1,118 @@
+Let's look at the basis of
+this easy gentic systems. How do we kick off and get generative AI to go
+and work this way? There is a prompt
+engineering pattern, and I've talked about
+it in my first class, Prompt Engineering for Chat
+GPT, and a paper I did. But I think of this as the
+basis for all this stuff, which is a flipped interaction, where rather than us telling
+the system what to do, rather than us
+asking it questions, it goes and tells us what to do, it asks us questions, or really it goes and ask existing computer
+systems questions. It runs queries and databases to collect information it needs, or it goes and tells those
+systems to run actions that it needs run in order to accomplish some goal
+that we give it. When I want to take
+a quick look at the flipped interaction pattern and talk about how this works. The basic structure
+of this pattern is, we go and tell it
+that you're going to ask me questions
+at one at a time in order to get enough information
+to suggest a restaurant for me to eat at in Nashville,
+Tennessee, tonight. You can think of this in
+this basic pattern as, ask me questions one at a time. One at a time is often the
+best for gentic systems. It doesn't have to
+be one at a time, but we'll talk about
+this in a minute. Go and ask me questions, or tell me what to do
+one step at a time. The goal of this is we want
+to create a situation where it goes and creates things
+that need to be done, tasks that need to be performed, or actions that
+need to be taken. Then the system
+will go and execute those actions on behalf of the agent and tell
+it what happened. This rough pattern of prompting, ask me questions one at a time, tell me what to do
+one step at a time, creates this environment
+where it's being told, you're in the driver's
+seat, go and do it. Then at the bottom I say
+ask the first question. This is a trick that works really well in
+lots of systems to make sure that we start off
+with one question only, or we say, "Tell me the first step," so that we start
+off with one step only. We want to create a
+powerful pattern of behavior where it goes off
+and it knows what to do. It was going to do
+this one step at a time. Let's look
+at our prompt. Ask me questions one at a
+time in order to gather enough information to suggest restaurants for me to eat at in Nashville,
+Tennessee, tonight. Ask the first question. It comes back, what type of cuisine are you in
+the mood for tonight? I'm going to come back and
+I'm going to say Tex-Mex. Now I've given it an answer, and it has to adapt, and part of the adaptation is choosing the next
+question to ask me. That is wildly powerful. That simple thing of looking at what
+information it was given, and then choosing
+the next question in response is
+critically important, because the same thing
+happens in a task. It has for a task to be run, it looks at what happened, and then it adapts
+what the next task is going to be based
+on what happened. Same thing with questions. I say Tex-Mex, then it says, "Do you have any
+dietary restrictions or preferences?" I say no. It adapts the next question then, because if I had said yes, it probably would
+have gone off and then asked me
+questions about them. But since I said no, it said, do you prefer a casual
+dining experience or something more upscale? I say, kid friendly. I just give it some feedback. Notice I'm not constraining my responses to any
+type of format. I'm giving it very free-flowing. It's having to adapt, not only to the information
+I'm giving it, but the format that I'm
+giving it the information. It's very fluid in
+what it's doing. Would you like a restaurant with outdoor seating or
+indoor seating, or does it not matter? I say, "Well, it doesn't matter, it's raining, so I'm probably
+not going to eat outside." Then it goes further
+and it says, "Do you have a specific
+preference for a specific area?" I say near Vanderbilt. Great, how far are you
+willing to travel? I say, "Well, a short
+drive, 5-10 minutes. Then it says, "Got it. Do
+you have any preference for a restaurant that
+takes reservations? Are you okay with walk-in?" I say walk-in's fine, but I don't want to
+have an insane wait. You notice this
+is totally fluid. Each time I respond to one of its questions,
+it's adapting. That is the agentic part
+beginning to happen. That is the agentic magic. It's also adapting to all the different formats and ways that I can
+specify my input. This is one of the
+important parts of large language models, is that they can handle input in so many
+different formats, so many different
+ways of expressing the information and the
+idea without us having to go and build some complex
+thing to be able to handle all these crazy
+ways that I'm responding. Then after I give it the
+walk-ins thing, it says, "Based on your preferences, I recommend Rosepepper Cantina." I go and Google Map this, and I'm like, well, right now from my house that's actually about 13
+minutes with traffic, slightly farther than
+I want to drive. I just go back and I say, "Hey, Google Map says it's
+13 minutes away, feeling a little
+lazy for that trek." It comes back and it says, "In that case, go to SATCo." SATCo happens to be right across the street
+from Vanderbilt. Now that's something
+really powerful and valuable that I can go and employ to help
+me solve a problem. Now I can solve a
+problem like this. Like where should I go? Help make a decision. Help guide me as a human being, and it's collecting
+information from me. There's no difference between it collecting information from me and it collecting
+information from a database. It's just the interface to collect that
+interface changes, or interface to collect
+that information changes. Asking the human
+being is much easier, because the human being can
+adapt to whatever it says. The difference is when
+it goes and collects information from a real computer
+system like a database, it's going to have to speak the language of that database. It's going to have to speak the language of that
+computer system, so it's going to
+have to translate the goal to whatever
+the target language is. if you think about something
+that these models and large language models are supremely good at,
+it is translation. Absolutely good at translation. Excellent experts at language. That piece is again one
+of the huge benefits, is that we go and
+express what we want in our human language, it decomposes it into a plan
+to go and accomplish it. It interactively begins
+executing its plan, and when it's a
+human on one side, it'll ask it in human language. But when it needs
+to go and it needs to talk to a database, it can go and begin speaking
+that database language. Just like in Star Wars. They had protocol
+droids that spoke all these different
+languages and could communicate with all
+these different systems. They acted as the interface
+to those systems. That is what generative
+AI is doing. Agentic AI is working
+very similarly, but rather than just
+asking it a question and us really directing
+everything one step at a time, agentic AI, we're giving
+it the ability to go and perform many
+different steps and adapt. It chooses the step,
+we perform it. It gets information back about what happened as
+a result of the step, and then it adapts, and that continues on and on.

@@ -8,7 +8,12 @@
     > You're going to help me cook whatever I need. Since you can't directly lift pots or pans or get to the fridge, you will tell me the steps and I will perform them. We will go one step at a time, ask me for what I want to cook.
   - system visualization
   <img src="./imgs/01.introduction.diagram.png" alt="x" style="max-width: 400px;" />
-- [ ] 02. Flipped Interaction Pattern
+- [x] 02. Flipped Interaction Pattern
+  - The prompt pattern: *Ask me questions one at a time in order to get enough information to [GOAL]. Ask the first question.*
+    - **One at a time**: Best practice for agentic systems
+    - **Goal-oriented**: Clear objective provided upfront
+    - **Start trigger**: "Ask the first question" or "Tell me the first step"
+  - [x] Test the prompt with ChatGPT to solve a real problem in life
 - [ ] 03. The Agent Loop
 - [ ] 04. Running the Code Samples in the Course
 - [ ] 05. Programmatic Prompting for Agents
