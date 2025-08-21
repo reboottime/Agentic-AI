@@ -1,0 +1,5 @@
+Giving Agents Tools
+
+Video • Duration: 7 minutes
+
+Learn how to provide agents with tools and capabilities to perform tasks.

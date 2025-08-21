@@ -1,0 +1,5 @@
+Hallucination is a New Form of Computing
+
+Video • Duration: 7 minutes
+
+Understanding how AI hallucination can be leveraged as a computational paradigm.
