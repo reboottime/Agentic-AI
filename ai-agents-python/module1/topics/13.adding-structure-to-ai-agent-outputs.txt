@@ -1,5 +1,260 @@
-Adding Structure to AI Agent Outputs
-
-Video • Duration: 14 minutes
-
-Learning how to structure and format AI agent outputs for better usability and integration.
+One of the most fundamental
+things that we have to do is figure out how do we get the model to output an action
+that we can understand. If you've ever worked with
+generative AI models, they are very chatty. They come up with all kinds
+of descriptions of what they're doing and every time you call them, they do
+something different. One of the most fundamental
+things is thinking about how do we prompt
+one of these models in order to get an
+action back that we can programmatically
+determine what the action is and then execute it
+on behalf of the agent. Now the key thing is the agent, we say it's going to decide
+what to do and do it. But in reality, it
+decides what to do, and then we have some
+traditional software that parses its response and goes and executes the action
+that it specifies. The agent itself can't
+reach into our computer. It can only output a bunch of texts that we can then
+parse and do something with. We have to figure out
+how do we structure our prompts so that we can
+extract actions from them. This is one of the core
+things that we have to do. Now the reason that we're doing this is
+because we're going to generate a prompt. We're
+going to put in a prompt. We're going to response. We're going to get an action,
+then we have to execute it. We have to do this fully
+autonomously in a loop. Now, if you walk in and go into some generative AI tool
+and you prompt it, for example, if you went
+in and you said, "Give me a Bash shell command to check
+my IP address on Linux." You might get this response
+the first time where if I had to parse this and this was the only format that I
+was ever going to get, I could probably write some
+code that would look for that first Bash markdown block and extract the code
+that was in it, and then automatically turned it into a string and
+exec it somehow. Now, I could do that. But if you go and you prompt
+the things multiple times, you'll see what happens and every time it's
+slightly different. Now, it's pretty
+close on these two, but there's also some
+slight variations. If you look, the first one had this SQL markdown block
+to represent part of it. This second one
+does not. This one has a slightly
+different version, it has a different
+number of blocks. What happens is that every
+time we execute generative AI, we're going to get a
+different response. It's not deterministic. It has this randomness to it. One of the big challenges
+is we want it to output everything in a really
+consistent form and typically want to want to
+minimize the amount of chatty interactions that
+we get where it's saying, and by the way, look at this fluffy command
+you could run, or maybe you want to
+run this alternative command and get all
+this other stuff. We want to narrow it down. The reason we're doing this is because whenever we're
+building these AI agents, one of the critical things
+that we're going to build is this AI environment interface. The environment is the computer that it's going to
+be executing things or the set of computers that's going to be
+executing actions on. The environment interface, that interface between the AI
+and what it can go and do, the actions it can take is
+something where we're going to have to write code to do
+it to parse the response. We're going to have to get a fairly limited range of
+responses to be able to write something
+where we can parse and understand the range
+of outputs that it does. There are at least
+two ways to do this. There may be more, but
+there's two that are the most common
+approaches and we're going to talk about both
+of them in this course. I'm going to start off
+with the first one, which is doing some prompt
+engineering and then parsing. And the reason I'm
+starting off with the first one is the second one requires that the large
+language model you're working with have some
+special capabilities to it, namely something called
+function calling, which we'll talk about later. But we have to be able to
+go and get an action out. Now, the first way will
+work with any LLM, and there are certain
+times when you may want to do it this way
+because you want to do something really
+unique and different. This is the bare
+metal full control over how you go
+about doing this. We're going to learn
+this way first. We're going to talk
+about this way first, and then we'll later go back
+and look at the other way, which will save us some
+and in some cases, will be better, but not always. There may be times
+where you want to use one versus the other. It could be because of the LLM you're working with doesn't
+support function calling or because there's some unique capability
+through the language you're creating or
+something else that the other approach is just
+not going to be able to do. Here's what we're going to
+do. We're going to construct this response or
+construct the prompt. We're going to generate a response and then
+we're going to parse it. Parsing requires that it be in a very rigorous strict format. This is what we want to do is we want to figure
+out how do we prompt engineer so that our parser will almost always get
+something that works. Now, it's not ever going to be guaranteed that it will get
+something out that it works, and we're going to
+have things like retry and stuff like that. But we're going to try to prompt engineer our way to
+get as consistent as possible a format for the response that
+goes into the parser. Let's take a look at a first example of how we can do this. Then we'll start to build up some intuition about
+what we're going to do. Here's what we're going to do. We're going to build a
+simple agentic prompt. That is a prompt where we tell it a series of
+actions it can take, and we ask it to output its response in a
+very specific format. We're going to say, "Whenever I ask you
+to solve a problem, you can take these actions. Pick up, use, or discard, like you're playing
+in a game, you will always produce your output
+in this exact format. Then I've got, basically, insert action, colon,
+insert object." Now this is using the template
+pattern for a prompt, and I'll link to
+this in the course. But the idea behind this
+is we're giving the LLM a template for its output
+that we want it to follow. When you have placeholders
+like this in your prompt, LLMs are really
+good at following your instructions in terms of placeholders and filling
+them in correctly. I'm telling it, I want
+you to output an action, a colon, and then an object. Some action you're going
+to take on some object. I give it the list
+of objects like pan, butter, green bean,
+salt, garlic, and spatula and then I tell it you can output
+one action at a time. Now, you can do multiple
+actions at a time. That's more advanced.
+It's a little trickier. But for now, we're just going
+to do one action at a time. Now I tell it now go ask
+me the problem to solve. What I'm trying to do is I'm
+trying to create a prompt that kicks off something
+that looks like that loop. Now, it goes and asked me for what problem
+I'd like to solve, I say, "Cook savory
+green beans." Now, what is its output? Normally, if you did
+this, you just said, tell me how to cook
+savory green beans, you're going to get this long
+recipe instead of steps. What do I get with this prompt? Pickup:pan. You notice
+what it's done. It's followed my instructions, and it's filling in the template according to my instructions. If we go back and we look at the original template
+and the prompt, it said insert action
+and then insert object. Now, couple of
+interesting things here. One is, you notice
+that it's decided to capitalize the action and my original actions
+were not capitalized. Now, this is okay. That's something I could
+parse and deal with, but it also just begins to show you there's
+so much variation. Next time I run this prompt, I may get pick up in title case, like I originally had
+it, and not all caps. But it does follow the fundamental template,
+which is pickup:pan. I then tell it the
+result of its action. I'm telling it in the prompt, you can output one
+action at a time. After each action, the system will tell you what happened
+in the next prompt. This is simulating the loop
+that we're going to do. When it says, pickup:pan, I then say, "handle
+breaks off pan." So I'm telling it and giving it feedback on what happened. I then comes back and it says, "Okay, discard the pan. We can't use that pan anymore." Now, if you think about a loop, and we are going through,
+we're taking some action. We're getting a result, and then we're
+giving it feedback. We're doing the same
+thing in a conversation. In fact, when we go and model the interaction
+with the agent, I said that we're going
+to go and take action. We're going to get
+feedback, and then we're going to bring
+that back into the prompt for the next
+iteration of the loop. That's what we're
+doing here. This is building up a conversation. Every time we add a message
+to the conversation, it sees the entire conversation. We're basically building a
+bigger and bigger prompt by building a bigger a longer
+and longer conversation. This is really critical.
+The LOM has no memory. It does not remember anything. Every time we add messages
+to that conversation, it's adding to its memory
+of what has happened. When I say handle
+breaks off pan, that gets sent back to
+it as a user prompt. It says, "Okay, now I have
+to decide on my next output, which just discard the pan. Basically, we're running
+a loop, essentially. But I'm just manually triggering the loop by giving it the
+feedback on the action. Let's run another
+example of this because we can get more
+complicated, as well. Whenever I ask you
+to solve a problem, you can take these actions. Fetch web page text, and then I have in
+parentheses the URL, base64_encode, and some value. Now, these look like
+Python functions, and they're taking parameters. Now we're going to
+move it closer to a output format that
+we can directly parse and then call some function
+that we want to work with. Whatever your
+programming language is, you can go and output
+something that tells you a function to run in your
+program or an API to call. What we're doing is trying to construct a prompt
+that does that. Now I'm giving it a
+different template. You will always produce your
+output in this exact format, and I say, "Insert
+your reasoning". Part of the reason for this
+is it's nice to give it a placeholder for where
+it should be chatty. If you are trying to do
+this bare metal prompting, and all you're doing is giving it the part
+for the action, but it keeps giving you all
+this chatty stuff around it, one of the simplest
+ways to solve it is just to give it
+a placeholder and say, "This is where you're going
+to put your reasoning. This is where you're going
+to be verbose and chatty." Then you typically want that
+at the start so that it can reason effectively
+about what it's supposed to do and tell
+you what it's going to do, and then output the action. I'm saying insert your
+reasoning and then action, and then I'm saying
+var equals action. I have some pseudo
+code here saying, "You can assign a variable
+to the result of an action." Then I tell it again,
+one action at a time, and after each time
+you run an action, I'm going to give you the
+result of that action. Now, ask for me for
+the problem to solve. It says, "Okay, share the problem
+you want to solve." I say, "Give me a base 64 encoding of the
+Vanderbilt home page." Comes back and it
+says, "Understood, and you notice it's put
+all its chattiness in one place," and then it
+gives me page text, equals fetch web page
+text, and it has the URL. Then I come back
+and I say, "Okay, page text is assigned," and then it comes back
+and it says, "Okay, now the encoded text is equal to base 64
+encoded page text." But you notice what we've done. We've created a language for it to describe the
+actions it wants to take. We're getting consistent
+parsable output. I could go and I could look for these action markdown blocks, and you can't see
+it in the slides, but the original
+actual raw prompt has markdown formatting
+for that action block. I can now go parse for that. I could then go look at
+the text inside of that, and I could interpret it as some type of
+programmatic action. So I've created a
+structure now where it can tell me how to accomplish
+the computation, but output it in a format that's not as raw as the
+original Bash that we saw, but now is something that we can go and parse and execute. Now if I've got a fetch
+web page text function, I can go and call it regardless of what programming
+language you're working. Now we can also go and
+do things that look like what we did with Bash and
+so just to go full circle, imagine we really
+did want it to write Bash code or execute
+things autonomously. We could do that.
+We say, whenever I ask you problem, you
+can take these actions. You can execute output
+Bash or Python. Then I tell you insert
+your reasoning again, it puts Bash or
+Python and the code. One at a time, I'll give you the feedback from standard out. I'll tell you you write
+a program. I'll run it. I'll see what it prints out to the terminal or to standard out. I'll copy and paste that, put it back in as a response
+to the system. Well, in this case, is
+what I'm telling it, and then you can decide
+the next action. I go back and I say, "Okay, an unknown device has shown up on my network at
+this IP address, and it comes back and
+it outputs a Bash block." I can run that. I can programmatically parse and identify what's in there. I can take it exec it. Now, you probably
+don't want to do this. There's a real risk
+of doing this, but this is to just go full
+circle on the example. Then I could run it. I
+ran the actual command. I gave it the raw
+output to standard out, comes back, and it tells
+me the next command, which is to run map. Basically, I'm going
+through and I'm prompting in a way that allows my output
+to be consistent, and I'm getting to tell
+it what it can do, how to output it, and specifying the format for all of that. Now, I said that there
+are two ways to do this. We've been through
+the first one, which is the bare metal way, prompt engineering and parsing. There is a second way that
+we will talk about later, which is to use a
+large language model that supports function calling. The short version of this,
+which we'll talk about later, is that some LLMs allow you to prompt it and
+give it a lift of functions, and it will return to
+you typically in JSON. A description of which function to call and with what arguments. Basically, it skips the part
+where you have to go and do the prompt engineering to design and get it to output
+a consistent response. This is really short circuiting
+and skipping one step, which is to get a
+consistent output format. You still have to
+have a great prompt to help the reasoning along. You still have to have all kinds of other
+things in place, but it simplifies one pieces, which it will go and output
+in a consistent format. There can still be
+errors in that format, so it doesn't alleviate
+you of all the issues, but it helps get
+you farther along the path and there can be times
+when you want to do this, times when you don't
+want to do it. We'll talk about
+those in more detail.

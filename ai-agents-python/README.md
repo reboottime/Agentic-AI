@@ -23,11 +23,12 @@ This course focuses on building AI agents from the ground up using Python, empha
   - [x] Practicing Programmatic Prompting for Agents
   - [x] Practicing Programmatic Prompting for Agents (Solution)
   - [x] Adding Structure to AI Agent Outputs
-  - [ ] Building Your First Agent
-  - [ ] AI Agent / Environment Interface
-  - [ ] AI Agent Feedback and Memory
-  - [ ] Learning More & Staying Connected
-  - [ ] Understanding Feedback & Memory (Graded Assignment)
+  - [x] Building Your First Agent
+    - [x] terminate is also a tool
+  - [x] AI Agent / Environment Interface
+  - [x] AI Agent Feedback and Memory
+  - [x] Learning More & Staying Connected
+  - [x] Understanding Feedback & Memory (Graded Assignment)
 
 - [ ] Module 2: Agent Tools and Function Calling
   - [ ] GAIL - Goals, Actions, Information, Language
@@ -69,16 +70,6 @@ This course focuses on building AI agents from the ground up using Python, empha
   - [ ] Hallucination is a New Form of Computing
   - [ ] New Ways to Access and Extract Information
 
-## Coding Tasks
-
-- [ ] Implement complete AI agent framework in Python from scratch
-- [ ] Design tool discovery systems and function calling mechanisms
-- [ ] Create production-ready agents for file exploration and documentation generation
-- [ ] Build Python agents that interact with external systems and APIs
-- [ ] Develop specialized agents for code generation, testing, and documentation
-- [ ] Implement the GAME framework (Goals, Actions, Memory, Environment) in Python
-- [ ] Create agents using Python decorators for tool management
-- [ ] Build inventory management and README generation agents
-
 ## Findings
 
+Professor Lee course is more approachable from theory perspective, as these series of course has broken theory roadmap.

@@ -2,9 +2,9 @@
 
 ## coding task
 
-- [ ] Building a Quasi-Agent
-- [ ] customer support Agent
-- [ ] Building Your First Agent
+- [x] [Building a Quasi-Agent](https://www.coursera.org/learn/ai-agents-python/ungradedWidget/7uXZ1/practicing-programmatic-prompting-for-agents)
+- [x] try out customer support Agent
+- [x] Building Your First Agent
 
 > Now that you understand the agent loop and how to craft effective prompts, we can build a simple AI agent. This agent will be able to list files in a directory, read their content, and answer questions about them. We’ll break down the agent loop—how it receives input, decides on actions, executes them, and updates its memory—step by step.
 
@@ -18,7 +18,7 @@
   <img src="./topics/imgs/01.introduction.diagram.png" alt="x" style="max-width: 400px;" />
 - [x] 02. Flipped Interaction Pattern
   - The prompt pattern: *Ask me questions one at a time in order to get enough information to [GOAL]. Ask the first question.*
-    - **One at a time**: Best practice for agentic systems
+    - **One at a time**: Best practice for Agentic systems
     - **Goal-oriented**: Clear objective provided upfront
     - **Start trigger**: "Ask the first question" or "Tell me the first step"
   - [x] Test the prompt with ChatGPT to solve a real problem in life
@@ -52,10 +52,14 @@
 - [x] 13. Adding Structure to AI Agent Outputs
   - why: traditional software needs structured input
   - In the [following course](https://www.coursera.org/learn/ai-agents-architecture-python), there is a guide to make structured output with required json format. The learning in this tutorial is asking LLM to give its reasoning process
-- [ ] 14. Building Your First Agent
-- [ ] 15. AI Agent / Environment Interface
-- [ ] 16. AI Agent Feedback and Memory
-- [ ] 17. Learning More & Staying Connected
+- [x] 14. Building Your First Agent
+  - [How Claude escapes from prompts designed to cause infinite thinking loops](./codebase.md#how-llm-for-example-claude-terminates-its-thought-if-you-asked-a-question-makes-it-loop)
+  - define agent rules: Before the agent begins its loop, it must have a clear set of rules that define its behavior, capabilities, and constraints. These agent rules are specified in the system message and play a critical role in ensuring the agent interacts predictably and within its defined boundaries.
+    - agent focus on what to do we create a system that leverages the LLM for high-level reasoning while relying on well-defined code for execution.
+    - This separation of reasoning and execution is what makes the agent loop so powerful
+- [x] 15. AI Agent / Environment Interface
+- [x] 16. AI Agent Feedback and Memory
+- [x] 17. Learning More & Staying Connected
   - [x] Stay Up to Date in a Rapidly Changing AI Landscape, join professor's circle community
-  - [ ] Read the paper: ["Living Software Systems" and the future that AI Agents will make possible](https://arxiv.org/pdf/2408.01768)
-- [ ] 18. Understanding Feedback & Memory (Graded Assignment)
+  - [x] Read the paper: ["Living Software Systems" and the future that AI Agents will make possible](https://arxiv.org/pdf/2408.01768)
+- [x] 18. Understanding Feedback & Memory (Graded Assignment)
