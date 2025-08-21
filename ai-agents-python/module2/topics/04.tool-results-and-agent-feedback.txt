@@ -1,0 +1,168 @@
+We've got our Agentic AI
+going and step by step, trying to solve problems or
+build out plans in advance. We've got it so that it knows
+how to be bounded by tools, and we're figuring out how to give it the right information. Let's talk about one
+of the critical steps. As it goes and uses tools, we're going to have to tell it the outcome of using that tool. That is, it cannot directly
+observe the result, and so we need to
+give it feedback on what the result was. Now, the way that
+we've been doing this, and we've shown
+it over and over, but I haven't explicitly
+talked about it as much is we have been
+giving it a prompt. It goes and tells us what to do. We go and perform that action, and the next prompt
+that we're giving it is the result of the action.
+This is critical. The result of
+applying that tool or performing that action is the follow up prompt
+that we give it. At the beginning, what we're doing is we're
+giving it the goal. Go do this, and I want you to do it one step at
+a time and adapt. It then goes and tells us
+the first step to perform, and from that point on, as the human being or the
+system or whatever it is, what we're feeding back to it is not necessarily
+human questions, but it is the result
+of actions from tools. Just like we would have
+in a conversation, what we can imagine is a conversation where a
+human maybe kicks it off. Then it goes and decides an
+action that needs to be run. But then the rest
+of the messages in the conversation where a human would normally be responding, where we were responding
+and telling it, hey, that cooking
+action is done. Instead, what we're going
+to do is we're going to insert the result of the
+action that it told us to run. Now, we did this implicitly
+along the way in many cases, but I want to make
+this really explicit. It's going to say, go and run this action, and then
+we're going to take it, and we're going to
+give it a prompt as a follow up that is the
+result of the action, so we can see what happened. In response, it will tell
+the next action to run, and then we will go
+and take the result of that action and put it
+in as the next prompt, which will be the result
+of running the action. What we're doing is, we are thinking about, like, where a human being
+went in and said, help me figure out what
+restaurant to go to for dinner. Then it kicked off this process where the human being was
+giving it information, and then it was asking
+another question. The human being was
+giving it information, and then it was asking
+another question. We're going to do something very similar except
+that it's going to specify an action
+rather than a question. Then a computer system is going to go and
+run that action, and we're going to take
+the result of that action, and we're going to put it
+in as the next prompt. Then it's going to side the next action
+based on the result. Then we're going to go and run that action in
+the computer system, and then we're
+going to put it in as a result of the next prompt. I'm going to give
+you a simulation of this in the context
+of cooking again, because we love
+steps and planning. With cooking, it's all
+somewhat intuitive, and we're going to talk about
+it in terms of a microwave. What we're going to do is we're going to
+take the microwave, and we're going to break it
+down. I've called it tools. It probably would have been
+better to name this actions. But you bear with me on my subtle inaccuracy here in the prompting because it'll
+still work out just fine. I've told it, here
+are your tools. Microwave get current time,
+microwave reset time, microwave increase time,
+microwave stop, microwave start, microwave open door,
+microwave close door, insert food in microwave. These are names
+that start to look like what computer
+systems speak. These are the names that the programmers types of names
+that we go and create. If you were creating
+a Python program, you might create variable
+names that look like this or function names that look like this,
+could possibly be. You're probably not
+going to prefix them with microwave like this, but they might look
+something like this. What we're doing is
+we're starting to move the tools and action
+descriptions closer to the interfaces that our real computing systems work with so that it
+can start thinking about breaking down and
+solving problems by specifying actions that look like what
+it could actually go and run. Now, in this case,
+we're imagining we've got this biker wave
+that's computerized, and it can go and
+run some actions. I say notes. You must set the time on the
+microwave to start it. You must work independently
+without input from me. I'm giving it some
+additional context about how these actions work and some baselines that
+it needs to know. You have to set
+the microwave time in order to apply start. If you want to use this action, it depends on another action. That type of information
+critically important, and it may not be
+able to infer it. You're going to help me
+cook food in the microwave. You can only use
+the provided tools and refer to them by their name. You must complete one step at a time and wait for a
+description of the outcome. Tell me the first step
+to reheat a quesadilla? It comes back, and it says, you need to insert the
+quesadilla in the microwave. Use the insert food
+and microwave tool to place the quesadilla inside. Then I tell it,
+here's the result. Food and microwave. This interaction is starting
+to look much closer to what we could have it do to interface with the
+real computer system. It then comes back, says,
+microwave increase time. Then I tell it result, time increased by five seconds. Now, notice the first time, I didn't tell it how much time that we will get an increase. If we go back and we
+look at the actions, it's just microwave
+increase time, but there's no specification
+of how much time. Now, this is where the
+outcome of applying the tool is becoming critically important because I'm
+telling I did that. I pressed that button, or I ran that action or
+I applied that tool, however you want
+to talk about it. The result is that the time
+increased by five seconds. This is the first
+instance where it now knows how much time it's
+going to get an increase by. Now it has to see that, 1-2 minutes, that's
+not going to cut it, so now it has to adapt. It comes back and it
+says, continue to use microwave increase time tool to set the total reheating time. If you want to reheat
+for one minute, you'll need to increase
+the time for 60 seconds, use the tool incrementally until you reach
+the desired time. It's still interfacing
+on a human level. I go back and I say, result, time increased to 60 seconds. It says, perfect. Now, it says, use
+the microwave start tool to start the microwave, and I'm just going to throw a little curveball
+in there for it. I say error door open. It comes back and it says, it looks like the door's open. Use the microwave
+closed door action. Now I go back and I say
+result, the door is closed. Notice, every time
+I'm giving a result, I'm giving it more up to date information
+about the state of the world around it so that it can make an
+appropriate decision. When I threw it this curveball and I said, error door open, I'm telling it, you asked me to perform this
+action. I couldn't do it. But critically, I'm telling it information about why
+I couldn't do it. I'm giving it information that needs to respond appropriately. When we start building
+agentic systems, the error messages
+are critically important that these are very rich and thoughtful
+error messages. We need to think about, I want to make it so darn clear
+with my error message, like, what is going on and why? A lot of times we neglect these things in
+computer systems. We go and we just rely on incomprehensible
+error messages, and we're just like,
+programmers will figure it out, IT folks will figure it out. It actually really matters. We want to think
+carefully about it. Now, sometimes these systems
+can get really smart, and they can just dissect all of those messages without us
+going and doing it for them. But sometimes we really need to be thoughtful in the
+feedback that we give. Error door open, it says,
+result door closed. Then just one more
+little note on this. If I had said error 32, and it doesn't know
+what error 32 is , it's totally hosed. No way it's going to be able
+to figure out what to do. It's really critical that if it doesn't know
+an error code, that I translate that error code into something that it will
+understand the meaning of. If it knows the error
+codes, who cares? Give it to it in
+numerical representation, it'll be just fine. Tell it the door is closed now. It says, now, start
+the microwave, and I tell it, the result
+the microwave is running. Then it basically comes
+back and it says, when it's done, use the microwave open door tool to open the door and
+remove your quesadilla. You see how we've brought it closer to our computer systems. We started to name
+things in a way that it can figure out and apply
+these actions or tools. But also, what we're doing
+is we're now starting to replace human feedback with
+the result of the tool. Now, the result of the tool
+right now is me faking it. But what will happen long term is that rather
+than me faking it, the actual computer system will provide the
+message back to it. You asked to run this tool, this is what happened. It will then respond,
+decide the next thing for the computer system to do and go through a chain
+of these things. The feedback will be critically important
+that we give it. We must tell it the result of its action so that it
+understands and can interpret the state of the world around it or the state of the system that it's
+interacting with, those feedback messages
+are absolutely critical. The quality of them,
+the quality of the error messages can make
+or break these systems. If you go and you create
+a system and you're like, it's making mistake and mistake, and it's just compounding
+these mistakes, you probably want to go and look and think about how do you give a really intelligent
+error message back? Because often if you
+tweak the error message, suddenly, it'll be able
+to get out of its loop. There's probably some missing
+information that it needs to know that if you just gave
+it in the error message, would help resolve everything.

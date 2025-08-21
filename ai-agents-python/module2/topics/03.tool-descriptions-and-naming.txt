@@ -1,0 +1,123 @@
+So when we start describing tools and
+actions to the system, sometimes it's really intuitive, right? If you ask generative AI to use a pot or
+a skillet, it understands what a pot and
+a skillet are. But if we start to ask it to
+interface with our computer systems where we've built all this crazy stuff,
+we have to start thinking about how do we describe the capabilities of the tools
+or the actions within the system. That is the moment we move
+outside of concepts and tools that are well known to like all of
+these custom computer software tools that we built that may have similar names but
+do and mean completely different things depending
+on which computer you're working with. Well, now we have to start thinking about
+how do we deal with that problem with agentic AI? How do we describe to it the capabilities
+of the tools that we're giving it access to. So let me give you an example of this. So we built a flipped
+interaction prompt again, and we're going to describe the tools
+at the disposal of the agentic AI. Except the agentic AI in this case is
+going to help us escape when we're trapped in an alien spaceship. So we say, tools, the X 155 tool,
+and we have a dash, and we say it prepares alien pizza,
+the Q 63 tool, and we have a dash, and we say it opens a dimensional
+portal to configurable destination. And then we have the l199 tool, and it causes ship to play
+Beatles music on a loop. And so we now have a set of tools that we
+can use to potentially escape the alien spaceship. Now, you notice the names for these tools
+don't make any sense anymore, right? These aren't tools that we know about. We've never seen these tools before
+because they're on this alien spaceship. But we want to get
+the agentic AI to help us, so we tell it what we know about the tools. We don't rely on the name
+alone to explain the concept. And then we say, okay,
+I'm trapped in an alien ship, you're going to help me escape. Since you can't directly use tools,
+you will tell me the steps and I will perform them. Each step must use a tool. We will go one step at a time. Tell me the first step. And so now I'm giving it, here's the list
+of these alien tools at our disposal, here's what they do. Now.
+Help me one step at a time. Use the tools to escape the alien ship. How does it do? Step one, prepare an alien pizza. Use tool x155 to prepare an alien pizza. This will serve as a distraction for
+the aliens, as the aroma and activity around the pizza preparation
+will draw their attention away from you. I'm not sure if this was my
+first step that I would use, but I like its thinking here,
+it's going to distract the aliens. Now, I didn't specify if
+they're friendly or not. That may be learning culturally that we
+tend to view aliens as something scary. I guess if I say I'm trapped
+in an alien spaceship, maybe there's some context there
+that it may not be a good thing. Then we come back and
+let's look at this again. So we just gave it x155, but the dash
+told it, this thing prepares pizza. And that's how it knew on this step one
+that he could go and prepare pizza. The description of the tool was critical. And in our computer systems,
+we've built the equivalent of alien tools. All these different custom
+little software things. And every time we want to work with one,
+we have to give a really clear and accurate description of what
+that tool's capabilities are and how you work with it and interact with it. Very, very important. Then goes on and it says, step two,
+open a dimensional portal. Use tool Q 63 to open
+a dimensional portal. This portal will be our escape route,
+leading to a configurable destination. And then it goes on and it says, and use tool l199 to cause the ship
+to play Beatles music on a loop. This will create an additional layer of
+distraction, making the aliens focus on the music and further reducing
+their attention on your escape. So what we've done is we've created
+new tools that it knew nothing about. We've taught it what those
+tools do in our prompt. And just to go back and review,
+all we had to do was we had to go and give it up front. Here's the tools available to you, but not only the tools that are available
+to you and their names, but what they do. So naming is important, but also the description of what the tool
+does can be really, really important. Now, how much does tool
+naming play a role in this? Well, tool naming is
+a critically important thing. And in fact, the name can be make or break when we're trying to build agentic
+systems and see how well they use tools. It really, really has to
+understand what that tool is. And if we can think of a great name for
+the tool, a very rich and descriptive name, often it'll know
+how to use it more effectively. We can create crazy tool names like I
+just did, and then tell it what those do. But often we want both really great
+names and really good descriptions, but I'm going to go back and
+I'm just going to drive this home. Now, originally when I did these tools,
+I had to go and give it descriptions of what they are
+because the names were bad because they'd never heard these names before. Now what I'm going to do this
+time is I'm going to go back and I'm going to rename these tools and
+I'm going to give them names that are descriptive and
+make sense for what the tool does. So I've renamed my tools
+to makeAlienPizza, openDimensionalPortal and
+playBeatlesMusic. And now I tell it I'm trapped in the alien
+spaceship, what do I need to do? And it goes through and it says,
+you know, make alien pizza. Same first step,
+solves the problem the same way, says, go make alien pizza to distract. I don't know why making alien pizza to
+distract is an intuitive thing, but apparently it thinks it is. Now, let's look at what happens if I
+change the names of these tools and I don't give a description. So I've got mkpz, sort of like make pizza. I've got odprtl, open dimensional portal,
+and I've got pbm, which now I've kind of
+forgotten what it was. Play Beatles music. So I've got these tool names,
+not very intuitive, they're kind of abbreviated, short. They also look like a lot of things that
+we've created in computer systems as short abbreviations where we,
+as the users of those systems, have institutional knowledge that that
+short little abbreviated name means this. And I can expand it out of my head
+because I know what it is, but it will not have that
+institutional knowledge. It will not know what those things are. Now, sometimes it may if they're common
+things or it's really clear, but often it will not. And so you have to be careful when
+you start thinking about tool naming, that it's going to be
+able to understand it. So when I change the tool names and I've now taken away the descriptions like
+I did before, now it says, okay, first step is to use the mkpz tool to create
+a detailed map of the alien ship's layout. So it's lost its understanding of the mkpz
+tool being the make alien pizza tool. And so this kind of helps you understand
+that it's really, really important that we go about thinking about tool naming,
+and it's also sort of lost the odprtl. It says, okay, open a portal that will
+help you move to another part of the ship. So it doesn't have as much context that
+this is an interdimensional portal, it can take me to any location. And so it's just saying, well, maybe
+this is just to move around the ship. And then if I go back and I think about,
+you know, creating tools and building things up,
+naming becomes really, really important. But also the mixture of
+tools becomes important. Because, for example, when I go and
+I say here's a bunch of tools, and I have sort of distracting things and
+environment, it may not get it right. So in this case I renamed the tools. They all make sense, but I didn't really give description
+about how you might use them. I didn't really say, here's some
+tools that you might want to use, but you may not need all of them. And so even how you present the tools,
+the ordering, the language, you give it around it, like does it
+have to use all of them or none of them? Are they optional? And as much context as we can
+give is really important. So in this case, I go in and give it the
+tools, pliers, scooter, and escape hatch. And I would expect that the first thing
+it would say would be escape hatch, but instead it says, you know, we need to
+locate and access the escape hatch, which is great, but then it assumes
+that the pliers are there for a reason. And it says, okay, use the pliers
+to loosen the bolts or screws. And I never said there was bolts or
+screws. So there's missing contextual information,
+there's missing description and what the tool is used for or
+why I might want to use it, or that I have to use all of them or
+none of them. And so we really, really have to think
+carefully about all of these issues when we begin building agentic AI. Something as simple as the name
+can make or break these systems, the name of a tool,
+the description of what a tool does. Many people go and they build these
+systems and they're like, it doesn't work. The generative AI is so bad when reality
+is, all you need to go is tweak the name of the tool, the surrounding contextual
+information you give it about the tools, how you might put the tools together,
+how many of them have to be used, do they all have to be used or
+none of them? All these types of things become really, really important details when we
+start building agentic AI systems.

@@ -1,5 +1,0 @@
-GAIL - Goals, Actions, Information, Language
-
-Video • Duration: 7 minutes
-
-Introduction to the GAIL framework for AI agent design and implementation.

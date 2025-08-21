@@ -1,0 +1,124 @@
+How do these agentic systems go and interact with the world? Well, we typically have them interact with
+the world through tools or actions that they
+can take through those tools. What we're going to
+talk about now is this concept of a tool
+or an action that an agent can go
+and use to try to accomplish a task
+because most of the time we don't want
+it to just dream up whatever it wants to do in
+order to accomplish the task. For example, if we're
+going to plan a trip, and it tells us that, well, you need to go and plan a trip that involves flying,
+and we don't want to fly, that doesn't make any sense,
+so we want to tell it, what are the allowed
+methods of transportation? Or if we tell it that it can go and collect
+information from us about what's happening
+as we're trying to figure out that Internet
+connection on our machine, if we tell it it's
+allowed to use a screenshot as a way of
+collecting information, that's one method
+that it could do it. If we don't want to
+take screenshots, we might say, well, your
+only tool is to ask me. Your only action is to ask me what happened for
+me to report back. We can think about giving them different tools to go
+and accomplish tasks. Now, I'm going to go back
+to this cooking example, and we're going to equip our agentic AI with some tools. Here's what
+we're going to say. These are the only
+tools available to you. Pan, you have a one quart
+sautee pan, a skillet, a large cast iron skillet, a wood fire, and I say a
+fire burning using oak. You're going to help me
+cook whatever I need. Since you can't directly lift pots and pans or get food out, you will tell me the steps, and I will perform them. We will go one step at a time, ask me for what I want to cook. Now what I'm doing
+is I'm giving it, here are the tools that you have available at your
+disposal to cook this. It's not the universe of
+cooking utensils and devices. You can't go and say, well,
+I want an Instant Pot, and I want a microwave, no, you've got a wood fire, a skillet, and a pan, that's it. Now, it has to figure
+out how does it solve the problem with the
+tools available to it. These are the tools
+in the prompt, and you very commonly
+see something like this done more sophisticated ways,
+more programmatic ways. Often these tools are
+described using languages that are more innate
+to computers, but this is basically a
+rough approximation of this, and what we'll see is it can
+clue in on this and do it. This is where we're telling it, these are the tools
+available to you. We could also say, these are the actions
+available to you, like, put pan on fire,
+things like that. It's a different way
+of approaching it, but we're going to take a
+look with the tool approach. It says, what do you
+want to cook today? I go back and I say,
+I want to cook pizza on the wood fire with a
+skillet or a sautee pan. It says, it's a fantastic choice , gather your ingredients. I've got my first task
+to go and perform, so I go and grab all
+the ingredients, and I say, I'm ready. Then it comes back, and it
+says, prepare the dough. It tells me what to do
+to prepare the dough, and again, asking
+me when I'm done. I say, I'm done. Then it comes back and it says, prepare the wood fire, and tells me how to
+get the fire prepared. Notice it's using
+a tool that I have access to that I've
+told it it can use, and then it tells me how to put the cast iron skillet on it. Tell me once the
+skillet's preheated. I say, it's done. Comes back, and it says, now let's continue. Cook the dough. Carefully brush a thin layer of olive oil
+on the preheated skillet. Again, it's solving the problem with the
+tools I gave it. I have constrained its universe of options and actions and things it can do
+down to this set of tools that I need to
+accomplish the problem. Because what's common in the real world is we don't get to just do whatever we want, we have limited resources, limited tools or things that we have to solve
+the problem with. An agentic AI has to be
+able to do the same thing. It can't go and say, you want
+to do X with a computer, therefore, I will reach into the world's fastest
+supercomputer and do that. No, you don't have access to it. You don't get to do that. We have to be able to
+put constraints on what tools it can use
+to solve the problem, and that's how we're doing
+it here in the prompt. Then I say, I'm done
+with that step, comes back and it says,
+now add the toppings. Again, we're still using, roughly, the tools
+that we've got. Keeps going, place the
+skillet on the wood fire, gives me some
+different information. It's roughly constrained to all the tools that I've
+basically told it to use, and it's solving the problem. This is how we go about, begin to think about getting our agent to solve the problem, but not to just solve
+it arbitrarily, but to solve it in a way
+that is bounded in terms of, when we think about
+our computer systems, they have limited actions
+that they can perform. They are constrained.
+They are rigid. We have to start
+taking agentic AI, and we have to start
+putting bounds on how it interacts
+with those systems by giving it a concept of a tool or an action that could be performed
+with those systems, and we have to bound
+those tools and actions to what those systems
+can actually perform. It can do all kinds of things. It can dream up all kinds of
+ways of solving the problem. It could go and tell a human all kinds of crazy ways
+of solving the problem, and a human could go and
+probably perform many of those ways of solving
+the problem without being told explicitly to
+be bounded in some way. But the moment we begin putting these agentic AI systems in contact with something like our customer relationship
+management system, our CRM system, or in control over our email, or in control over whatever
+other system it is, those systems are
+going to be very limited in what they can do and the actions
+they can take, and so we're going
+to have to express those tools or actions that bound the capabilities
+of those systems to the agentic AI. Now, do we call this
+a tool or an action? There's no hard and fast
+rule to this, I would say. Many times action is the
+better way to think about it. I'm going to go
+and say, these are the explicit actions
+that you can take, particularly when we start talking about interfacing
+with computer systems. Computer systems that
+often makes sense to talk in terms
+of actions because there's such finite number of things that you can
+ask the system to do, and so it's easier to spell it out as a
+series of actions. If you're talking
+about interfacing with something as open ended
+as a human being, thinking about
+expressing it in terms of tools often makes more sense because human beings can perform many different
+actions with a tool, and they can flexibly adapt, and so if the agentic AI says, go and perform this
+action with this tool, a human will know
+how to do that. Or if it says, use this tool to do this, a human can go and
+fill in the blanks. But when we're interfacing with our rigid computer systems,
+they can't do that, and so often we have to describe
+each individual action, or operation, or instruction. Think about like CPUs, and now they have a
+limited number of instructions they can perform, and we have to start thinking
+about defining it more explicitly in terms of
+actions. Which one do you use? It depends on the context, depends on what
+you're trying to do, but you can think about
+expressing it both ways. There's also other ways that
+you could do it as well, but these are two of the
+most common ways to do it.
