@@ -2,7 +2,29 @@
 
 ## Progress
 
-- [ ] 01. GAIL - Goals, Actions, Information, Language
+- [x] 01. GAIL - Goals, Actions, Information, Language to prompt Agent
+- the framework
+
+ ![x](./topics/imgs/gail-framework.png)
+
+ ![x](./topics/imgs/gail-framework2.png)
+
+- example
+   > You are Action Agent, a helpful Al assistant.
+    Your goal is to accomplish the task given by the user.
+    If you have enough information to directly respond to the user'srequest, you should do so. lf you need to complete tasks, you canuse the provided tools to help you. Whenever you are completelydone with the task, you should tell the user the result and terminatethe conversation.
+    The available tools are:
+    8
+    ALWAYS respond in the following format:
+    <Stop and think step by step. Insert a rich description of your step bystep thoughts here.>
+
+        ```action
+        {{
+        "tool": "tool name"
+        "args":fffill in anv reguired arauments here.
+        }}
+        ```
+
 - [ ] 02. Giving Agents Tools
 - [ ] 03. Tool Descriptions and Naming
 - [ ] 04. Tool Results and Agent Feedback
