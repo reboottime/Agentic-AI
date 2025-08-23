@@ -75,4 +75,4 @@
     - Include robust error handling.
     - Provide informative error messages.
   - Inject instructions into error messages.
-- [ ] 13. Understanding the AI Agent Loop (Graded Assignment)
+- [x] 13. Understanding the AI Agent Loop (Graded Assignment)
