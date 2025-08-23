@@ -63,7 +63,16 @@
   - How
     - Ask LLM output a structured data in json format
     - The selected function(tool) is defined or referenced in the file that runs the llm call
-- [ ] 10. Try Out an Agent Loop with Function Calling
-- [ ] 11. Exercise: Extend the Function Calling Agent
-- [ ] 12. Agent Tool Design Best Practices
+- [x] 10. Try Out an Agent Loop with Function Calling
+- [x] 11. Exercise: Extend the Function Calling Agent
+- [x] 12. Agent Tool Design Best Practices
+  - [goal](./topics/): When designing tools for an AI agent, the goal is to provide a limited, well-defined set of functions that are as specific as possible to the agent’s intended task. Well-designed tools reduce ambiguity, improve reliability, and help the AI execute actions correctly without misinterpretation.
+  - good practices:
+    - Use descriptive names.
+    - Provide structured metadata.
+    - Leverage JSON Schema for parameters.
+    - Ensure AI has contextual understanding.
+    - Include robust error handling.
+    - Provide informative error messages.
+  - Inject instructions into error messages.
 - [ ] 13. Understanding the AI Agent Loop (Graded Assignment)
