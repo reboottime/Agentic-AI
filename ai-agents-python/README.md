@@ -9,7 +9,7 @@ This course focuses on building AI agents from the ground up using Python, empha
 
 ## Course Modules
 
-- [ ] Module 1: AI Agent Concepts
+- [x] Module 1: AI Agent Concepts
   - [x] Introduction
   - [x] Flipped Interaction Pattern
   - [x] The Agent Loop
@@ -45,17 +45,17 @@ This course focuses on building AI agents from the ground up using Python, empha
   - [ ] Agent Tool Design Best Practices
   - [ ] Understanding the AI Agent Loop (Graded Assignment)
 
-- [ ] Module 3: GAME Framework and Agent Design
-  - [ ] Overview of the GAME Framework
-  - [ ] Designing AI Agents with GAME
-  - [ ] Simulating Agents in ChatGPT
-  - [ ] Simulating GAME Agents in Conversation
-  - [ ] Modular AI Agent Design
-  - [ ] Agent Loop Customization
-  - [ ] Implementing GAME in Code
-  - [ ] Try Out the Agent Framework
-  - [ ] How Your Agent Communicates with the LLM: The Agent Language
-  - [ ] Putting It All Together: Document Your Code with a README Agent
+- [x] Module 3: GAME Framework and Agent Design
+  - [x] Overview of the GAME Framework
+  - [x] Designing AI Agents with GAME
+  - [x] Simulating Agents in ChatGPT
+  - [x] Simulating GAME Agents in Conversation
+  - [x] Modular AI Agent Design
+  - [x] Agent Loop Customization
+  - [x] Implementing GAME in Code
+  - [x] Try Out the Agent Framework
+  - [x] How Your Agent Communicates with the LLM: The Agent Language
+  - [x] Putting It All Together: Document Your Code with a README Agent
 
 - [ ] Module 4: Advanced Agent Tool Management
   - [ ] Keeping Agent Tools Up to Date with Python Decorators
