@@ -24,12 +24,36 @@
         "args":fffill in anv reguired arauments here.
         }}
         ```
+- Tools
+  - [x] 02. Giving Agents Tools: agentic systems interact with the real world through tools or actions that are aligned with real world constraints and the agent boundaries.
 
-- [ ] 02. Giving Agents Tools
-- [ ] 03. Tool Descriptions and Naming
-- [ ] 04. Tool Results and Agent Feedback
-- [ ] 05. Agent Tools in Python
-- [ ] 06. Try Out an Agent that Calls Python Functions
+    ![x](./topics/imgs/tools.png)
+
+  - [x] 03. Tool Descriptions and Naming: help generative ai to have a clear understanding about his tools throw clear name and description
+    ![x](./topics/imgs/tool-description.png)
+
+- [x] 04. Tool Results and Agent Feedback
+
+![x](./topics/imgs/system-analysis.png)
+
+- [x] 05. Agent Tools in Python. Describe the tools agent can use using **json schema**, for example:
+
+    ```json
+        {
+            "tool_name": "write_doc_file",
+            "description": "Writes a documentation file to the docs/ directory.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                "file_name": { "type": "string" },
+                "content": { "type": "string" }
+                },
+                "required": ["file_name", "content"]
+            }
+        }
+    ```
+
+- [x] 06. [Try Out an Agent that Calls Python Functions](https://colab.research.google.com/drive/1W3LEOFjAQs69PJ3rM1aYG8Cofo_de6XH?usp=sharing#scrollTo=Mwe2eeOQB0cC)
 - [ ] 07. Using Function Calling Capabilities with LLMs
 - [ ] 08. Try Out LLM Function Calling
 - [ ] 09. An Agent Loop with Function Calling
