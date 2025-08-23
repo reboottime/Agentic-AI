@@ -54,7 +54,9 @@
     ```
 
 - [x] 06. [Try Out an Agent that Calls Python Functions](https://colab.research.google.com/drive/1W3LEOFjAQs69PJ3rM1aYG8Cofo_de6XH?usp=sharing#scrollTo=Mwe2eeOQB0cC)
-- [ ] 07. Using Function Calling Capabilities with LLMs
+- [x] 07. Using Function Calling Capabilities with LLMs. Here is how:
+  - The LLM selects tools by semantically matching the user's request against the tool descriptions provided in the JSON Schema definitions.
+  - It uses the system instructions as decision-making guidelines (e.g., "first list files before reading them") to determine the appropriate sequence and timing of tool calls.
 - [ ] 08. Try Out LLM Function Calling
 - [ ] 09. An Agent Loop with Function Calling
 - [ ] 10. Try Out an Agent Loop with Function Calling
