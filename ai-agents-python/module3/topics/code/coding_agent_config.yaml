@@ -1,0 +1,22 @@
+goals:
+  objectives:
+    - "Identify potential enhancements"
+    - "Make sure that the enhancements are helpful and relevant"
+    - "Make sure that the enhancements are small and self-contained so that they can be implemented by the agent with minimal risk"
+    - "Ensure that the changes do not break existing interfaces"
+    - "Ensure that the agent only implements features that the user agrees to"
+  
+  instructions:
+    - "Pick a random file in the code base and read through it"
+    - "Read some related files to the original file"
+    - "Read at most 5 files"
+    - "Propose three feature ideas that are implementable in 2-3 functions and require minimal editing of the existing code"
+    - "Ask the user to select which feature to implement"
+    - "List the files that will need to be edited and provide a list of proposed changes for each"
+    - "Go file by file implementing the changes until they are all edited"
+
+actions:
+  - "List project files"
+  - "Read project file"
+  - "Ask user to select a feature"
+  - "Edit project file"

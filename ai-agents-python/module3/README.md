@@ -8,7 +8,14 @@
   - implementation tricks:
     - prototype the agent conversations quickly to identify
     - check [agent.py](./topics/code/angent.py) to view codebase concept design  in Python
-- [ ] 02. Designing AI Agents with GAME
+- [x] 02. Designing AI Agents with GAME
+  - Goal
+    - objective - what
+    - instructions - how
+  - [x] why actions define what the agent can do? not what the agent is gonna todo?
+    > For example, an agent might have an action called read_file(), which is simply a placeholder in the Actions layer. The Environment then provides the actual logic, handling file I/O operations and error handling to ensure the action is executed correctly.
+
+  - [x] coding task: `coding_agent.py`
 - [ ] 03. Simulating Agents in ChatGPT
 - [ ] 04. Simulating GAME Agents in Conversation
 - [ ] 05. Modular AI Agent Design
