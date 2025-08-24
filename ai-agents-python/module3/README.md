@@ -2,7 +2,12 @@
 
 ## Progress
 
-- [ ] 01. Overview of the GAME Framework
+- [x] 01. Overview of the GAME Framework:
+  - what is it ?: Goal, Action, Memory, Environment.
+  - ![x](./topics/imgs/calendar-agent.png)
+  - implementation tricks:
+    - prototype the agent conversations quickly to identify
+    - check [agent.py](./topics/code/angent.py) to view codebase concept design  in Python
 - [ ] 02. Designing AI Agents with GAME
 - [ ] 03. Simulating Agents in ChatGPT
 - [ ] 04. Simulating GAME Agents in Conversation
