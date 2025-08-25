@@ -48,5 +48,5 @@
   - [ ] 06. Agent Loop Customization
   - [ ] 07. Implementing GAME in Code
   - [ ] 08. Try Out the Agent Framework
-- [ ] 09. How Your Agent Communicates with the LLM: The Agent Language
-- [ ] 10. Putting It All Together: Document Your Code with a README Agent
+  - [ ] 09. How Your Agent Communicates with the LLM: The Agent Language
+  - [ ] 10. Putting It All Together: Document Your Code with a README Agent
