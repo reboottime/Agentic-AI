@@ -41,7 +41,10 @@
       >
       > Ask me for the first task to perform.
 - Code Architecture Practice
-  - [ ] 05. Modular AI Agent Design
+  - [x] 05. Modular AI Agent Design
+    - insights:  GAME Component are what change from none agent to another while core loop stays the same.
+    - actions define what agent can do, think of them as the agent's toolkit
+    - [ ] [the environment design](./topics/05.modular-ai-agent-design.md#e---environment-implementation) seems strange to the previous `agent.py` practice
   - [ ] 06. Agent Loop Customization
   - [ ] 07. Implementing GAME in Code
   - [ ] 08. Try Out the Agent Framework
