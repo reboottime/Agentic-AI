@@ -48,9 +48,9 @@ This course focuses on building AI agents from the ground up using Python, empha
 - [ ] Module 3: GAME Framework and Agent Design
   - [x] Overview of the GAME Framework
   - [x] Designing AI Agents with GAME
-  - [ ] Simulating Agents in ChatGPT
-  - [ ] Simulating GAME Agents in Conversation
-  - [ ] Modular AI Agent Design
+  - [x] Simulating Agents in ChatGPT
+  - [x] Simulating GAME Agents in Conversation
+  - [x] Modular AI Agent Design
   - [ ] Agent Loop Customization
   - [ ] Implementing GAME in Code
   - [ ] Try Out the Agent Framework
