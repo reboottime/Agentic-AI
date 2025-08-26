@@ -9,7 +9,7 @@ This course focuses on building AI agents from the ground up using Python, empha
 
 ## Coding Tasks
 
-- [ ] Implement  Game Framework
+- [ ] Implement  Game Framework manually
 
 ## Course Modules
 
