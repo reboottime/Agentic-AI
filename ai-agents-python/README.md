@@ -10,6 +10,8 @@ This course focuses on building AI agents from the ground up using Python, empha
 ## Coding Tasks
 
 - [ ] Implement  Game Framework manually
+- [ ] Tool registration and management codebase
+- [ ] Implement README agent using the final architecture, see module4 topic 4 and module3 topic 10
 
 ## Course Modules
 
@@ -61,11 +63,11 @@ This course focuses on building AI agents from the ground up using Python, empha
   - [x] How Your Agent Communicates with the LLM: The Agent Language
   - [x] Putting It All Together: Document Your Code with a README Agent
 
-- [ ] Module 4: Advanced Agent Tool Management
-  - [ ] Keeping Agent Tools Up to Date with Python Decorators
-  - [ ] Tool Organization for Agents
-  - [ ] Refactoring Our README Agent
-  - [ ] Try Out the README Agent with the Decorator
+- [x] Module 4: Advanced Agent Tool Management
+  - [x] Keeping Agent Tools Up to Date with Python Decorators
+  - [x] Tool Organization for Agents
+  - [x] Refactoring Our README Agent
+  - [x] Try Out the README Agent with the Decorator
 
 - [ ] Module 5: Innovation and Advanced AI Agent Concepts
   - [ ] Build the Impossible with AI Agents
