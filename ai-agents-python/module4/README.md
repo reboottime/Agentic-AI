@@ -1,5 +1,14 @@
 # Module 4: Advanced Agent Tool Management
 
+## Recap
+
+`@register_tool` decorator provides a solution that brings benefits below:
+
+- single source of truth bout the tool function
+  - Before: The function declaration and the action registration description for a tool function could become inconsistent.
+  - After: Using `@register_tool` ensures both the description and registration are always in sync from a single source.
+- Improved codebase maintainability and organization
+
 ## Progress
 
 - [x] 01. Keeping Agent Tools Up to Date with Python Decorators
@@ -14,5 +23,5 @@
 }
 ```
 
-- [ ] 03. Refactoring Our README Agent
-- [ ] 04. Try Out the README Agent with the Decorator
+- [x] 03. Refactoring Our README Agent
+- [x] 04. Try Out the README Agent with the Decorator
