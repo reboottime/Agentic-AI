@@ -51,10 +51,10 @@ This course focuses on building AI agents from the ground up using Python, empha
   - [x] Simulating Agents in ChatGPT
   - [x] Simulating GAME Agents in Conversation
   - [x] Modular AI Agent Design
-  - [ ] Agent Loop Customization
-  - [ ] Implementing GAME in Code
-  - [ ] Try Out the Agent Framework
-  - [ ] How Your Agent Communicates with the LLM: The Agent Language
+  - [x] Agent Loop Customization
+  - [x] Implementing GAME in Code
+  - [x] Try Out the Agent Framework
+  - [x] How Your Agent Communicates with the LLM: The Agent Language
   - [ ] Putting It All Together: Document Your Code with a README Agent
 
 - [ ] Module 4: Advanced Agent Tool Management

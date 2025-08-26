@@ -19,7 +19,7 @@
 - [x] 03. Simulating Agents in ChatGPT.
 - [x] 04. Simulating GAME Agents in Conversation
   - [x]  why?
-    - [ ]  workflow wise
+    - [x]  workflow wise
       - The goals are achievable with the planned actions
       - The memory requirements are reasonable
       - The actions available are sufficient to solve the problem
@@ -40,13 +40,18 @@
       > the action as my next message.
       >
       > Ask me for the first task to perform.
-- Code Architecture Practice
+- [ ] Code Architecture Practice: Building a Simple Agent Framework
   - [x] 05. Modular AI Agent Design
     - insights:  GAME Component are what change from none agent to another while core loop stays the same.
     - actions define what agent can do, think of them as the agent's toolkit
-    - [ ] [the environment design](./topics/05.modular-ai-agent-design.md#e---environment-implementation) seems strange to the previous `agent.py` practice
-  - [ ] 06. Agent Loop Customization
-  - [ ] 07. Implementing GAME in Code
-  - [ ] 08. Try Out the Agent Framework
-  - [ ] 09. How Your Agent Communicates with the LLM: The Agent Language
+      - architecture questions:
+        - [x] In `Action` class,  why do we need the parameters property on `Action` if the`execute` function accept `args`. As the `parameters` is a json schema that defines the `args` data shape
+        - [x] environment design:
+          - Q:[the environment design](./topics/05.modular-ai-agent-design.md#e---environment-implementation) seems strange to the previous `agent.py` practice.
+          - A: execute an action within an environment, this code pattern also makes sense conceptually.
+  - [x] 06. Agent Loop Customization. See dependency [injection pattern](https://stackoverflow.com/questions/130794/what-is-dependency-injection) is heavily used in the sample code
+  - [x] 07. Implementing GAME in Code
+  - [x] 08. Try Out the Agent Framework
+  - [x] 09. How Your Agent Communicates with the LLM: The Agent Language
+    - why we need it : This component serves as the translator between our structured agent components and the language model’s input/output format.
   - [ ] 10. Putting It All Together: Document Your Code with a README Agent
