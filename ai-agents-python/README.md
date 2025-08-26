@@ -7,6 +7,10 @@ Please be aware the last update of the course is at March, 2025.
 
 This course focuses on building AI agents from the ground up using Python, emphasizing core principles over framework dependencies.
 
+## Coding Tasks
+
+- [ ] Implement  Game Framework
+
 ## Course Modules
 
 - [x] Module 1: AI Agent Concepts
@@ -72,4 +76,15 @@ This course focuses on building AI agents from the ground up using Python, empha
 
 ## Findings
 
-Professor Lee course is more approachable from theory perspective, as these series of course has broken theory roadmap.
+- Professor Lee course is more approachable from theory perspective, as these series of course has broken theory roadmap.
+
+- Understanding How agent works definitely improved my productivity and thinking capability when interacting with LLMs and cursor.
+
+- The `game` framework is a good problem solving framework that is plausible in real world cases too, see these points
+`
+>
+> 1. The agent's goals (what it's trying to accomplish)
+> 2. Available actions (tools the agent can use)
+> 3. Current memory context (conversation history and relevant information)
+> 4. Environment details (constraints and context for operation)
+> Store both decision and results
