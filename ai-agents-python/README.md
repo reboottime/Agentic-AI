@@ -49,7 +49,7 @@ This course focuses on building AI agents from the ground up using Python, empha
   - [x] Agent Tool Design Best Practices
   - [x] Understanding the AI Agent Loop (Graded Assignment)
 
-- [ ] Module 3: GAME Framework and Agent Design
+- [x] Module 3: GAME Framework and Agent Design
   - [x] Overview of the GAME Framework
   - [x] Designing AI Agents with GAME
   - [x] Simulating Agents in ChatGPT
@@ -59,7 +59,7 @@ This course focuses on building AI agents from the ground up using Python, empha
   - [x] Implementing GAME in Code
   - [x] Try Out the Agent Framework
   - [x] How Your Agent Communicates with the LLM: The Agent Language
-  - [ ] Putting It All Together: Document Your Code with a README Agent
+  - [x] Putting It All Together: Document Your Code with a README Agent
 
 - [ ] Module 4: Advanced Agent Tool Management
   - [ ] Keeping Agent Tools Up to Date with Python Decorators
