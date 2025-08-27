@@ -7,11 +7,13 @@ Please be aware the last update of the course is at March, 2025.
 
 This course focuses on building AI agents from the ground up using Python, emphasizing core principles over framework dependencies.
 
-## Coding Tasks
+## Tasks
 
-- [ ] Implement  Game Framework manually
-- [ ] Tool registration and management codebase
-- [ ] Implement README agent using the final architecture, see module4 topic 4 and module3 topic 10
+- coding tasks
+  - [ ] Implement  Game Framework manually
+  - [ ] Tool registration and management codebase
+  - [ ] Implement README agent using the final architecture, see module4 topic 4 and module3 topic 10
+- [ ] recap the course as a whole
 
 ## Course Modules
 
@@ -69,12 +71,12 @@ This course focuses on building AI agents from the ground up using Python, empha
   - [x] Refactoring Our README Agent
   - [x] Try Out the README Agent with the Decorator
 
-- [ ] Module 5: Innovation and Advanced AI Agent Concepts
-  - [ ] Build the Impossible with AI Agents
-  - [ ] Rethinking How We Teach Innovation
-  - [ ] The Inventory Management Agent
-  - [ ] Hallucination is a New Form of Computing
-  - [ ] New Ways to Access and Extract Information
+- [x] Module 5: Innovation and Advanced AI Agent Concepts
+  - [x] Build the Impossible with AI Agents
+  - [x] Rethinking How We Teach Innovation
+  - [x] The Inventory Management Agent
+  - [x] Hallucination is a New Form of Computing
+  - [x] New Ways to Access and Extract Information
 
 ## Findings
 
@@ -90,3 +92,5 @@ This course focuses on building AI agents from the ground up using Python, empha
 > 3. Current memory context (conversation history and relevant information)
 > 4. Environment details (constraints and context for operation)
 > Store both decision and results
+
+- retrain how to think in generative AI era
