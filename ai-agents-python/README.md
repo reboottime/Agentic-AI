@@ -90,3 +90,5 @@ This course focuses on building AI agents from the ground up using Python, empha
 > 3. Current memory context (conversation history and relevant information)
 > 4. Environment details (constraints and context for operation)
 > Store both decision and results
+
+- retrain how to think in generative AI era
