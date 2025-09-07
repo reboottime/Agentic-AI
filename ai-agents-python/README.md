@@ -7,9 +7,17 @@ Please be aware the last update of the course is at March, 2025.
 
 This course focuses on building AI agents from the ground up using Python, emphasizing core principles over framework dependencies.
 
+## Tasks
+
+- coding tasks
+  - [ ] Implement  Game Framework manually
+  - [ ] Tool registration and management codebase
+  - [ ] Implement README agent using the final architecture, see module4 topic 4 and module3 topic 10
+- [ ] recap the course as a whole
+
 ## Course Modules
 
-- [ ] Module 1: AI Agent Concepts
+- [x] Module 1: AI Agent Concepts
   - [x] Introduction
   - [x] Flipped Interaction Pattern
   - [x] The Agent Loop
@@ -30,46 +38,59 @@ This course focuses on building AI agents from the ground up using Python, empha
   - [x] Learning More & Staying Connected
   - [x] Understanding Feedback & Memory (Graded Assignment)
 
-- [ ] Module 2: Agent Tools and Function Calling
-  - [ ] GAIL - Goals, Actions, Information, Language
-  - [ ] Giving Agents Tools
-  - [ ] Tool Descriptions and Naming
-  - [ ] Tool Results and Agent Feedback
-  - [ ] Agent Tools in Python
-  - [ ] Try Out an Agent that Calls Python Functions
-  - [ ] Using Function Calling Capabilities with LLMs
-  - [ ] Try Out LLM Function Calling
-  - [ ] An Agent Loop with Function Calling
-  - [ ] Try Out an Agent Loop with Function Calling
-  - [ ] Exercise: Extend the Function Calling Agent
-  - [ ] Agent Tool Design Best Practices
-  - [ ] Understanding the AI Agent Loop (Graded Assignment)
+- [x] Module 2: Agent Tools and Function Calling
+  - [x] GAIL - Goals, Actions, Information, Language
+  - [x] Giving Agents Tools
+  - [x] Tool Descriptions and Naming
+  - [x] Tool Results and Agent Feedback
+  - [x] Agent Tools in Python
+  - [x] Try Out an Agent that Calls Python Functions
+  - [x] Using Function Calling Capabilities with LLMs
+  - [x] Try Out LLM Function Calling
+  - [x] An Agent Loop with Function Calling
+  - [x] Try Out an Agent Loop with Function Calling
+  - [x] Exercise: Extend the Function Calling Agent
+  - [x] Agent Tool Design Best Practices
+  - [x] Understanding the AI Agent Loop (Graded Assignment)
 
-- [ ] Module 3: GAME Framework and Agent Design
-  - [ ] Overview of the GAME Framework
-  - [ ] Designing AI Agents with GAME
-  - [ ] Simulating Agents in ChatGPT
-  - [ ] Simulating GAME Agents in Conversation
-  - [ ] Modular AI Agent Design
-  - [ ] Agent Loop Customization
-  - [ ] Implementing GAME in Code
-  - [ ] Try Out the Agent Framework
-  - [ ] How Your Agent Communicates with the LLM: The Agent Language
-  - [ ] Putting It All Together: Document Your Code with a README Agent
+- [x] Module 3: GAME Framework and Agent Design
+  - [x] Overview of the GAME Framework
+  - [x] Designing AI Agents with GAME
+  - [x] Simulating Agents in ChatGPT
+  - [x] Simulating GAME Agents in Conversation
+  - [x] Modular AI Agent Design
+  - [x] Agent Loop Customization
+  - [x] Implementing GAME in Code
+  - [x] Try Out the Agent Framework
+  - [x] How Your Agent Communicates with the LLM: The Agent Language
+  - [x] Putting It All Together: Document Your Code with a README Agent
 
-- [ ] Module 4: Advanced Agent Tool Management
-  - [ ] Keeping Agent Tools Up to Date with Python Decorators
-  - [ ] Tool Organization for Agents
-  - [ ] Refactoring Our README Agent
-  - [ ] Try Out the README Agent with the Decorator
+- [x] Module 4: Advanced Agent Tool Management
+  - [x] Keeping Agent Tools Up to Date with Python Decorators
+  - [x] Tool Organization for Agents
+  - [x] Refactoring Our README Agent
+  - [x] Try Out the README Agent with the Decorator
 
-- [ ] Module 5: Innovation and Advanced AI Agent Concepts
-  - [ ] Build the Impossible with AI Agents
-  - [ ] Rethinking How We Teach Innovation
-  - [ ] The Inventory Management Agent
-  - [ ] Hallucination is a New Form of Computing
-  - [ ] New Ways to Access and Extract Information
+- [x] Module 5: Innovation and Advanced AI Agent Concepts
+  - [x] Build the Impossible with AI Agents
+  - [x] Rethinking How We Teach Innovation
+  - [x] The Inventory Management Agent
+  - [x] Hallucination is a New Form of Computing
+  - [x] New Ways to Access and Extract Information
 
 ## Findings
 
-Professor Lee course is more approachable from theory perspective, as these series of course has broken theory roadmap.
+- Professor Lee course is more approachable from theory perspective, as these series of course has broken theory roadmap.
+
+- Understanding How agent works definitely improved my productivity and thinking capability when interacting with LLMs and cursor.
+
+- The `game` framework is a good problem solving framework that is plausible in real world cases too, see these points
+`
+>
+> 1. The agent's goals (what it's trying to accomplish)
+> 2. Available actions (tools the agent can use)
+> 3. Current memory context (conversation history and relevant information)
+> 4. Environment details (constraints and context for operation)
+> Store both decision and results
+
+- retrain how to think in generative AI era

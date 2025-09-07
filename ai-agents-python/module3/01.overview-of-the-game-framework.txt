@@ -1,5 +1,0 @@
-Overview of the GAME Framework
-
-Video • Duration: 5 minutes
-
-Introduction to the GAME framework for AI agent design and development.
