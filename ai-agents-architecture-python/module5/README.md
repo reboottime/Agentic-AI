@@ -35,12 +35,23 @@
     - higher quality (usually more expensive and slower) model for initial planning (design strategy)
     - use lower quality (usually faster and cheaper) for plan execution
     - separate planning as a tool
-- [ ] 03. The Capability Architectural Pattern
-  - [ ] What's the difference between `Tools` and `Capabilities` from both
-    - [ ] conceptual level
-    - [ ] and code organization level
-- [ ] 04. Ahead of Time Planning for Improving Initial Plan Generation
-  - use a cheaper model for execution
+- [x] 03. The Capability Architectural Pattern
+  - [x] questions:
+    - Q: What's the difference between `Tools` and `Capabilities` from both conceptual and code organization level
+    - A:
+      - Core Conceptual Distinction
+        - Tools = WHAT the system can do
+          - Discrete functions or interfaces
+          - Direct execution capabilities
+          - Input → Processing → Output
+        - Capabilities = HOW the system orchestrates tools
+          - Behavioral patterns and strategies
+          - Coordination logic
+          - Decision-making frameworks
+        - In summary,  Tools are atomic, functional units that perform specific operations. Capabilities are higher-level behavioral (patterns) that orchestrate how agents use tools. The capability doesn't replace tools—it orchestrates when and how tools get used.
+
+- [x] 04. Ahead of Time Planning for Improving Initial Plan Generation
+  - use a cheaper model for executions
   - iterate the initial plan based on the agent's reasoning
 - [ ] 05. Improving AI Agent Reasoning with In-loop Planning
 - [ ] 06. Intermediate Planning: Tracking Progress in the Agent Loop
