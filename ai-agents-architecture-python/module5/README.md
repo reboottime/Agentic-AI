@@ -34,10 +34,10 @@
     - higher quality (usually more expensive and slower) model for initial planning (design strategy)
     - use lower quality (usually faster and cheaper) for plan execution
     - separate planning as a tool
-  [ ] 03. The Capability Architectural Pattern
+- [ ] 03. The Capability Architectural Pattern
 - [ ] 04. Ahead of Time Planning for Improving generate initial plan
-      - use cheaper model to do the execution
-      - iterate the initial plan based on the eAgent Reasoning
+  - use cheaper model to do the execution
+  - iterate the initial plan based on the eAgent Reasoning
 - [ ] 05. Improving AI Agent Reasoning with In-loop Planning
 - [ ] 06. Intermediate Planning: Tracking Progress in the Agent Loop
 - [ ] 07. The Great Agent Trade-off: Ahead of Time vs. Dynamic
