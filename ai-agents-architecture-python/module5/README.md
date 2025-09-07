@@ -13,8 +13,9 @@
       > - result
     - problem to solve template
       > - problem: problem statement
-      > - thought: ( blank, exp)
-      > - tools:
+      > - thought: (blank, expect llm to fill or we fill it)
+      > - tools: (blank, expect llm to fill)
+      > - result: (blank, expect llm to fill)
   - LLMs are trained to predict the next word
   - showing examples helps llm to **inference** the implicit information and learn pattern(s)
   - The examples listed in the prompt show LLM the pattern it should follow / learn
@@ -35,9 +36,12 @@
     - use lower quality (usually faster and cheaper) for plan execution
     - separate planning as a tool
 - [ ] 03. The Capability Architectural Pattern
-- [ ] 04. Ahead of Time Planning for Improving generate initial plan
-  - use cheaper model to do the execution
-  - iterate the initial plan based on the eAgent Reasoning
+  - [ ] What's the difference between `Tools` and `Capabilities` from both
+    - [ ] conceptual level
+    - [ ] and code organization level
+- [ ] 04. Ahead of Time Planning for Improving Initial Plan Generation
+  - use a cheaper model for execution
+  - iterate the initial plan based on the agent's reasoning
 - [ ] 05. Improving AI Agent Reasoning with In-loop Planning
 - [ ] 06. Intermediate Planning: Tracking Progress in the Agent Loop
 - [ ] 07. The Great Agent Trade-off: Ahead of Time vs. Dynamic
