@@ -53,6 +53,12 @@
 - [x] 04. Ahead of Time Planning for Improving Initial Plan Generation
   - use a cheaper model for executions
   - iterate the initial plan based on the agent's reasoning
-- [ ] 05. Improving AI Agent Reasoning with In-loop Planning
-- [ ] 06. Intermediate Planning: Tracking Progress in the Agent Loop
+- [x] 05. Improving AI Agent Reasoning with In-loop Planning
+  - ![z](./topics/imgs/add-progress-report.webp)
+  - The Problem: The primary purpose of progress reports is to serve as a reference mechanism that prevents agents from losing track of their objectives during long-running loops.
+  - The Solution: Generate periodic progress reports that act as **navigational checkpoints**. Each report contains:
+    - Original plan reminder
+    - Completed steps summary
+    - Next action identification
+- [x] 06. Intermediate Planning: Tracking Progress in the Agent Loop
 - [ ] 07. The Great Agent Trade-off: Ahead of Time vs. Dynamic
