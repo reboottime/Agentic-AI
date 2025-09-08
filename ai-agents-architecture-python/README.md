@@ -41,19 +41,19 @@ And this course doesn't discuss how Agent can learn from its experiences.
   - [x] Providing Agentic AI Information About the World
   - [x] Agent Interaction Architectures (homework)
 
-- [ ] Module 4: Dependency Injection for Tools
+- [x] Module 4: Dependency Injection for Tools
   - [x] Isolating Agents from Accidental Complexity
   - [x] Clean AI Tools with Dependency Injection
-  - [] Clean Tool Dependency Injection with the Environment
+  - [x] Clean Tool Dependency Injection with the Environment
 
-- [ ] Module 5: Approaches to Improving AI Agent Reasoning
-  - [ ] Improving AI Agent Reasoning with In-Context Learning
-  - [ ] Improving AI Agent Reasoning with Up-front Planning & Chain of Thought
-  - [ ] The Capability Architectural Pattern
-  - [ ] Ahead of Time Planning for Improving Agent Reasoning
-  - [ ] Improving AI Agent Reasoning with In-loop Planning
-  - [ ] Intermediate Planning: Tracking Progress in the Agent Loop
-  - [ ] The Great Agent Trade-off: Ahead of Time vs. Dynamic
+- [x] Module 5: Approaches to Improving AI Agent Reasoning
+  - [x] Improving AI Agent Reasoning with In-Context Learning
+  - [x] Improving AI Agent Reasoning with Up-front Planning & Chain of Thought
+  - [x] The Capability Architectural Pattern
+  - [x] Ahead of Time Planning for Improving Agent Reasoning
+  - [x] Improving AI Agent Reasoning with In-loop Planning
+  - [x] Intermediate Planning: Tracking Progress in the Agent Loop
+  - [x] The Great Agent Trade-off: Ahead of Time vs. Dynamic
 
 ## coding task
 
@@ -68,3 +68,4 @@ And this course doesn't discuss how Agent can learn from its experiences.
 - How to find suitable course:
   - Follow course designers who can follow frontier and  present content well for the ordinary
   - Good learning system design
+- Evaluation Aspects 

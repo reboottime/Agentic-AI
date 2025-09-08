@@ -2,10 +2,96 @@
 
 ## Progress
 
-- [ ] 01. Improving AI Agent Reasoning with In-Context Learning
-- [ ] 02. Improving AI Agent Reasoning with Up-front Planning & Chain of Thought
-- [ ] 03. The Capability Architectural Pattern
-- [ ] 04. Ahead of Time Planning for Improving Agent Reasoning
-- [ ] 05. Improving AI Agent Reasoning with In-loop Planning
-- [ ] 06. Intermediate Planning: Tracking Progress in the Agent Loop
-- [ ] 07. The Great Agent Trade-off: Ahead of Time vs. Dynamic
+- [x] 01. Improving AI Agent Reasoning with In-Context Learning
+  - what is it: show LLMs **correct examples** how to solve a task.
+  - rationale:
+  - in context learning template:
+    - example template
+      > - problem
+      > - thought
+      > - tool(s)
+      > - result
+    - problem to solve template
+      > - problem: problem statement
+      > - thought: (blank, expect llm to fill or we fill it)
+      > - tools: (blank, expect llm to fill)
+      > - result: (blank, expect llm to fill)
+  - LLMs are trained to predict the next word
+  - showing examples helps llm to **inference** the implicit information and learn pattern(s)
+  - The examples listed in the prompt show LLM the pattern it should follow / learn
+    - Show agents examples of problems being solved correctly
+    - Like training interns by demonstrating the thought process
+    - Agent learns patterns from seeing successful executions
+  - performance: it is incredibly powerful for agents
+- [x] 02. Improving AI Agent Reasoning with Up-front Planning & Chain of Thought.
+    > but often it can be really effective if we have it think about plans up front.
+  - to improve understanding, first visit [this diagram](http://raw.githubusercontent.com/reboottime/ML-in-LLM-Era/refs/heads/main/courses/Introduction%20to%20Generative%20AI%202024/notes/screenshots/angent.png) to understand how Agent works, then visit [this example](./02.upfront-planning-example.md) to compare the difference between reasoning with ad hoc approach and with upfront planing approach.
+  - magic words: plan at the start, think step by step
+    - hence, before the agent takes any actions or does any executions, it begins with making a plan.
+  - aspects: with the same brain and giving the right (or better) {tool, information source} => better result
+  - planning: goal -> divide -> actions -> implement a task (conquer) -> feedback -> update plan
+  - progress: ad hoc(no planning at all) -> planning -> {fixed planning & execution -> adaptive planning & execution}
+  - model optimization strategy  => balance the planning and execution efficiency
+    - higher quality (usually more expensive and slower) model for initial planning (design strategy)
+    - use lower quality (usually faster and cheaper) for plan execution
+    - separate planning as a tool
+- [x] 03. The Capability Architectural Pattern
+  - [x] questions:
+    - Q: What's the difference between `Tools` and `Capabilities` from both conceptual and code organization level
+    - A:
+      - Core Conceptual Distinction
+        - Tools = WHAT the system can do
+          - Discrete functions or interfaces
+          - Direct execution capabilities
+          - Input → Processing → Output
+        - Capabilities = HOW the system orchestrates tools
+          - Behavioral patterns and strategies
+          - Coordination logic
+          - Decision-making frameworks
+        - In summary,  Tools are atomic, functional units that perform specific operations. Capabilities are higher-level behavioral (patterns) that orchestrate how agents use tools. The capability doesn't replace tools—it orchestrates when and how tools get used.
+
+- [x] 04. Ahead of Time Planning for Improving Initial Plan Generation
+  - use a cheaper model for executions
+  - iterate the initial plan based on the agent's reasoning
+- [x] 05. Improving AI Agent Reasoning with In-loop Planning
+  - ![z](./topics/imgs/add-progress-report.webp)
+  - The Problem: The primary purpose of progress reports is to serve as a reference mechanism that prevents agents from losing track of their objectives during long-running loops.
+  - The Solution: Generate periodic progress reports that act as **navigational checkpoints**. Each report contains:
+    - Original plan reminder
+    - Completed steps summary
+    - Next action identification
+- [x] 06. Intermediate Planning: Tracking Progress in the Agent Loop
+- [x] 07. The Great Agent Trade-off: Ahead of Time vs. Dynamic
+  - **agent execution exists on a spectrum between two extremes**, and you cannot optimize all dimensions simultaneously.
+    - The Spectrum
+
+      ```markdown
+      Dynamic <-----------> Static
+      (Step-by-Step)      (Workflow)
+      ```
+
+    - Key Trade-off Dimensions
+      - **Adaptability vs Efficiency**: More agent involvement = more adaptable but slower and costlier
+      - **Control vs Performance**: More human control = more predictable but less intelligent adaptation
+      - **Flexibility vs Repeatability**: More dynamic decisions = more flexible but less consistent results
+    - The Four Approaches as Points on the Spectrum
+      - **Step-by-Step Dynamic** (Maximum Adaptability)
+        - Agent decides everything in real-time
+        - Highest flexibility, lowest efficiency
+
+      - **Hybrid** (Balanced Trade-off)
+        - Workflow when possible, dynamic when needed
+        - Attempts to get benefits of both extremes
+
+      - **AI Shim** (Controlled Intelligence)
+        - Human defines process, AI adapts data flow
+        - Maintains repeatability while adding smart adaptation
+
+      - **Ahead-of-Time Workflow** (Maximum Efficiency)
+        - Pre-planned execution, no runtime decisions
+        - Highest efficiency, lowest flexibility
+  - Decision Logic: There's **no universal best approach** .The "right" choice depends entirely on your specific use case requirements and constraints. Thus, **Choose based on what you value most:**
+    - Need adaptability? → Go more dynamic
+    - Need efficiency? → Go more static
+    - Need both? → Use hybrid approaches
+    - Need control? → Use AI Shim pattern
