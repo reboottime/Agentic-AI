@@ -66,25 +66,27 @@
     - The Spectrum
 
       ```markdown
-      Dynamic <-----------> Static
+      Dynamic(Agents involve in each action) <-----------> Static & Fixed (Ahead of time by human or the plan first capbility)
       (Step-by-Step)      (Workflow)
       ```
 
     - Key Trade-off Dimensions
-      - **Adaptability vs Efficiency**: More agent involvement = more adaptable but slower and costlier
+      - **Adaptability vs cost Efficiency**: More agent involvement = more adaptable & flexibility but slower and costlier
       - **Control vs Performance**: More human control = more predictable but less intelligent adaptation
       - **Flexibility vs Repeatability**: More dynamic decisions = more flexible but less consistent results
     - The Four Approaches as Points on the Spectrum
       - **Step-by-Step Dynamic** (Maximum Adaptability)
         - Agent decides everything in real-time
-        - Highest flexibility, lowest efficiency
+        - Higher flexibility & cost, low predictability
 
       - **Hybrid** (Balanced Trade-off)
-        - Workflow when possible, dynamic when needed
+        - Workflow when possible, dynamic when needed, for example, when error occurs, agent jump into reason and solve the error
         - Attempts to get benefits of both extremes
 
       - **AI Shim** (Controlled Intelligence)
-        - Human defines process, AI adapts data flow
+        - Human defines process, AI adapts data flow. Using the Intern Analogy, 
+          - the intern sits in between the process steps, and decide whether to go forward to next step or exit.
+          - or process the data flow in between steps
         - Maintains repeatability while adding smart adaptation
 
       - **Ahead-of-Time Workflow** (Maximum Efficiency)
