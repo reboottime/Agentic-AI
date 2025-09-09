@@ -63,6 +63,7 @@ A tool is something an agent knows how to use and does not need to  understand h
 - [The Agent Development Life Cycle](https://sierra.ai/blog/agent-development-life-cycle)
 
 - [Designing AI-Intensive Applications - swyx](https://www.youtube.com/watch?v=IHkyFhU6JEY)
+- [12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](https://www.youtube.com/watch?v=8kMaTybvDUw)
 
 - evaluate the memory module performance
 
