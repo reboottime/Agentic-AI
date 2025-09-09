@@ -65,10 +65,22 @@ A tool is something an agent knows how to use and does not need to  understand h
 - [Designing AI-Intensive Applications - swyx](https://www.youtube.com/watch?v=IHkyFhU6JEY)
 - [12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](https://www.youtube.com/watch?v=8kMaTybvDUw)
 
+- [evals]: evaluate your llms or ai system. see 4.1, 4.2 & 4.3
 - evaluate the memory module performance
+- [Building Agents at Cloud Scale — Antje Barth, AWS](http://youtube.com/watch?v=WJjInLeaJjo&list=PLcfpQ4tk2k0W3ORTR-Cr4Ppw6UrN8kfMh&index=27)
+- [Amazon Bedrock](https://aws.amazon.com/bedrock/), a aws service that helps you to connect with llm providers and integrate with aws other services.
+- Evals:
+  -  **[Five hard earned lessons about Evals — Ankur Goyal, Braintrust](https://www.youtube.com/watch?v=a4BV0gGmXgA&list=PLcfpQ4tk2k0W3ORTR-Cr4Ppw6UrN8kfMh&index=3)
+  - **[The Future of Evals - Ankur Goyal, Braintrust](http://youtube.com/watch?v=MC55hdWLq4o&list=PLcfpQ4tk2k0W3ORTR-Cr4Ppw6UrN8kfMh&index=12)
+  - [As the day August 2025,  evals is the top painful things for AI Engineer ](https://youtu.be/mQ7_Zje7WKE?si=LsH3XKsNWuzyhjaR&t=689)
 
 ## References
 
 - 1.[Agentic AI Definition by google search](https://www.google.com/search?q=agentic+ai+definition&sca_esv=fe03dc12a99e2005&rlz=1C5CHFA_enUS1104US1104&sxsrf=AE3TifMS3QsbDVUq9VaPjpOFhW3tec8iQA%3A1757348573732&ei=3QK_aM3CLP6t0PEPybCy-Q4&oq=&gs_lp=Egxnd3Mtd2l6LXNlcnAiACoCCAAyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyChAjGPAFGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyExAAGIAEGEMYtAIYigUY6gLYAQEyExAAGIAEGEMYtAIYigUY6gLYAQEyExAAGIAEGEMYtAIYigUY6gLYAQEyExAAGIAEGEMYtAIYigUY6gLYAQEyExAAGIAEGEMYtAIYigUY6gLYAQEyExAAGIAEGEMYtAIYigUY6gLYAQEyExAAGIAEGEMYtAIYigUY6gLYAQEyExAAGIAEGEMYtAIYigUY6gLYAQEyExAAGIAEGEMYtAIYigUY6gLYAQFIy0JQ0AdY0AdwAXgCkAEAmAEAoAEAqgEAuAEByAEA-AEBmAICoAIRqAITwgIEEAAYR5gDDeIDBRIBMSBA8QWi97_JQcHpT4gGAZAGCLoGBggBEAEYAZIHATKgBwCyBwC4BwDCBwcwLjEuMC4xyAcP&sclient=gws-wiz-serp)
 - 2.[[生成式AI時代下的機器學習(2025)]第二講：一堂課搞懂 AI Agent 的原理 (AI如何透過經驗調整行為、使用工具和做計劃)](https://www.youtube.com/watch?v=M2Yg1kwPpts)
 - 3.[Architecting Agent Memory: Principles, Patterns, and Best Practices — Richmond Alake, MongoDB](https://www.youtube.com/watch?v=zLv2o5hRdXs)
+
+- 4.1 [Iterate, eval, ship. Braintrust is the evals and observability platform for building reliable AI agents](http://braintrust.dev/)
+- 4.2 [Evals Are Not Unit Tests — Ido Pesok, Vercel v0](https://www.youtube.com/watch?v=L8OoYeDI_ls&list=PLcfpQ4tk2k0W3ORTR-Cr4Ppw6UrN8kfMh&index=16)
+- 4.3 [2025 is the Year of Evals! Just like 2024, and 2023, and … — John Dickerson, CEO Mozilla AI](https://www.youtube.com/watch?v=CQGuvf6gSrM&list=PLcfpQ4tk2k0W3ORTR-Cr4Ppw6UrN8kfMh&index=17)
+- **[Make your LLM app a Domain Expert: How to Build an Expert System — Christopher Lovejoy, Anterior](Make your LLM app a Domain Expert: How to Build an Expert System — Christopher Lovejoy, Anterior)
