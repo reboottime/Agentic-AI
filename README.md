@@ -60,6 +60,9 @@ A tool is something an agent knows how to use and does not need to  understand h
 
 ## Engineering Practice
 
+
+[The Agent Development Life Cycle](https://sierra.ai/blog/agent-development-life-cycle)
+
 - evaluate the memory module performance
 
 ## References
