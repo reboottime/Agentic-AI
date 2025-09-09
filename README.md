@@ -83,4 +83,4 @@ A tool is something an agent knows how to use and does not need to  understand h
 - 4.1 [Iterate, eval, ship. Braintrust is the evals and observability platform for building reliable AI agents](http://braintrust.dev/)
 - 4.2 [Evals Are Not Unit Tests — Ido Pesok, Vercel v0](https://www.youtube.com/watch?v=L8OoYeDI_ls&list=PLcfpQ4tk2k0W3ORTR-Cr4Ppw6UrN8kfMh&index=16)
 - 4.3 [2025 is the Year of Evals! Just like 2024, and 2023, and … — John Dickerson, CEO Mozilla AI](https://www.youtube.com/watch?v=CQGuvf6gSrM&list=PLcfpQ4tk2k0W3ORTR-Cr4Ppw6UrN8kfMh&index=17)
-- **[Make your LLM app a Domain Expert: How to Build an Expert System — Christopher Lovejoy, Anterior](Make your LLM app a Domain Expert: How to Build an Expert System — Christopher Lovejoy, Anterior)
+- **[Make your LLM app a Domain Expert: How to Build an Expert System — Christopher Lovejoy, Anterior](https://www.youtube.com/watch?v=MRM7oA3JsFs)
