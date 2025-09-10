@@ -73,6 +73,7 @@ A tool is something an agent knows how to use and does not need to  understand h
   -  **[Five hard earned lessons about Evals — Ankur Goyal, Braintrust](https://www.youtube.com/watch?v=a4BV0gGmXgA&list=PLcfpQ4tk2k0W3ORTR-Cr4Ppw6UrN8kfMh&index=3)
   - **[The Future of Evals - Ankur Goyal, Braintrust](http://youtube.com/watch?v=MC55hdWLq4o&list=PLcfpQ4tk2k0W3ORTR-Cr4Ppw6UrN8kfMh&index=12)
   - [As the day August 2025,  evals is the top painful things for AI Engineer ](https://youtu.be/mQ7_Zje7WKE?si=LsH3XKsNWuzyhjaR&t=689)
+- **[How to train your Agent](http://youtube.com/watch?v=gEDl9C8s_-4)
 
 ## References
 
