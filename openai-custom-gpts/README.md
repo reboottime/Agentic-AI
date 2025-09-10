@@ -1,6 +1,6 @@
 # README
 
-**About Course**: Please visit [OpenAl GPTs: Creating Your OwnCustom Al Assistants](https://www.coursera.org/learn/openai-custom-gpts) to get more information.
+**About This Course**: Please visit [OpenAl GPTs: Creating Your OwnCustom Al Assistants](https://www.coursera.org/learn/openai-custom-gpts) to get more information.
 
 **Why this course**: While the topic is about customizing OpenAI GPTs, the content introduced in the lectures contains some fundamental practices:
 
@@ -10,7 +10,7 @@
 
 ## Course Content and My Progress
 
-- [ ] Module 1: Custom GPT Fundamentals
+- [x] Module 1: Custom GPT Fundamentals
   - [x] Welcome (Video)
   - [x] Programming a GPT (Video)
     - prompt: from now on triggers writing memory
@@ -28,7 +28,7 @@
       - context(background) What would you like ChatGPT to know about you to provide better responses? [context]
       - rules: How would you like ChatGPT to respond? [style]. For example:
       > Always respond concept in a fun way that I can understand and wave my interest
-  - [ ] Retrieval Augmented Generation (RAG) (Video)
+  - [x] Retrieval Augmented Generation (RAG) (Video)
     - how it benefits you:
       - LLMs are trained on data that are cut off by its time. Hence, LLMs don't have idea about facts & informations that are not in its training data
       - Providing Information after its training cut off time that it doesn't know
@@ -75,9 +75,9 @@
   - [x] Learning More & Staying Connected (Reading)
 
 - [ ] Module 2: THINK: Create Great GPTs (Part I)
-  - [ ] Test (Video)
-  - [ ] Build a Benchmark (Video)
-  - [ ] Benchmark Design Considerations (Reading)
+  - [x] Test (Video): what we need: create a benchmark to evaluate & test how well the GPT is doing.
+  - [x] Build a Benchmark (Video) 
+  - [x] Benchmark Design Considerations ([Reading: Benchmark Design Considerations](./topics/module02/Benchmark%20Design%20Considerations.pdf))
   - [ ] Build a Custom GPT for Generating Test Cases (Video)
   - [ ] Build Your Own Custom GPT Test Case Generator (Graded Assignment)
   - [ ] The Goal is to Help the Human Solve the Problem, Not Provide the Answer (Video)
