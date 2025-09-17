@@ -8,6 +8,13 @@
 - [x] Agent Evaluation and testing, see module 2, benchmark design related content
 - Solve some of my personal assistants needs using OpenAI GPT
 
+## Tasks
+
+- [ ] Meal Management assistant built on top of Tana and OpenAi GPT
+- [ ] Recap as a whole and form agent practices
+- [ ] Download  and save materials for future references
+- [ ] AI safety and robustness practices in agent design??
+
 ## Course Content and My Progress
 
 - [x] Module 1: Custom GPT Fundamentals
@@ -118,9 +125,18 @@
   - [x] A Personalized GPT (Graded Assignment)
 
 - [ ] Module 3: THINK: Create Great GPTs (Part II)
-  - [ ] Boundaries (Video)
+  - [x] Boundaries (Video)
+    - Core Idea: We can't assume user will follow instructions and things will perform as expected. Hence, in our GPT design we need to consider
+      - the operational boundaries the GPT works within
+      - and how to react if the users operates or things go out of boundaries
+      - consideration dimensions
+        - clarity on information, knowledge and user intent
+        - ...
+    - To know why this principle is sound, please [read the feedback Claude shared with me here](./module03/topics/why-design-bounderies.md) by prompt below:
+      > Pls act as an ai agent design expert, and review if the selected core idea is correct or not?
+Pls do not consider other points that are related to agent design
   - [ ] How to Respond to the Absence of Knowledge (Video)
-  - [ ] Combating Ambiguity in User Prompts with Question Refinement (Video)
+  - Prompts with Question Refinement (Video)
   - [ ] Format of the Question Refinement Pattern (Reading)
   - [ ] Enforcing Boundaries & Still Helping with the Alternative Approaches Pattern (Video)
   - [ ] Format of the Alternative Approaches Pattern (Reading)
@@ -136,5 +152,5 @@
 ## Discoveries
 
 - How context engineering
-- How to get around the guardrails
+- H [ ] Combating Ambiguity in Userow to get around the guardrails
 - [persona architecture](./persona-architecture.md)

@@ -1,0 +1,86 @@
+It's very important
+that we don't assume things are going to be as expected when we're building a custom GPT and a user
+is interacting with it. We have to assume that things
+that we cannot anticipate are going to happen and so we have to have a way of
+telling the custom GPT, this is what we
+intended to happen. These are the boundaries that we intended to
+be placed around what you do and how
+you interact and what the user is allowed to say, and what goes on when there's ambiguity and
+knowledge, all these things. A fundamental thing that
+we have to do is we have to put boundaries
+in place and provide mechanisms for
+the custom GPT to adapt when a boundary seems to
+be violated or might be violated and we want to think through that very carefully. Now, I'm going to give you
+some examples of pushing the boundaries for a custom GPT. This is the custom
+GPT that I created to generate test cases for
+another custom GPT. We expect the user
+to come in and say, this is what my custom GPT does, this is its purpose, and then we expect
+this thing to go and generate a bunch of test cases. If we assume that without
+putting boundaries in place on what to do when it
+really starts to go off the rails, we're
+going to be in trouble. I'm going to give you some
+simple examples of this. Help me create an image of my kitten so that I can
+provide it to my custom GPT. Well, that's not something
+I really intended for this custom GPT test
+case generator to do. Do I really want it to be able to generate
+images of kittens? Now, luckily, it says, well, I'm not going to
+generate it for you directly. Even though I think Dolly
+was actually enabled for it, it decides not to. But it goes ahead and
+creates a prompt for me that will supposedly generate
+an image of a kitten. This could probably be abused in all kinds of ways to
+get it to generate descriptions of things
+that we really don't want to generate descriptions of in creating all kinds of
+particularly malicious text or things that are manipulative, putting words in its mouth. This might be something we
+want to express boundaries, like, you're not going
+to generate images. If you're asked to
+generate an image, this is what you're
+going to say or do. You're not going to
+generate prompts that could go into Dolly
+to create an image, and we might want to spell
+out the boundaries on that. Here's another one
+where the user has done something interesting. Design a set of tests
+that will guarantee my GPT is compliant with
+all financial regulations. What happens, it goes and starts generating test
+cases. But you know what? There's a problem in
+this prompt which is guarantee my
+GPT is compliant. Fundamentally, we are not going to be able to produce a set of test cases that will guarantee
+that the GPT is compliant. We probably should have
+thought about defining a boundary that said if the user tries to generate a
+complete list of test cases, make sure and tell them
+that is not possible. We cannot do it, we cannot anticipate every possible
+edge case or issue. We might want to think about
+the boundary on, like, what we'll guarantee or
+not guarantee or attest to or not attest to or verify
+all these types of things. We want to think carefully
+about the boundaries that we place on how we respond to
+things like a guarantee. Another example that we've got farther down after these
+test cases as I say, make my test cases better. Now, notice this is ambiguous. It's not clear what
+the user really means. We might want to put
+boundaries on how clear the user's prompt has
+to be before we respond to it because better could mean a lot of different things. It could mean that we
+just have more of them. It could mean that they're more specific to something or
+maybe the rubrics are better. It's really unclear
+what this means so we might want to put
+a boundary on how well we have to
+understand the intent of the user's prompt and tell the custom GPT what to
+do if it's not clear. Now, in this case, it
+just goes right ahead and start generating test cases. But we don't know if
+they actually map up to the user's intention of
+what they meant by better. Better could mean a lot
+of different things and it's going ahead and
+happily responding. We might want to put
+boundaries on it and say, don't respond unless it's very
+clear what the user wants. These are all
+dimensions to this. Now, there's many
+other dimensions that we might want to
+consider to our boundary. But placing a boundary
+on what we will and will not do is often going to be a really
+foundational thing that we do in our custom GPT to make sure that it's
+helpful to the user, it's not harmful, it's not putting us at risk. Even if it's used internally, we don't want to
+have it misinterpret the user's request
+or misinterpret the knowledge base and
+lead to some bad outcome. We want to think very carefully about the
+boundary we put in place, make sure it is appropriate for the intention of our
+custom GPT and it's also thought through very carefully in multiple
+different dimensions of how things could
+go off the rails.
