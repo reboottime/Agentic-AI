@@ -135,13 +135,36 @@
     - To know why this principle is sound, please [read the feedback Claude shared with me here](./module03/topics/why-design-bounderies.md) by prompt below:
       > Pls act as an ai agent design expert, and review if the selected core idea is correct or not?
 Pls do not consider other points that are related to agent design
-  - [ ] How to Respond to the Absence of Knowledge (Video)
+  - [x] How to Respond to the Absence of Knowledge (Video)
+    - how: explicitly tell GPT what to do when it can't answer
   - Prompts with Question Refinement (Video)
-  - [ ] Format of the Question Refinement Pattern (Reading)
-  - [ ] Enforcing Boundaries & Still Helping with the Alternative Approaches Pattern (Video)
-  - [ ] Format of the Alternative Approaches Pattern (Reading)
-  - [ ] Cognitive Verifier Pattern (Video)
-  - [ ] Format of the Cognitive Verifier Pattern (Reading)
+    - problem: user is not clear about its meaning and intent
+    - solutions:
+      1. if it is not clear, go and ask for follow up questions
+      2. If it is not clear, refuse to answer
+      3. Reply user with a improved version of its question, and ask user if they'd like that question to be answered instead. For example:
+      > ALWAYS start by analyzing the user's question and thinking of a better version of it. Provide the user
+the suggested better version of the question and then ask the user if they would like you to answer
+that question instead.
+  - [x] Format of the Question Refinement Pattern (Reading)
+  - [x] Enforcing Boundaries & Still Helping with the Alternative Approaches Pattern (Video)
+    - Why: we still want to be helpful while hedge the issue not having sufficient information(reply with wrong answer). The solution is to provide user with alternative solutions
+    - In short, we still have boundaries but provide with alternatives to be helpful.
+    - example:
+    > You are going to help Vanderbilt employees answer Travel and Business Expense questions.
+ALWAYS start by analyzing the user's question and determining if the question can clearly be answered without multiple interpretations using the travel policy. If not, suggest alternative approaches that the user could use to accomplish the same goal that would clearly be allowable in the travel policy in the following format:
+conversation starters
+  - [x] Format of the Alternative Approaches Pattern (Reading)
+  - [x] Cognitive Verifier Pattern (Video)
+    - what is it:
+      - break user questions into subordinate questions
+      - then get confirmation from users to answer about the subordinate questions
+      - then give the final answer
+  - [x] Format of the Cognitive Verifier Pattern (Reading)
+    - template
+      - When you are asked a question, follow these rules
+      - Generate a number of additional questions that would help more accurately answer the question
+      - Combine the answers to the individual questions to produce the final answer to the overall question
   - [ ] Applying Patterns (Graded Assignment)
   - [ ] Handling Ambiguity in Concept Mapping (Video)
   - [ ] Knowledge Conflict Resolution (Video)
@@ -152,5 +175,5 @@ Pls do not consider other points that are related to agent design
 ## Discoveries
 
 - How context engineering
-- H [ ] Combating Ambiguity in Userow to get around the guardrails
+- Combating Ambiguity in User how to get around the guardrails
 - [persona architecture](./persona-architecture.md)
