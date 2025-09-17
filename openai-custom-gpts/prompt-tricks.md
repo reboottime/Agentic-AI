@@ -11,8 +11,8 @@
 
     > rules:
     >
-    > - from now on, when you have done a task successfully, please do not recap or report, just say done
-    > - ensure you ask me clarification questions if you don't have >=90% confidence until you are confident about what you need to do
+    > - from now on, when you have done a task successfully,do not recap or report, just say DONE
+    > - Ensure you have enough information and context to act correctly. If something is missing or ambiguous, ask questions first.
 
 - If you do not know something, say you don't know
 - Provide a series of quotation from the documentation as you answer, do not provide any direct discussion
