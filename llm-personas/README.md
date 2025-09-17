@@ -5,3 +5,4 @@ This repository contains a curated collection of helpful LLM personas, each with
 ## Personas
 
 - [logistic expert](./logistic-expert.md)
+- [personas that helps figure out goals](./goal-personas.md)
