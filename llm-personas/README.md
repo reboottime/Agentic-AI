@@ -6,3 +6,4 @@ This repository contains a curated collection of helpful LLM personas, each with
 
 - [logistic expert](./logistic-expert.md)
 - [personas that helps figure out goals](./goal-personas.md)
+- [triage expert in healthcare system](./triage-expert.md)
