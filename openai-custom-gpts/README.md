@@ -14,6 +14,7 @@
 - [ ] Recap as a whole and form agent practices
 - [ ] Download  and save materials for future references
 - [ ] AI safety and robustness practices in agent design??
+- [ ] Read [VIDIA-NeMo Guardrails](http://github.com/NVIDIA-NeMo/Guardrails?tab=readme-ov-file#use-cases) to consolidate understanding
 
 ## Course Content and My Progress
 
@@ -167,6 +168,11 @@ conversation starters
       - Combine the answers to the individual questions to produce the final answer to the overall question
   - [ ] Applying Patterns (Graded Assignment)
   - [ ] Handling Ambiguity in Concept Mapping (Video)
+    - the problem:
+      - the same term & concept may have different interceptions between LLMs and users
+      - users may talk about some terms and concepts are not in the knowledge base;
+      -  Hence, the two above conditions may result in an answers that differ a lot with proper answer.
+    - the solution:
   - [ ] Knowledge Conflict Resolution (Video)
   - [ ] You and Your Business are Responsible, Not the Bot (Video)
   - [ ] Adversarial Testing (Video)
