@@ -1,0 +1,72 @@
+As much as we would
+like to believe that our documents,
+our policies, all of the information that we're going to be
+giving the custom GPT is really clear
+cut and obvious. The truth is in the real world, we ask questions
+about policies and documents all the time
+because they are not clear cut and because it's
+not clearly explained what is is not allowed or what the process is, or
+whatever it is. When we're building
+a custom GPT, both with the instructions
+that we write into the prompt, as well as with
+the knowledge base that we give it
+through documents, we can end up in situations where the user asks something or requests a task to be performed where the answer is not obvious. What we need to do is we
+need to draw that out. We want to make sure that
+our custom GPT does not go and make it appear
+as if there is one answer when there
+is not just one answer. Now, sometimes we
+might want this. If we want some creative GPT to come up with all kinds of
+wild ideas, great, do that. But if we're thinking about
+a business use case where we want it to be really
+accurate and really correct, we don't want to lead
+somebody down the wrong path, then we need to
+think about drawing out the possible
+contradictions or multiple interpretations
+of the either way to solve the problem or what the answer is based on
+the knowledge base. I'm going to give you
+an example of this. What I've done is I have
+designed a custom GPT where what I want it to do is when it lists
+the information, so as before, what
+I'm asking it to do is give us relevant
+information to consider, and we're getting quotations
+from the document. After giving the
+relevant information to consider for the question, I want it to list
+possible interpretations and list as many of them
+as it can think of. Now, the idea is that
+I want the human being to be aware if there is
+potential ambiguity. I want it to try to draw out any potential ambiguity and
+present it to the user, so it is explicit. In this example, I say, can I get reimbursed for
+Southwest Business Select? If you actually read the Vanderbilt Travel
+and Expense Policy, it is not actually clear if you can or cannot because
+it depends on, do you consider this
+to be an upgrade or do you consider it
+to be first class? It depends on your
+interpretation. I actually have had
+to ask that question before to know what
+the correct answer is. In this case, now, I say possible
+interpretation, so it knows to go and list
+the possible interpretations, and I'm using the
+template pattern, and there are multiple
+possible interpretations that Southwest Business
+Select is an upgrade, and it may or may not be. Then Southwest Business Select is the lowest available airfare. For example, what if
+that's the only flight? Can I go and take it?
+There's multiple situations. Now, is this every
+possible situation? No. But the key thing is is
+that there's at least two. Now the human being realizes, wait a minute, it's not obvious. Then we can say, please contact this address for
+clarification on this, and here's what you
+might want to ask them. This is changing the game. This is making it
+more about informing the human that there are
+multiple possible answers. Now I'll go and ask a question
+that I know is answered. Can I rent a motorcycle? It explicitly says right here, motorcycle rentals are not an
+allowable business expense. Direct statement from the policy, possible
+interpretations. There's only one. Motorcycle
+rentals are not allowed. It's just not something
+that you're going to do. The human sees there is
+no other interpretation. Maybe there is. Maybe you could come up with
+something else, but probably not, and
+then please contact. But this is a helpful way is if there is potential ambiguity or
+multiple interpretations, think about, do I need to
+present those to the user? If so, just present
+it and let the user think about it and know and
+be aware of the ambiguity, of the inconsistency, of
+the fact that there's multiple ways of accomplishing the goal or interpreting things.

@@ -1,0 +1,4 @@
+# mental models
+
+- guardrails
+- OKR

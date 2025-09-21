@@ -1,0 +1,36 @@
+>> We can help humans solve problems by
+helping get them in touch with other human beings that can give them the answers or
+solve the problem that they need solved. We don't always have to just rely
+on generative AI to do everything. So a simple way to tap into this
+in a custom GPT is just provide contact at the end of every answer. That is to say, here is a human or
+other contact that you can reach out to. Here's a frequently asked questions
+that you can reach out to. Here's a human being that you can call. Here's a set of human
+beings that you can email. Here's where you can put in a support
+ticket, whatever it is, and we can have intelligent routing. We can say, if it's a question about this,
+you should direct it to this place. If it's a question about that,
+you should direct it over there. If these circumstances are true,
+tell them to submit a ticket and that somebody will get back to them. But we don't always just have
+to rely on generative AI. So always, always. It can be very helpful if you have
+the capacity, if you already have a human element to this, if you already have
+somebody who answers questions. For example,
+in the university we have advisors. We have people who do undergraduates, they help the undergraduates answer
+questions that maybe even the advisors don't know the answer to because it deals
+with registration or something else. We should direct, wherever possible,
+our users to those experts, so that they know where to go
+if they are at all unsure. And a simple thing we can do is just, we tell the custom GPT at the end
+of every response, list contacts, or list the relevant contact, or
+direct them to one of these resources that seems most appropriate based
+on the question that they asked. We can rely on the GPT to get
+them to the right person, or to get them to the right
+external resource that might have additional information
+to solve their problem. That is, the GPT can be a router, it can be a connector that
+gets them to the right place. A lot of times we have people who, they start here because they
+don't know what else to do. It's what they found first. But it doesn't mean that they want to
+solve the problem through interacting with generative AI. They want to potentially talk to
+a human being or read something or do something else. So we need to have an escape valve for
+our users wherever possible, to either be routed to other human beings,
+email, phone ticket, or to external resources like
+frequently asked questions, additional web pages,
+books, whatever it is. We don't have to solve the problem
+completely within the GPT. Often we can route them to the correct
+place, be it a human being or some other resource to get the answer.

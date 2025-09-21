@@ -1,0 +1,34 @@
+When we're using generative AI, we should think about using it to support human reasoning, to help human beings
+solve problems, not necessarily just
+to give them answers. Now, there's a bunch of reasons
+why we want to do that. We we want to focus
+on helping them solve a problem as opposed
+to giving them answers. The reason is is because when we're helping them
+solve the problem, a big part of what
+we're trying to do is to help them reason, help them arrive
+at the solution, not replace their reasoning. A lot of what we saw
+when we started with generative AI was that we ran into problems because
+as a society, we started seeing
+people use it to cheat. They started saying, well, it's just going to make
+everybody dumb. Everybody's going to use it
+to generate all the ideas. Nobody's going to think anymore and we do not want to go there. We want to think about creating custom GPTs that help
+people solve problems, that help people
+get things done, that help people learn, that help people be more creative. We don't want to have
+people thinking less. We want to think more, not less. Now, how do we do that? Well, we focus on
+augmented intelligence, where the goal is to
+have the custom GPT working together with the human, to provide them
+with information, to provide them with
+perspectives to support their reasoning so that they can go and work
+through the problem. This is different than just
+giving them an answer. What we're going to see in
+this module is a number of simple techniques
+that we can use to control the information
+that goes back to the user, how we present it,
+how we explain it, what we do and do not
+do in order to make sure that the user stays engaged and that
+their reasoning, their augmented intelligence
+is what we're working with, not just the artificial
+intelligence that's trying to give them the answers that
+they can check out. We're going to do things better. We're going to help
+them think better. We're not going to
+help them think less.

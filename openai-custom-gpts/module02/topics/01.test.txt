@@ -1,0 +1,18 @@
+If you're going to build a custom GPT for
+your organization, or it's one that you're going to
+take to the external world, or just one that you're going to use yourself
+and you're really going to dig into it. One of the most important things you can
+do from the very beginning is to build a benchmark or a set of metrics to measure
+how well that custom GPT is doing. Now, if you look around in generative AI, this is something that gets
+done all the time, basically. We benchmark the models. We see how well they reason,
+how well they perform different tasks, the type of tasks that
+they don't do well on. And we want to think about testing as
+one of the fundamental things that we do when building a custom GPT. If we don't test, we can't know
+if we're doing better or worse. It may seem like we're doing better, but
+in reality we're actually regressing on all these other things
+that we really care about. A benchmark is something
+simple that we can do. Testing is something critically important
+to make sure that we build custom GPTs that actually help people solve problems, as opposed to just creating more
+problems and headaches for us. The only way to know if we're doing
+a good job is to create the benchmark and actually measure if we are moving towards
+a successful generative AI solution.

@@ -1,0 +1,60 @@
+An incredibly useful prompt pattern to
+know when you're building custom GPTs is the flipped interaction pattern. So what is this pattern? Well, we think about telling
+chat GPT what to do. We think about asking it questions. But one of the most powerful things
+that we can do is we can ask it to ask us questions so
+we can tell it, go and ask me questions to help me achieve
+some goal that I'm looking for. But I don't want to direct
+giving you the information. I want you to elicit the information
+that you need from me. Now, this can be really powerful
+in a number of different contexts. One context where it's really, really powerful was the user doesn't know
+what information they need to give it. So they don't know what information is
+going to be useful in solving the problem. And so they want to rely on the domain
+knowledge of ChatGPT to help go and ask the right questions and
+sort of adaptively navigate through the questioning space in order to build
+up context to then solve the problem. So this is a really,
+really powerful area to use. It is particularly whenever you have
+a user who may not have a full picture of what's going on, they may not have
+the process, other types of things, which often that is the case with a custom
+GPT is we're trying to help the user solve some problem, but
+they may not be a complete domain expert, they may not have all the knowledge,
+the process, other things. And so we can tell a custom GPT,
+go and ask the user questions. Now, I'm going to give you a simple
+example outside of a custom GPT. So I'm going to use the flip
+to interaction pattern, which is basically ask me questions
+until some goal is achieved. So ask me questions until you have enough
+information to create a recipe that I will like, and then I'm going to tell it. Optionally, you can say how many
+questions to ask at a time. This can often be useful because sometimes
+it'll like to overwhelm the user with questions. So in this case, I'm going to say
+ask the questions one at a time, and then I'm going to use a little trick. Often you need to tell it,
+ask me the first question, sort of triggered in the right direction. So I've built up a prompt here using
+the flipped interaction pattern. I'm going to have it ask me questions
+in order to create a recipe for me. Okay, what are your favorite types
+of dish or cuisine that you enjoy? And I go say, okay, I like Tex Mex. I love a lot of different cuisines,
+I'm just going to go with Tex Mex for now. What are some of your preferred
+ingredients or flavors? I'm going to say, well, let's go with
+refried beans, ribeye, and avocado. Do you prefer Tex Mex dishes to be spicy,
+mild? And it goes through asking
+me questions one at a time. And you notice it keeps going. It keeps going until it thinks it has
+enough information to generate a recipe. For me, notice I didn't ever say stop and
+generate the recipe. I just gave it that goal at the beginning. I said, until you have enough information
+to create a recipe that I will like. So it is deciding when it thinks
+it has enough information. I am not dictating to it or
+telling it when. Now, I could have stopped probably at some
+point in the conversation and just said, go generate the recipe and figure it out,
+but I'm not doing that here. Now, one thing that's interesting about
+this and something that, you know, I think is a really powerful thing to
+know is if you're going through this questioning process and you do get to
+a point where you get a little like, hey, I've just,
+I don't want to ask any more questions. Just tell it to choose the rest. And kind of what you're basically saying
+is, I've given you a bunch of information, I'm not sure about the rest,
+or I don't care. You fill in the blanks for
+me at this point with what you need, and now it goes and creates the recipe. But what I did not do is go step-by-step
+and say, I like this, I like this, I like this, I like this,
+now generate the recipe. What we did is the opposite. It said, what about this? What about this, what about this? It asked us all the questions and
+then it decided to generate the recipe. This is a really, really useful pattern,
+getting chat GPT or your custom GPT to ask you or
+the user of your custom GPT questions in order to collect information or
+contextual information that is needed in order to reason more
+effectively, solve some problem, build a better experience, and
+we'll see some simple ways that we can use this to do really powerful
+things with our custom GPTs.
