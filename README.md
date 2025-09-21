@@ -85,3 +85,5 @@ A tool is something an agent knows how to use and does not need to  understand h
 - 4.2 [Evals Are Not Unit Tests — Ido Pesok, Vercel v0](https://www.youtube.com/watch?v=L8OoYeDI_ls&list=PLcfpQ4tk2k0W3ORTR-Cr4Ppw6UrN8kfMh&index=16)
 - 4.3 [2025 is the Year of Evals! Just like 2024, and 2023, and … — John Dickerson, CEO Mozilla AI](https://www.youtube.com/watch?v=CQGuvf6gSrM&list=PLcfpQ4tk2k0W3ORTR-Cr4Ppw6UrN8kfMh&index=17)
 - **[Make your LLM app a Domain Expert: How to Build an Expert System — Christopher Lovejoy, Anterior](https://www.youtube.com/watch?v=MRM7oA3JsFs)
+- ** [Building Production-Ready Agentic Systems: Lessons from Shopify Sidekick](https://shopify.engineering/building-production-ready-agentic-systems)
+- [Introduction to Generative AI and Machine Learning 2025 - Lecture 2: Context Engineering — Key Technology Behind AI Agents](https://www.youtube.com/watch?v=lVdajtNpaGI)
