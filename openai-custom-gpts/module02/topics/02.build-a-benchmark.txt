@@ -1,0 +1,105 @@
+Anytime we change
+the instructions to our GPT or we change
+the knowledge base, it can have unexpected effects. One of the important things that we want to do when
+we start building a custom GPT and really thinking about how do we build
+the best custom GPT? A very important thing
+to do is to build yourself a simple benchmark.
+Now, why do you do this? Well, you do this so that
+as you make changes, you can make sure that it's
+still reasoning effectively. That it's not regressing
+in some area and starting to give bad answers to something
+that used to do well on. But the other reason you want to do it is because
+you want to make sure that it really is as
+good as you think it is. Often when we go and
+sort of ad hoc to this, we may miss areas
+where we will say, well, it should be
+able to do this, and we don't actually test it. Then it turns out it doesn't
+do a very good job of it. Building yourself a benchmark is a really simple thing
+that you can do to one, make sure it actually
+performs well in all the areas that you would
+like it to perform well. But two, that as you go and modify it and
+improve it over time, that you don't have some
+type of regression. Now, there's lots of ways
+that you can do benchmarking, but I'm going to show
+you a really simple way. So I've created a
+simple table here with a number of questions showing the prompt that
+the user would input, what the expected answer is. Now notice, I'm saying
+expected answer. I'm just trying to
+provide a simplified description of what we want. Just roughly, is there
+a right or wrong? Now, you could also have
+examples of great output, like if you go and you play around with it and
+experiment with it, and you see a really
+great output, you could capture that and cut and paste it in as
+expected answer. Here, I've just typed in what
+the expected answers are. Because in these cases,
+there's right and wrong, but I might want
+to have something that's more about the quality, something qualitative as
+opposed to quantitative. But the key is you want
+to capture examples of what a good output looks
+like in the document, so somebody reading
+it can interpret it. Then we want to have a rubric. How are we going to
+grade the output? In many cases, the
+output is not something that we can quantitatively
+evaluate easily. It's something
+that a human being is going to have to look at, or we may use GPT 4 in the
+future to grade itself or degrade other models if we're
+using some future model. We want to spell
+out exactly what we are looking for
+in the output. What makes this
+answer good or bad? How if we change that
+answer in different ways, would we lose points
+or increase points? Then finally, we want
+a scoring scale. I like 1-10, you could have a
+scoring scale to 100, however you
+want to do this. But we want a simple
+scoring scale so we can look at and see then
+quantitatively, how does the human being who's looking at this think
+it's performing? Now, our goal might be to get
+all tens on every answer. But realistically, probably
+what we're going to see is that we're going to get, good scores on some things, not as good scores
+on some things, and we're going to
+always probably be dealing with
+some trade offs in different areas
+depending on how we go and change the instructions. The other thing that
+we want to do in this is we want to stop and think methodically about what are the ways that it's
+going to be used, that we want it to
+perform well in. We want to think about lots of different tasks or questions
+that the user might, go in input, and we want to test them
+and check how it works. This is an opportunity
+for us to really start thinking about
+comprehensively, like, have we covered
+all of the cases? Then we want to go and
+think about what are unexpected things that the
+user might want to do. Later I'll talk about
+adversarial testing, but we also want to have
+what is going to happen if the user types in
+something totally unexpected. The user goes and says, generate an image of a car for me, or the user says, predict the best stock for me to buy
+next week. What will happen? What will your GPT do? Will it do what you
+expect it to do? So, you want to have both
+the anticipated use cases, but you also want to
+have edge use cases. Now, in software engineering, we've been doing this
+for a long time. Now, you have to do it
+and think about it, if you're going to
+build some type of custom GPT and deploy it because it's essentially a software tool that you're giving
+to other people. You want to think about both
+the things that you expect, but you also want to think about the edge cases and the
+things that are totally unexpected as well to make sure that aid your guard
+rails work correctly, there's not some type of
+unexpected loophole in your knowledge base or
+your instructions that creates something that
+is problematic for you. If you're going to
+create and deploy a real custom GPT that's going to be useful
+to a lot of people, you will benefit immensely
+if you stop and build yourself a benchmark of
+what you expect to do, examples of good output, how you would score output because it's probably
+not yes or no. It's probably some
+nuance of what you're looking for in that output,
+and then the scores. Then you can go
+and each time you make changes or updates
+to the custom GPT, you can run through this
+script and test it. There's also ways to automate this that I won't go
+through in this class, but you can also go and
+automate some of this. But the key is you want to be measuring the success
+of your custom GPT. Is it doing better on the
+things you care about? Is it regressing in anywhere? Is it handling the edge cases applying its guard
+rails correctly?

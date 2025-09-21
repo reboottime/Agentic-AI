@@ -1,0 +1,84 @@
+Although custom GPTs interact with text,
+it doesn't mean that our users have to type everything from scratch,
+think of everything from scratch. Yes, we can do the conversation starters, but we can do things that
+are more powerful than that. We can actually build entire menu systems. You can think of these
+as prebaked buttons or options on a file manager type
+thing that you would have. But we can do it in text in really
+smart ways in our custom GPTs using the menu actions pattern. So I'm going to show you how to
+use the menu action pattern and show you how it can be a powerful thing
+that you can add to a GPT to add call, kinds of things to help the user interact,
+discover what they can do, but also do things faster and
+more effectively. So I've got a custom GPT that I'm
+building the menu actions for. And so what I'm going to say is you're
+going to help Vanderbilt employees answer travel and business expense questions. Nothing big there. Mention to the user that you have a series
+of special commands that they can use if you'd like to,
+if they'd like to know what they are. And then I say you have the following
+special commands that can be run. So I'm defining a series
+of menu actions or commands that are prebaked
+into this custom GPT. Special things that if
+the user types this in, it's going to know what
+to do automatically. Now, I'm going to define
+them with slashes. You can define it however you want. You could have them be stars,
+you could have them be hashtags, you could have them be at signs,
+you could have be whatever you want, but I'm just going to do them with slashes. I'm going to say /email. This is a special command. If somebody types in /email,
+it will do something special. And here's what it's going to do. It's going to generate an email to your
+financial unit manager with detailed information about the question
+you need help answering. So the idea behind this is like, if you
+can't find the answer, you can email your financial unit manager with a complete
+summary of what the question was. Options with a travel item. So right here, I'm going to say options,
+and I'm having a placeholder for some travel item. And I'm going to say list
+the allowed options for that travel item that the user has
+specified and list them as bullets. /rules in expense type, provide direct quotations from the policy
+that lists rules related to the expense. And then the last one is /preapprove. Create an email summarizing what we
+discussed that I can send to my financial unit manager for
+preapproval and verification. So I'm creating a menu action,
+a series of menus, basically an action items that a user can
+invoke to get something done faster or better, but also to discover things
+that I might be able to use it for. So I can pre bake a bunch of
+commands that might be incredibly helpful to the person and
+they don't have to think them up. And I also don't have to make them
+conversation starters because I might not want them to be starters. I might want them something they can
+access at any time in the conversation. So let's now see this in action. So we'll switch over here
+to this conversation. We've now got our conversation
+going with this GPT. Can I reimburse for
+Southwest Business Select? We get an answer like before,
+but now it gives us a hint. Would you like to know the specific
+rules from the policy regarding air travel expenses or
+help drafting an email for preapproval? And I'm going to say,
+what else can you do? And I could have made it more explicit so it listed all the actions
+at the end of every prompt. I didn't do that. Now, it says, well,
+here's the things I can do. And it lists all the commands, /email,
+/options, /rules, /preapprove. So now the user knows, here are other things I can do with
+it that it already knows how to do. So let's do the preapproval thing. I just asked about Southwest Business
+Select, it gave me an answer. I want to get preapproval for
+Southwest Business Select. So what I told it to do is creates an
+email summarizing our discussion that you can send to your financial unit manager
+for preapproval and verification. So I'm going to run that command,
+/preapprove, and now it drafts the email for me. Subject, Request for Preapproval of
+Travel Expense, Southwest Business Select. Dear financial unit manager, it has
+the whole email describing what it is. I understand that our organization
+typically reimburses for economy class travel, but I believe that
+the additional cost of business select can be justified due to, and it says to
+fill in the potential reasons why. Now I can also go and I can say, well,
+give me options for ground transportation, things that are approved
+within the policy. And that's one of the menu options. And now, it says, here's rental cars,
+taxis and rideshares, personal vehicles, public transportation. So I can look at all the options
+I have there that are allowed. I'm going to say, okay,
+give me the rules on rideshares. Again, another action. So I do /rules Rideshares. Now, it says Vanderbilt travel with
+menu actions, and then we see use for business-related travel,
+receipts required, economical choices, safety and compliance. So it's running my actions. Basically, the user now sees
+all these things they can do, I can start running through them. It also makes the user's
+interaction faster and shorter, because all I have to
+do is type slash something and something complicated happens that
+would require a longer prompt. So if you think particularly about
+internal use cases, for example, when you want to go and
+help operational efficiency. Well, one simple thing you can do with
+a custom GPT is build a bunch of menu actions so people don't have
+to type in long prompts or worry about getting them right or
+wrong or knowing what to do. You just say, here's some options, and
+they can type in slash a short word and have a whole complicated thing happen. So the menu actions pattern is a really
+powerful one with custom GPTs that can help you build interactive GPTs with
+sort of all these different pathways and commands that can be run. You could actually have probably
+hierarchies of menus, all kinds of things, but it's something absolutely
+worth exploring and thinking about how you can
+build it into your ChatGPT.

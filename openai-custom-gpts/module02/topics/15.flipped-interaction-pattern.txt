@@ -1,0 +1,78 @@
+Generative AI always wants
+to try to solve the problem, and this leads to hallucination. We've all heard
+about hallucination. This is when it tries to come up with an
+answer that fits. It may look really convincing, but maybe it's not
+factually accurate. Often, the cause of hallucination is that the
+generative AI does not have the information that
+it needs in order to accurately solve the problem
+or answer or whatever it is. One thing that's really, really important when we're
+building a custom GPT, particularly if we want it
+to be factually accurate, but also if we just
+want it to be better at solving problems or
+more creative and inspirational is we
+need to make sure it has enough information
+to do a good job. We always want the information
+to come before the problem-solving because
+if we attempt to solve the problem without
+getting the information first, what we're going to do
+is either be at risk of hallucination or
+we're going to be at risk of just producing a poor answer that isn't
+exciting or isn't very good. There's a number of different
+ways that we can do this. One, we can do things
+like we've seen, we can give the
+custom GPT documents. But often we have to think about collecting other
+types of information, and it's helpful to just quickly think through
+some of those. What are some things
+that we may want to collect from the user? Context about the problem. Often, the user may go
+and describe the problem, but they may not
+describe the full scope of where the problem
+is occurring. We need to make sure that we've collected
+enough information. The answer can vary
+dramatically depending on the context in which
+the problem is occurring, and we want to make
+sure we really, really have enough
+information about it. The answer of, can I take first class travel at
+Vanderbilt depends on, for example, do you have a
+medical reason to do that? Is there some emergency? There's all kinds of other contextual things
+that could matter. Another thing is
+user preferences. This is something that we
+don't normally think about, but we're interacting
+with a user, and we want to do things
+that are exciting to them, that are helpful to them, that fit their learning style, that fit their desired
+interaction model. We want to collect that
+information and think about it. That is information
+that needs to go into the context and be
+explicitly stated. We can have all kinds
+of other things. Some other interesting ones
+are past interactions. Often what we will see is interactions in
+the conversation. It's basically a history of our interactions with the user. But sometimes the solving
+of the problem requires knowing things outside of
+the current conversation. For example, the answer of can I get reimbursed
+for first class travel? If you previously asked your financial unit
+manager at Vanderbilt, and they said, no, you
+cannot in this context, and you go into the bot and you don't provide
+that information, that's a critical piece
+of missing context, that they have interacted
+either with the bot previously or they interacted with the financial unit manager. That's really, really
+important as well. There's all kinds
+of other things. Another one is the
+desired outcome. What do you want the
+answer to be like? Do you want it to be
+short and concise? Do you want it to be verbose? Do you want a list
+of quotations? All of these things
+are important to think about of the types of
+information we want to collect, but there's lots and
+lots of other things. But the critical
+thing is we need to make sure that we collect and have enough information
+in the context of the conversation to solve
+the problem effectively. Do not jump in and make
+assumptions or ask it to quickly start doing something until
+you have the information. Often we'll need to explicitly
+tell the custom GPT, make sure that you have
+enough information. Don't jump the gun, don't assume anything, don't
+do any of these things. We want to tell it collect
+the information first. Sometimes what we
+need to do is say, not only collect the
+information, but restate it, make it very explicit, make the user agree
+that that is correct, and only then attempt
+to solve the problem.

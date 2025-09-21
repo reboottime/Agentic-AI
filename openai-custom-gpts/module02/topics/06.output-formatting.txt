@@ -1,0 +1,77 @@
+If you're working
+with a knowledge base and you want to answer
+user questions, or you want to solve
+problems for users, and you really want
+them to understand why, but you also want to minimize your risk that you get it wrong, often the best thing to do is to provide citations
+from the document. Typically, the very
+best way to do that is to actually provide
+the direct quotation from the document along
+with the page or other area within the
+document that it occurs. Now the reason for
+this is twofold. One, the user can see your description of
+the language and understand the exact
+original language, and they can read it
+and they can decide for themselves what the answer is. They can see it and
+think about it, and is this the answer? Two is they can take that
+supposed direct quotation, particularly if you
+signal to the user that is a quotation with
+direct quotation marks. They can then go and check that against the
+original policy, or if you later find out that your custom GPT did
+something wrong, you might be able
+to ask the user to share the
+conversation with you. You can then see the
+direct that it generated, and you can go and
+compare it to the policy. Did it makes some mistake in
+pulling out the quotation? This is an example
+where I've done this. Now I've done it outside of
+the context of a custom GPT. I'm just doing it
+in a conversation. What I did to demonstrate
+this is I attached the Vanderbilt travel and
+business expense policy, and I say, can I
+get reimbursed for staying in a tree house in
+the middle of the Amazon? Now, I say provide a series of direct quotations from the
+document as your answer, but do not provide
+any discussion. What I want is I
+just want to know, is there supporting
+information that could help me reason about what
+the correct answer is? I don't want it to
+tell me the answer. I want it to provide
+me direct quotations. I don't want to be
+influenced by what it says. I want to read it for myself,
+and I want to decide. It goes through, it provides the direct quotation
+in quotes right here. The cost of ride-sharing
+services and non-conventional
+lodging opportunities are allowable expenses. That sounds like I could
+probably get reimbursed for it. It then shows me where it came from and I could
+download the document. Then if I really want
+to fact-check it, I would then open
+up the document, and I would look for
+this direct quotation. Does this really exist inside
+of the document somewhere? It allows me to do
+consistency checking. This can be really,
+really helpful in knowing it got it right
+or it got it wrong. If I can go and check that, that thing actually exists. Now, what I might want to do
+is I might want to tell it, if all of the
+following are true, I believe these are
+the correct quotations from the document.
+Here they are. If all of these are true and you can find them and verify
+them in the document, then the answer is it depends on how much you want
+to hedge your bets. But you want to provide facts that the human can
+look at and reason about. You also want to
+provide facts that you can go and fact-check later, and are things that are
+easy to go and match up, and often one of the
+easiest things is to search and try to find
+texts that exists. Now, in this case,
+I know this happens to exist in the document,
+so it did a good job, but it makes it so much
+easier for me to know what's correct and
+not if I can have it list facts and things that I
+can easily go in fact-check. But also, if we show the user
+of the original language, often we can let the user make an appropriate decision
+based on what they read, rather than running
+the risk that it goes and explains things in the wrong way or
+does something else. As much as possible, we want to try to use direct quotations, ask it to cite things,
+give information. A simple way is just say
+provide direct quotations. Provide direct quotations, that is a simple way to
+get things that you can go and trace back to their origin in order to know
+if it was right or wrong.

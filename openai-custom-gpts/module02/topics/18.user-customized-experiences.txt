@@ -1,0 +1,80 @@
+Context is critically important to
+writing really good custom GPTs and having them be able to
+effectively help human beings. But one of the pieces of context that's
+often missing is who the user is that's interacting with the GPT, and either
+what they're interested in or what their role is, all kinds of information
+about the user can be critical. So how do you figure out that
+information and get it to the GPT? There's a variety of different approaches,
+but I'm going to show you a really simple approach, and I'm going to
+give you a scenario where this matters. Now, I built an updated version of
+the travel policy GPT for Vanderbilt. And Vanderbilt has just
+introduced a new policy. They have decided that, because of various
+technical reasons, they no longer want to reimburse Vanderbilt computer science
+faculty for in-flight Wi-Fi purchases. So now, how do we build a custom GPT
+that can effectively reason about this? Now, in this example that we can see right
+here, I've got two policy documents. I've got the original policy document,
+which we see the travel and business expense policy. And then this weirdly named document is
+this new policy that Vanderbilt has just put out, where CS faculty at Vanderbilt
+are no longer allowed to pay for Wifi and get reimbursed for it. So now we have a problem, right? Because if we want to answer the question,
+can I get reimbursed for Wi-Fi? We have to know who the user is. So how are we going to solve this problem? The way we solve it is with
+the flipped interaction pattern. And the idea behind this is we
+ask ChatGPT, or GPT-4, basically, to go and ask us questions in
+order to elicit information. In this case, what we're going
+to do is we're going to instruct the custom GPT to go and ask the user
+questions about their role and who they are first in order to determine
+what they are or who they are. And basically,
+are they a CS faculty or not? And once it figures that out, it will be
+able to appropriately answer questions. So the way we do this is we tell it,
+you're going to help Vanderbilt. You're going to help Vanderbilt
+employees answer travel and business expense questions. Now, I add an important
+change to this custom GPT. I say always, and
+notice I've got it in all caps. Now, this may or may not always make
+a difference, but sometimes it can. So, always start by asking the user
+about their job role, etc, in order to customize the answers. And so
+what I want to do is I want to make sure. The first thing that happens is that we
+elicit information about who the user is. And then I tell it, and make them more
+tailored in language and circumstances. And then this is really critical. Only after figuring out the user and
+role should you try to answer. So I'm telling it first
+you're going to do this. Only then are you going
+to attempt to answer. This is really critical. Always start by asking who the user is,
+and only once you know that information in order to customize the answers
+are you going to attempt to answer. And then I tell it, use the provided
+documents to answer questions. Now, the really important
+part is I tell it. Always start by asking the user
+about their job, role, etcetera. I'm using a flipped interaction pattern to
+go and elicit information from the user so that I have the information I need for
+decision making. Now, I'm going to show you this in
+action with a separate conversation. So now I'm going to ask it,
+can I get reimbursed for in-flight Wi-Fi? And it says, before I can give you an accurate answer
+about in-flight Wi-Fi reimbursement, could you please let me know your
+department or role at Vanderbilt? So now, rather than jumping
+straight into the question and the answer, instead it's jumping into,
+let me find out about the user so that I can gather contextual information that
+I need to make the appropriate decision. And then I say, I'm a professor in CS,
+and it tells me, thank you for sharing this information. As a computer science faculty member
+at Vanderbilt, the policy specifically states that in-flight Wi-Fi expenses
+are not eligible for reimbursement. So it's gone through, and
+it's first asked me who I am, found out my role, and
+then answers the question. So this is what we told it to do. If we go back and we do it again, we say,
+can I get reimbursed for in-flight Wi-Fi? It asks us our role again,
+before providing, could you please tell me more
+about your position at Vanderbilt? I say, I am a professor in French. And now it says, thank you for
+sharing this, and basically says that it
+is an allowable expense. So it's changed what it's saying
+because it's gathered context. Now, note, if we don't give it the
+context, if we don't have it, ask the user who they are and what they do and what
+their role is, or collect whatever else we need to know about the user,
+it will not be able to accurately answer. Now, this can be really important in
+all kinds of situations if you're dealing with HR often benefits contracts. All kinds of things are dependent
+upon the user's role. All kinds of policies are role-dependent. All kinds of things really,
+really matter who the user is. Or if you're trying to
+customize education, you're going to have a quiz bot. Well, you may need to know
+the grade level of the person. You may need to know all
+kinds of other information. Have they completed certain trainings yet? And all of that is often something that
+you need to go and ask the user for. Now, sometimes you may be able to
+figure out another way to go and achieve this effect. Go and log the user in,
+pull from some type of database. But in many cases you're not going
+to be able to do that easily. So a simple solution this is to use the
+flipped interaction pattern to stop and ask the user questions about who
+they are in their role first, in order to then be able to go and
+accurately answer the question.

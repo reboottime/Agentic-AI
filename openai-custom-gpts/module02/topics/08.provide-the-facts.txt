@@ -1,0 +1,80 @@
+>> Thinking carefully about how to present
+the information or the problems that the custom GPT is solving can be really,
+really helpful to your users. A lot of people just assume they
+have no control over the output and the structure of what the custom GPT does,
+but that's not the case. In fact, we can use the template
+pattern to actually help us customize the output and the formatting
+and make sure that it is consistent, but it's also relevant, presents the right
+information to the user first, that it structures it and formats it
+nicely, and provides some consistency. Now, it won't be perfect, but
+it can be much better than if we just leave it all up to the custom GPT and
+whatever it decides to do at the time. So I'm going to show
+you an example of this. I have gone and built a new version of
+the travel and expense policy GPT, and this time what I'm going to do is I'm
+going to have it output its information in a specific format. I'm going to say, help the user get
+answers to questions about the Vanderbilt travel and expense policy. Nothing new there. But now I'm going to say you
+must always output your answers in the following format. So I'm going to use a template for
+it to output its answers. So here is my template. I'm using the template pattern. First, I'm going to say hash, and
+I'll explain this in one second. Answer, colon, and
+then I give it a placeholder. I tell it, insert, answer. And I tell it, it can be yes, no, or
+maybe these little vertical lines here, or pipes is another term
+to use to describe them. They're often helpful when
+you want to describe options, it has to be one of these things. So I say yes, vertical line or pipe? No, vertical line or pipe, maybe. And this is basically describing,
+here's three options. So I'm saying insert your answer, and your answer can only be
+one of these three things. And notice I'm using the sort of less
+than greater than to provide a template. I'm basically telling it, this is
+where I want you to fill something in, in the template. Now, why did I have that hash there? The reason I have it here is
+because the format that this model is going to use to output
+formatted text is called markdown. And this is a markdown heading. So if you have something that starts with
+one hash that is indicating a first level heading, if you have something down
+here like this with two hashes, that is a second level heading. So what I'm doing is I'm making it so that the answer is going to be
+a first level heading and it's going to be followed by a second level heading
+that says supporting information. So I'm using my knowledge of markdown. Now, I'm not going to give you
+a complete explanation of markdown, but you can go and look it up. It's a great thing to use a exploration
+of ChatGPT for is say, how would I format this a markdown and sort of explain
+what you're trying to achieve and it can give you the markdown
+that you could use. You can go and read guides,
+you can have a quiz you on markdown, give you a tutorial,
+whatever you want to do. But the key is kind of
+knowing the structure. You describe what the formatting
+should be and markdown, you create placeholders where you
+want it to insert information. One less than,
+greater than like I've done here. That's a great way. You can use other types of placeholders,
+but this one works really effectively. Inside of the placeholders,
+you describe what you want in there. And it doesn't have to be simple. You can say insert the name,
+you can say insert answer and then give it options like yes, no,
+maybe, or you can do something else, like for here I'm going to say insert
+direct quotations from the document. And I also put this in quotations. Just got to give it a hint that I want
+you to put quotation marks around the quotation from the document. Now another thing I'm doing in this
+template that can sometimes work well is occasionally it'll interpret this too
+literally, like you want one quotation. Even though you say quotations,
+it may still take it literally as one. Dot, dot, dot is a great way of
+just kind of indicating, hey, I want a bunch of these, more than one,
+as many as you need, put them in here. And then I've got a second section
+which is just discussion, and then a placeholder. Discuss the quotations and
+how they support your answer. Notice the sort of complexity
+of this placeholder. Is it just simple name or
+something like that? No, I'm saying discuss it. And not just discuss it, but
+discuss how they support your answer. So you can build an entire template
+using the template pattern that then guides the output of the custom GPT. So let's take a look at this in action. So I'm going to switch over to
+a conversation that I've had with it and we'll see how this then works. So as you can see here, now, this is what the output is going
+to look like in this template. So I said, can I get reimbursed for
+Southwest Business Select? It starts off with a first
+level heading answer, no. And that's what I told it to do. I told it to give me
+the answer either yes, no, or maybe as a first level heading. Then I told it give me
+supporting information. And that supporting information
+should be a series of quotations supporting its answer. So in this case I've got direct
+quotations in quotation marks from the policy that support the answer. And then finally at the end,
+I told it to give me discussion and I told it give me discussion of how
+the quotations support its answer. So it's following my template from the
+template pattern in order to provide its answer in. This allows me to think about
+how to present the information to the user to make it most effective. I don't just have to let it be random or
+whatever it decides, but I can actually provide it the template that
+it's going to try to fit everything into. And my template can be rich and I can have
+placeholders that describe complex things that it needs to fill in, like how the
+supporting quotations support the answer. And I can also describe sort of
+constraints, like I'd like yes, no, and maybe for the answer, not a paragraph. I just want simple words. And I can also describe
+formatting around headings and other things that can
+be done with Markdown. So the template pattern is a really
+effective way of controlling the output of the custom GPT and making it more
+relevant and useful to your users.

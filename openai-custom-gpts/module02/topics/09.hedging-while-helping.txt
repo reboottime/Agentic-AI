@@ -1,0 +1,89 @@
+A lot of times, what we
+try to do is we try to take custom GPT is all
+the way to the end. That is, we try to eliminate the user too much from the
+decision making process. But really, our goal
+is to help the user solve a problem, to
+accomplish something, and we don't have to
+eliminate their intellect, their decision making
+in the process, we just need to help
+them solve the problem. We don't want to disregard
+all of their brain power, let's tap into it so that
+we get better answers. Rather than artificial
+intelligence that's replacing our user, let's augment their intelligence and their decision making so that they can make
+better decisions or solve problems faster. Now, what does this
+look like to do this? Well, in a prior example
+with the output formatting, where I took the
+template pattern and I produced all the output
+in a particular format. I put in really bold type as
+a heading one, the answer. I don't actually think
+that's a good idea , and I'll tell you why. For one, I am signaling, hey, here's the answer,
+and I am encouraging the user to some degree to
+just say, hey, that's great. I've got the answer and go. Then I have supporting
+information down here. But you know what's
+going to happen? A lot of people are
+just going to look at answer in bold at the top, and they're going to say,
+great, that's the answer, and they're going to check
+out, and they're not going to look at the
+supporting quotations at all, because they're sort
+of less emphasized. They're below it.
+They're lower in importance in the way that I
+formatted it and shown it. A lot of people also just
+like a quick answer. They don't want to have
+to engage themselves. If you make it too easy, you will let the user check out. Let's think about
+a better way to do this that doesn't require, you know, letting the
+user just check out. I redid the GPT, but I said, this time,
+here's the formatting, you're going to
+start off by saying, here is the relevant
+information to consider, and you're going to
+give it the quotations. What I've done is I've
+reversed what I did before. I make the most important thing, the direct quotations
+from the document that could potentially help support making a decision about this. I'm doing the opposite
+of giving an answer. I'm instead saying here's
+potential relevant evidence. Now, again, the user still
+wants to fact check this. They still want to look at
+it, these types of things. But instead of giving
+them an answer, I'm giving them text
+from the policy that could potentially support
+them making a decision. I'm not letting them
+just get off free. I'm letting them go and look at the policy and decide and
+think for themselves, and so this is a helpful thing. The other thing I do is then I give them additional
+considerations. My goal instead of letting them off the hook
+and just saying, this is the answer is instead to say, here's relevant
+information. But here's some additional
+things you might want to consider and think about because I want my users thinking. I want them thinking carefully. I want them working
+together with the GPT, augmenting their intelligence
+and thinking through things jointly as opposed to just running off
+with an answer. Then finally, I do
+something else, as I say, and if you need clarification, here's a human being or a set of human beings that
+you could go and talk to. I am doing the opposite of just giving them
+a flat out answer. I'm expecting my users to think. I'm expecting them to reason
+about the information, and I also on top of it, want to give them some
+additional perspective to think about when they're
+coming to their conclusion. Now, they may not
+get the answer, but I think it's better to have joint collaborative
+decision making, where the user is
+having to decide, supported by the custom GPT. They're working
+together. Now, this is exactly what you do when you go get on a commercial airline. They have a pilot
+and a co-pilot. They are there so that they
+can jointly check each other, help make sure the
+decisions are better. There's no single entity that can be the
+point of failure. They both have to
+make a mistake, hopefully, for some
+major problem to occur. We want something that
+looks more like that here. We don't want to
+just say, here's the answer and let
+the human check out. No, we want the human
+to check it as well, and we want the custom
+GPT to support the human. It gives them information. We should probably
+even tell the user, make sure this actually
+exist in the policy. We give them additional
+things to think about. We want to spur them to think, and then we give
+them human support if there's going
+to be some issue. Now, depending on
+your custom GPT, you may or may not
+need all of this. But often when our goal is to help the human
+solve the problem, not to give them the answer, we want them thinking
+and engaged. This is a way that we can
+help them get engaged. Give them evidence to consider, give them things to think about, give them human support
+that they can go to, don't just give them the answer and allow
+them to check out.

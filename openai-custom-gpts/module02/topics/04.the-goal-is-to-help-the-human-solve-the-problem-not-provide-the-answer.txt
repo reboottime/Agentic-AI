@@ -1,0 +1,106 @@
+>> Thinking up great test cases
+obviously is going to be a challenge. You have to really think carefully
+about all the different dimensions. And sometimes as human beings, we don't do
+the best job of really thinking through all the different ways that somebody
+could interact with our system and all the different issues that could arise. And I've given you a number of different
+dimensions to think about when building test cases. Now, how are we going to
+overcome this problem? Well, one way that I can help
+you overcome this problem is I can show you how to build your own
+custom GPT to generate your test cases. In fact, this is a great way to get
+started with building a custom GPT because the risk is extremely low. We are trying to have
+it generate ideas for test cases that we can then
+use to test other GPTs. Now, if it doesn't do a great job,
+we'll look at it and say, hey, none of those are useful test cases to me. We can go and tweak it and try to
+improve it, but often what we'll see is it can generate really good and sort
+of thoughtful test cases for our domain. Now, how are we going to do this? How are we going to build a custom GPT? So I've started putting
+together a custom GPT. I've also included a document with
+all of the different sort of design considerations for
+test cases for custom GPTs. Now, there's lots and lots of additional
+design considerations you might want to consider for your particular domain, like
+compliance or regulatory or other things. But this is a good starting point. I've given it to you so
+you can go and tweak it and build your own custom GPT
+that is appropriate for your organization or
+your own custom GPT test case generator. So I've started one,
+the Custom GPT Test Case Generator. And here are my instructions. You're going to help the user generate
+test cases for their custom GPT. First, you will ask the user questions one
+at a time until you understand what their custom GPT is supposed to do. Once you have a reasonable understanding,
+progress to the next step. Second, you will read the provided
+document and generate four initial test cases for the user to consider
+based on a variety of dimensions. You will explain each test case. Each test case should be formatted,
+is I have title is a level one heading. You'll learn more about this in
+subsequent videos of how I'm doing this. Each test case should have a goal. Each one should explain what
+is being tested and why. Each one of them should
+have a user prompt. And I have some typos which I'll fix as I
+go along here we now have the prompt that the user would have typed in, and it's
+going to generate and think of the prompt. We're going to have what the correct
+answer should be, but we're going to tell it that the user needs to be told that
+they should edit or fill this part in. It might give you
+an initial starting point. And then we're going to have a rubric for
+grading the output that considers the different sort of dimensions
+of this test case and the purpose. Then what I've done is for the knowledge
+base, I have attached the document from your prior reading that describes
+all the dimensions of test cases and the types of things that
+we need to consider. And I have attached that
+as the knowledge base so it understands what we're
+trying to accomplish. What are the dimensions of the test
+cases that we need to consider to have the appropriate inspiration to go and
+build good test cases? And now let's go and
+take a look at our generator. So I'm going to switch over here. This is our custom GPT
+test case generator. And I'm going to say, please help me
+generate test cases for my custom GPT. So it starts off by saying, great, let's
+understand more about your custom GPT. This is a GPT to answer questions about the Vanderbilt travel and expense policy. And it's asking me a whole bunch of
+questions about what else might be going in. You think of appropriate answers, given that this is a large university. Now, I could have gone in, and I probably
+should have gone and filled each one in, but for the. For the purposes of this video, I'm letting it sort of infer what is
+appropriate based on what I've done. Now it's starting to generate test cases. Test one, basic factual inquiry. What is the per diem rate for
+meals during university funded travel? So it's giving me what the prompt would
+have been that the user typed in. The correct answer it tells me I need to
+fill this in with the correct information from the Vanderbilt travel policy. Now, notice I could have given it
+the travel policy, actually, and had it actually fill in correct answers
+for me, which would have been fantastic, and I should have thought of doing that. Maybe I'll do that in the future. And then the rubric, it's giving me
+the scoring rubric for this thing. Test case two, procedural guidance test. Tests its ability to guide the user
+through a more complex procedural query, assessing both the completeness and
+step by step. How do I submit a travel experience
+report for attendance at a conference. And so
+this is a more sort of step by step. The answer may be spread out across
+multiple pages, something else. And so it has to be able to go and assess
+all this information and then provide it. Interpretive. Can I get reimbursed for travel expenses
+if I decide to extend for my stay for personal reasons, multi turn
+interaction with clarifications, then I can go in and say,
+generate four more for me. So let's go and
+generate some additional test cases. Handling ambiguity. What should I do if my travel
+costs exceed the budget? So it's not clear what that means. And like we mean, I have follow
+up specific scenarios, and so it's keeping going. And I could just go and brainstorm with it
+over and over, or I could tailor it, and I could say, no, I want test cases
+related to potential issues, related to compliance, or something that
+could have a safety related issue in it. And I want to make sure that there's
+not a problem with safety and what I'm recommending, or something that could
+cause the user to spend a lot of money, and then it turns out that we can't
+reimburse for it at Vanderbilt, and that gets people upset. So let's try that one. What about test cases that
+involve the user potentially spending a lot of money that
+they can't get reimbursed for? So let's check that out. What might that look like? So it starts off with non
+reimbursable expenses. Can I book a luxury hotel during my
+conference trip and get reimbursed? Well, there's a misunderstanding because
+you can't do a luxury hotel at all. That would be considered a problem. International conference. What should I know about
+booking business class flights, providing all of these things that could
+be expensive, that we want to test and make sure that we've
+really thought through? Are we guarding our users against spending
+money that they can't get reimbursed for, which creates a financial burden on them,
+creates probably a lot of anxiety, unhappiness with the university,
+other things like that. So we could start tailoring
+our test cases and really thinking about them from
+a lot of different dimensions. We could also go and update our custom
+GPT so it outputs them as comma separated values, or in some structured
+format that we can import into, like an excel file that we're using
+to keep track of all this, or to import into some test case
+system where we track results. So not only can we use the generator to do
+sort of textual versions, but we could go and update the output formatting so
+that we can just output our test cases as something that we can pull into CSV, you
+know, pull into excel and track that way, or pull into some other tool, and we can
+make it easier for ourselves to do this. But this is a great way to get started
+about brainstorming and thinking through all the different ways that somebody might
+want to be able to go and use your system, but also you can go and sort of brainstorm
+with it what would be really adversarial things that somebody might do and try to
+get a whole bunch of different ideas. Because the goal of this is to help you
+think more broadly about how somebody might use it, how they might mess up what might be
+the potential problems or ambiguities, and really have a large exploration
+of your capabilities of your GPT.
