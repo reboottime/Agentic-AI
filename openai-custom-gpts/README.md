@@ -13,8 +13,13 @@
 - [ ] Meal Management assistant built on top of Tana and OpenAi GPT
 - [ ] Recap as a whole and form agent practices
 - [ ] Download  and save materials for future references
-- [ ] AI safety and robustness practices in agent design??
+- [ ] AI safety and robustness practices in agent design?
 - [ ] Read [VIDIA-NeMo Guardrails](http://github.com/NVIDIA-NeMo/Guardrails?tab=readme-ov-file#use-cases) to consolidate understanding
+
+## Homework Examples
+
+- module 02: 
+- module03: I designed a [customer service representative for Custom Cleaning Solution based on real-world interaction experience](./module03/homework.xml)
 
 ## Course Content and My Progress
 
