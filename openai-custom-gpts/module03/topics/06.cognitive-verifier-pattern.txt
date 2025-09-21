@@ -1,0 +1,79 @@
+In many cases, the answer to the question that the user
+is asking needs to be answered by breaking
+the question down into multiple sub-questions
+and answering those questions instead
+and then combining the answers to give the user the actual answer to
+the overall question. Now, there's lots of
+cases where this is true. For example, we've been asking about travel
+policy, and often, it'll say things
+like it needs to be reasonable and appropriate. Well, if we're
+going to determine, and we're going to say, well, you can or cannot book this based on is it
+reasonable and appropriate? Well, a sub-question might be, what is reasonable
+and appropriate? How do you define that? How do you define upgrades?
+All of these things. We might have sub-questions
+that we need to ask and answer in order to combine the answers and answer the overall question and often by thinking about
+these sub-questions, by taking the user's question, breaking it down into other more specific detailed
+questions related to it, we can go and arrive at a better answer by
+going and asking additional questions
+that can be used to form the answer to
+the overall question. I'm going to give you
+an example of this. We're going to build a custom GPT that uses the
+cognitive verifier pattern. The idea behind this pattern is that whatever question
+the user puts in, we are going to
+suggest a series of sub-questions that
+we could answer instead that would give us a better overall answer
+to the original question. We'll suggest sub-questions
+to go and answer, and then we'll combine
+the answers to those sub-questions and answer
+the original question. I'm going to create a
+custom GPT with this. As before, we're going to tell
+it you're going to answer questions about travel,
+using the policy. Now, what we're going
+to say is always start by analyzing the user's
+question and thinking of three to four sub-questions
+that could be answered that would allow you to
+give a better answer to the original question. We're telling the GPT explicitly go and break down the
+user's question into three or four sub-questions
+that you can then answer and give the user
+a better overall answer. Then output the questions in the following format and
+ask the user if they'd like to proceed with asking and answering these questions. I'm going to have it say, here's the approach I'm going to take to answer the
+original question. Let's first answer
+these questions before, and I'm going to give it
+the list of questions, and then I give it its
+original instructions, use the provided documents. Here's the where the
+magic is happening. Always start by analyzing the user's question
+and thinking of three to four sub-questions that could be answered that
+would allow you to give a better answer to the
+original question and then I'm going to explain what
+those questions are to the user and ask the user if they want to take this approach. Let's take a look
+at this GPT and this cognitive verifier
+pattern and action. I've got a conversation using this question that
+I've used over and over. We're going to see
+different ways and interaction styles with
+the same question. Can I get reimbursed for
+Southwest Business Select? It says, to answer
+whether you can get reimbursed for Southwest
+Business Select, let's answer these
+questions first. What type of airfare classes are reimbursable under
+Vanderblt' travel policy? Are there specific restrictions
+or approvals required for reimbursing higher classes of airfare like business select? How does the policy define necessary and reasonable
+expenses for air travel? Those are three great questions that we could answer that would help us answer the overall
+question and now says, would you like to proceed with
+answering these questions to clarify your query
+about reimbursement? I say, Yes, and now it
+goes and answers all of the individual questions and then gives me the final
+answer down here. This is a way of improving essentially potentially the
+reasoning of the model, but also helping to elicit the details
+of these questions. Often, a question has a lot of other things that need to be answered as part of it and
+we can tease those out. We can make it
+apparent to the user, different dimensions
+to the question, so they can think about
+it and they can make sure that the GPT is on the
+same page but also the GPT can go and answer the individual pieces of the question that it needs to get information for in order to give that
+better overall answer. This is the cognitive
+verifier pattern can be really useful for
+building GPTs that break down what the user
+is trying to do and think through a way of tackling the problem
+in different pieces. Often what we see with
+these GPTs is they reason better when we break
+problems down to smaller, simpler steps so that they can go and tackle one at a time.

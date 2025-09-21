@@ -1,0 +1,78 @@
+When we begin using
+multiple documents or multiple policies
+or multiple sets of information, inevitably, we're going to end
+up in a situation where we're going to
+have conflicts or potential ambiguities
+that are created at the intersection of
+these two policies or these two documents. We need to define
+rules for how we handle those ambiguities
+or those conflicts. Basically, conflict
+resolution or ambiguity resolution strategies. What does this look like? Well, I'm going to
+give you an example. I've built a GPT for the
+travel policy again, but I've given it two
+separate policies. One is the up-to-date Vanderbilt Travel and
+Business Expense policy. The second one is I've given it a fake skydiving policy,
+saying, you know what? Vanderbilt has
+changed its policy. You can now get reimbursed for skydiving as a
+team-building activity, but I'm giving this
+policy an older date. Now, there's two
+different, or actually, multiple different ways
+that we could think about interpreting what is
+stated in these documents. If you look at the
+Vanderbilt policy, it's going to say you can't
+get reimbursed for this. But if you have this other
+policy that was in the past, then maybe it was allowable. We have to figure
+out how do we deal with that conflict resolution. One way we can deal with
+it is we can say, look, take most recent documents, assume that whatever
+they state is true. But if there is an older
+document that covers some area that the newer
+document does not cover, then we want the older
+document also to be enforced. In this case, Travel
+and Business Expenses, all of the things that are laid out there are reimbursable. But now we also have
+a skydiving policy, which skydiving isn't explicitly mentioned in the newer policy. We'll assume it's enforced too, because there's not
+direct overlap. That's the first version of it. I say always use the most recent document or policy to answer
+the question. If there is a more recent
+policy that does not explicitly change or
+redefine an existing policy, you can assume that existing
+policy also applies. This is Strategy 1. Second strategy is,
+I'm going to say, always use the most
+recent document or policy to answer
+the question. If there is a more
+recent policy, you should assume that is
+complete and only it applies. Anything not mentioned
+in the policy, but in older policies
+is no longer in effect. I have two different
+resolution strategies. One is, if it's mentioned in the newer
+policy, it's in effect, but also if there is something
+that wasn't covered in the newer policy
+that is covered in the older policy,
+it's also in effect. The second strategy is, no, whatever is in the newer policy is comprehensive and should be assumed to be complete and supersedes everything
+that came before it. If it's not mentioned
+in the newer policy, we don't allow it anymore. Two different strategies. I've created two different GPTs to use these different conflict
+resolution strategies. But this is thinking
+you need to think of. I've got multiple documents, maybe multiple
+policies over time, multiple sources of truth, of what happened or
+things like that. How does it integrate them? How does it decide and
+do conflict resolution? Let's take a look at these
+two different conversations. We're going to start off with the one where we're
+going to look at, can I get reimbursed
+for skydiving? And it says, yes, you can be reimbursed
+for skydiving if it is conducted as a team building or personal
+development activity. This is the fake skydiving
+policy that I created that had an older date than the current Vanderbilt
+travel policy. But I told it, look, if it's not explicitly
+mentioned in the newer policy, you can assume the
+older policy is still enforced or still in effect. Now it says, yes, you can
+be reimbursed for it. In the second one, I said, no, only look at the
+up-to-date policy. Don't worry about what
+happened in the past. You can assume whatever
+the most recent version of the document is is complete. Now it says, sky diving expenses
+are generally considered personal expenses and are not
+eligible for reimbursement. Just by changing the conflict
+resolution strategy, I get very different answers. Very important that we
+think through this. Anytime we get
+multiple documents, we're going to be updating or we have documents that may have different sort of
+interpretations or conflicts or other things, or coming through
+different periods of time, we want to think about how do we give it
+rules so that it can handle those ambiguities and do the conflict
+resolution effectively.

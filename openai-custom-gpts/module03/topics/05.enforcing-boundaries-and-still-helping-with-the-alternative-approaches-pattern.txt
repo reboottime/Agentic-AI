@@ -1,0 +1,104 @@
+We're always going
+to have situations where it's not exactly
+clear what the answer is, either because of ambiguity in the knowledge base
+that we've given it, or it might be
+because the user's question isn't very clear, which we saw ways
+of handling that. But sometimes what we want
+to do is we want to help the user arrive at
+potential solutions. We want to help them solve
+the problem they are facing, we don't want to
+give them answers that may be unreliable, we don't want to go out on
+a limb and answer sometimes when we really don't know
+exactly what the answer is, and we don't want
+to take the risk, particularly if it's
+about reimbursement, and somebody's going
+to spend money. We don't want to take
+them out on a limb. We're suddenly there financially burdened because of a bad
+decision that our GPT has made. Now, the truth is, we
+actually probably are legally responsible for what our GPT say and we need to think
+through that carefully. But one way that we can
+try to overcome this issue of how do we hedge against the issue that we may not
+have perfect knowledge, but we still want to help the
+user solve their problem; how do we solve that
+tension between trying to be helpful help
+them get a solution, but also bounding our risk and trying to make sure
+that we don't answer questions or solve
+tasks that we really don't have sufficient
+information or sufficient knowledge or whatever it is to do appropriately wherever there's some ambiguity, how do we solve this tension? One way that we
+can do it is with the alternative approaches
+prompt pattern. I'm going to show you
+how we're going to do this in a custom GPT. What we're going to say
+is just like before, you're going to answer
+travel questions from the Vanderbilt Travel and
+Business Expense Policy. Now we're going to do
+something different. We're going to say always
+start by analyzing the user's question and
+determine if the question can be clearly answered without multiple interpretations
+using the travel policy. We're defining what
+we mean by this. Basically we're saying
+go and determine if It's really clear cut what the answer is
+based on the policy. But if there's multiple
+interpretations to where it's not exactly clear or it's
+not exactly covered, then we want you to do something
+different than normal. In that circumstance, we say, if not, meaning if there's
+multiple alternatives, we want to suggest
+alternative approaches that the user could use to accomplish the same
+goal that would clearly be allowable
+in the travel policy. I'm basically saying
+if there's ambiguity, try to suggest some possible
+alternative approaches for the user to achieve whatever goal it is
+they're trying to achieve Without violating
+the travel policy. We're going to come up
+with things that would clearly be allowed and okay. What they're doing, we
+don't really know if they can do it or
+not or how to do it, but here's some things
+that we can suggest doing instead that would clearly be allowed based on
+the travel policy. Then what I'm going to do
+is I'm going to tell it, I want you to output
+it in this format. Basically, we want
+to state really clearly up front the
+answer is unclear, and then we're going
+to say instead of XYZ, where XYZ is whatever
+the user put in, you might try and then I'm going to have it
+pose three options. Insert clearly
+allowable option 1, insert clearly
+allowable option 2. What I'm trying to do is
+I'm trying to say, look, I can't help you with
+what you asked for, but here's some other things
+that could be done instead. You're trying to help the
+user solve their problem, but you're still putting
+boundaries and guardrails in place to make sure that
+you don't do the wrong thing. Let's take a look at this
+in action in our GPT now. We're going to go in
+and we're going to ask, can I purchase Southwest
+Business Select, which is not perfectly and
+clearly defined in the policy. It says, answer unclear. It starts off by saying, hey, it's unclear if we can
+do this or answer this. It gives us some information. But very importantly,
+it then says, instead of purchasing
+Southwest Business Select, you might consider booking the lowest available
+economy class airfare that your travel needs,
+clearly allowable. Utilizing allowable
+upgrade options like priority boarding or early check-in if
+they are necessary for your travel and
+conform to the guidelines. That's something that you can do within bounds in
+the travel policy. Or the third one,
+discussing with your supervisor or the
+finance department whether exceptions can be made for specific circumstances
+that require higher class fares and getting such approvals in writing
+if they are granted. All of those are great options, they could all help the
+user solve their problem, and that way, the user can think of other ways they
+could achieve this. They might go in and they think, I need Southwest
+Business Select, that's the way I'm
+going to solve my problem of more leg room. Now they've got
+some suggestions of alternative ways
+they could still get there and they could still
+maybe get that leg room, but that are clearly within
+the bounds of the policy. It's a way of helping
+your users out. We're going to put
+boundaries in place. Whenever we put
+boundaries in place, we're going to create this tension between
+helping the user solve the problem and trying to hedge our bets and
+make sure that we are doing things
+that we really can do clearly and effectively
+and without ambiguity. This is a way of trying to help bridge that gap to
+still have boundaries, but still help the user.

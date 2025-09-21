@@ -1,0 +1,61 @@
+>> A very common sort of ambiguity that's
+going to arise is that the user is going to talk about some concept, some term that just does not
+appear in the policy, or they're going to talk about a concept or
+term that if you try to map it and interpret it in terms of the policy,
+there's lots of different interpretations. And so this is a common misconception
+as we're trying to map the terms and concepts that are mentioned in
+the user's question, or task, or prompt into the documents or
+knowledge that we've got. And what happens is that often there may
+be multiple ways that we could perform that mapping, and depending on how
+we perform that mapping of concepts, we could end up with totally different
+results or totally different answers. And that's a place often we want
+to be very, very careful and want to think through how
+to handle it effectively. So often what we want to do is we want to
+build into our custom GPT a strategy for when you try to map concepts into
+the policy or into the other documents or knowledge base that I've given you, what
+should you do if there's multiple possible interpretations of how
+to perform that mapping? And I'm going to give you
+one example of doing this. So I've got a GPT for
+this travel policy GPT, and I'm going to say always start by
+analyzing the user's question and determining if there are any concepts
+discussed in the question that cannot be unambiguously mapped into
+concepts in the policy. Now, if you're using other documents,
+or knowledge, or whatever it is, you just explain if
+I don't have a clear concept mapping. So we're going to basically use
+the ambiguity in the concept mapping as a trigger for something to happen. We're going to behave differently when
+we can't unambiguously map the concepts. So if there are any concepts that
+have multiple possible mappings, state that the answer is unclear and
+suggest possible the questions that you could answer instead using
+the concepts in the policy in this format. So here's what I want to do. What I want to do is I want to say
+they're talking about concepts or terms, that it's not clear what is the right
+way to map them into the policy. So I need to do something about this. So what I'm going to do is
+I'm going to say, look, it's unclear what the answer is, but
+I can answer these questions instead. And I'm going to provide related
+questions, but using the concepts and terms in the policy. So hopefully two things will happen. One, the user will know what
+can ask questions about it and figure out how to rephrase things,
+how to think through it. But also we're providing some safety
+because we are refusing to answer. But at the same time,
+we're still trying to help the user. So let's take a look at this custom GPT
+in action and how it changes things. So what I'm going to do is I'm going
+to say, can I get reimbursed for Southwest Business Select? I know that concept does not appear
+in the Vanderbilt travel policy. So there's multiple ways of interpreting
+that mapping, and we've seen all kinds of ambiguity back and forth throughout
+this and different ways of handling it. Now the GPT says, okay,
+the answer's unclear. It tells you what is not
+mentioned in the policy. The concept of southwest business select,
+this is not mentioned in the policy. So questions I can answer are,
+can I get reimbursed for purchasing economy coach class airfare? Are airfare upgrades
+reimbursable under the policy? So now I've got something that's
+still trying to help the user, but it's recognizing that there is ambiguity
+here and we need to be careful. And it's spelling out,
+this is what's ambiguity. This concept is not
+mentioned in the policy. I can't map it cleanly and we're going
+to need to do something about it. So you're going to have to
+ask a different question or I'm not going to help you with this one. So thinking about how concept mapping
+works and can we cleanly map concepts? This is a powerful technique to help
+guard our GPT against a mistake being made because the user's talking about
+it and asking a question using terms or concepts that we didn't really
+clearly define in the policy. There's not a one to one mapping,
+and so now we have to be careful. And so that's what we can do, is we can
+think about this concept mapping problem, identify when it's not clear, and
+then tell the GPT how to take action.
