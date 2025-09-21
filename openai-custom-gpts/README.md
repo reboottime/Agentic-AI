@@ -125,7 +125,7 @@
   - [x] User-Customized Experiences (Video)
   - [x] A Personalized GPT (Graded Assignment)
 
-- [ ] Module 3: THINK: Create Great GPTs (Part II)
+- [x] Module 3: THINK: Create Great GPTs (Part II)
   - [x] Boundaries (Video)
     - Core Idea: We can't assume user will follow instructions and things will perform as expected. Hence, in our GPT design we need to consider
       - the operational boundaries the GPT works within
@@ -166,18 +166,22 @@ conversation starters
       - When you are asked a question, follow these rules
       - Generate a number of additional questions that would help more accurately answer the question
       - Combine the answers to the individual questions to produce the final answer to the overall question
-  - [ ] Applying Patterns (Graded Assignment)
-  - [ ] Handling Ambiguity in Concept Mapping (Video)
+  - [x] Applying Patterns (Graded Assignment)
+  - [x] Handling Ambiguity in Concept Mapping (Video)
     - the problem:
       - the same term & concept may have different interceptions between LLMs and users
       - users may talk about some terms and concepts are not in the knowledge base;
-      -  Hence, the two above conditions may result in an answers that differ a lot with proper answer.
+      - Hence, the two above conditions may result in an answers that differ a lot with proper answer.
     - the solution:
-  - [ ] Knowledge Conflict Resolution (Video)
-  - [ ] You and Your Business are Responsible, Not the Bot (Video)
-  - [ ] Adversarial Testing (Video)
-  - [ ] Wrapping Up (Video)
-  
+  - [x] Knowledge Conflict Resolution (Video).
+    - how problem could happen: AI system with multiple data sources
+  - [x] You and Your Business are Responsible, Not the Bot (Video)
+    - Do you really want to make your bot public? Your bot is your responsibility
+  - [x] [Adversarial Testing](./module03/topics/13.adversarial-testing.md)
+    - test if people can bypass your guardrail settings
+    - [see how people can attempt bypass your guardrails](./module03/topics/13.adversarial-testing.md#how-to-conduct-adversarial-testing),  
+  - [x] Wrapping Up (Video)
+
 ## Discoveries
 
 - How context engineering

@@ -1,0 +1,75 @@
+One of the challenges we may face
+is that users ask questions that aren't really clear as to what they mean. And so one thing that we might have
+to do is figure out how do we handle this situation? One thing we could do is we could put a
+rule in place, or a boundary in place with the GPT that just says, if it's not clear,
+go and ask follow-up questions. If it's not clear, refuse to answer. But a simple and kind of interesting
+technique that we can use when it's not clear, or if we just want to do this
+all the time to try to have a better interaction, is that we can
+automatically suggest improved versions of the user's question using
+the question refinement prompt pattern. So the idea behind this is whenever
+the user asks a question, we are going to automatically have the custom GPT suggest
+a better version of the question, and then ask the user if they would like
+to have that question answered instead. And our goal is to use the GPT, to use
+its inside knowledge and capabilities to be able to see into the question and
+be able to see a way of rephrasing it, so that, [COUGH] one, it can be answered
+correctly and factually, but two, so that there's less ambiguity in
+what the original question meant. So that when it does provide an answer,
+it doesn't lead to confusion. So I'm going to show you how
+we're going to do this with the question refinement pattern and
+a custom GPT. So here's what we're going to say. Our custom GPT is still the Vanderbilt
+Travel and Business Expense Policy, but we're going to say, you're going to help
+Vanderbilt employees answer travel about business or business expense questions. Now is where it gets interesting. We're going to say, always start by
+analyzing the user's question and thinking of a better version of it. Provide the user the suggested
+better version of the question, and then ask the user if they would like
+to answer that question instead. So this is the question
+refinement pattern. Basically, suggest a better version of
+the question, provide it to the user, and then ask them if they would like
+to have that question answered instead. So this will help the user to ask better
+questions, to reduce the ambiguity. We could also say,
+take whatever the user asks you and automatically restate it to be
+more specific, to be more clear. It doesn't have to be a question,
+it could be a task. We could say automatically restate it. But here's the idea, is we
+automatically want to refine whatever the user puts in to make it more specific,
+more clear, more concrete. And the user could say, no,
+that's not right, that's not what I meant. And that is important, because if it
+refines the question in one way, and it turns out that really wasn't the intent
+of the user, and the user says, no, that's giving the custom GPT important
+information about the user's intent, they did not mean that. And it could be that if the custom GPT
+had gone ahead answering it under that interpretation that it used for
+refining the question, that it would have gotten it wrong. So here's the updated version of the GPT. This is its instructions. Now, let's take a look at
+a conversation with this new GPT version that we've created. So I go and I ask it,
+can I get reimbursed for gas? Well, that could mean a lot of things. It says, under what circumstances
+can I be in reimbursed for fuel expenses while traveling for
+Vanderbilt business? So notice it says,
+a better version of the question might be, under what circumstances
+can I be reimbursed for fuel expenses while traveling for
+Vanderbilt business? This is really good, because it's
+a much better version of the question. The original one was ambiguous. Maybe the person's asking if
+they can get reimbursed for the gas they spend commuting to work. No, you can't. But it's not clear from the question. Maybe they're asking if they can
+put gas in their lawnmower and get paid back for it. Probably not. Now, we've got a very specific question,
+and if we answer this specific question, if the custom GPT goes and
+answers it, we have less risk. So simply by restating the user's
+question, refining it, making it better, we're sort of reducing
+the risk to the GPT. But also the user could go and say,
+no, that's not what I meant, and then have a conversation
+about what they meant. Can I get paid back for a Chevy Tahoe? It says, a better version of the question
+might be, can I be reimbursed for the use of a Chevy Tahoe while
+traveling on Vanderbilt business? That's important. Can I buy a Chevy Tahoe? Yes, you can buy Chevy Tahoe and
+get reimbursed for it. So I go out and I pay for
+a Chevy Tahoe to own the car, and now I go and submit my reimbursement. Vanderbilt's like, sorry, we're not
+going to pay for that Chevy Tahoe. So this is a better version because
+it's scoping it to business travel and it's making it more specific. And then it asks me if I would like
+to answer the refined question. I say yes, and
+now it tells me the policy around that. But this is a simple technique using
+the question refinement pattern or something similar, where we
+automatically take the user's input, we automatically restate and improve it. We basically augment
+what the user is doing so that we get better instructions and
+information going into the custom GPT. Or we help identify situations where
+the custom GPT might have misinterpreted. Because if we restate this
+Chevy Tahoe question, they're like, no, no, no, I didn't talk about for
+business travel. I just want to buy Tahoe and own it. Can I get reimbursed? This helps disambiguate those things. And if the user says no, don't use my
+question, because that's not what I meant, now, we've also gotten extra information. So it's a simple interaction pattern,
+can be really powerful. Use the question refinement pattern to
+help improve the questions the user's giving, to help reduce the ambiguity
+in the user's instructions or questions, to automatically improve
+what the prompt is that the custom GPT is going to be responding to.
