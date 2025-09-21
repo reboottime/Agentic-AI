@@ -1,0 +1,42 @@
+>> You have to take responsibility for
+all of the custom GPTs. Basically, what you're
+going to do is by proxy, you're going to give them the identity
+of your organization or of you, and allow them to go off into the world and
+represent you. And you have to think very carefully
+about the ramifications of that. And no matter what,
+you have to realize, you have to stand behind whatever that bot does,
+whatever that custom GPT decides to do. You are the responsible party,
+your organization, or you the person, and you have to remember that. So think carefully about what
+that thing is going to do. And do you really want it
+to have those capabilities? Do you really want it to be public and
+out in the world? It's a big difference to have some
+internal support custom GPT that's going to help your employees accomplish tasks. It might make mistakes, but
+it's no harm, no foul, right? Because it's internal, and you can talk
+about it and talk about how to fix it. You put that thing external and
+it becomes much, much more difficult. So the starting point is,
+remember, you can't blame the bot, you can only blame yourself or your
+organization once you put it out there. Now, we saw a great example of
+this in the news not too long ago. Air Canada had a chatbot
+that somebody went and one of their customers interacted with it,
+and the chatbot promised their customer a discount that Air Canada
+later decided they would not honor. They said, no, the chatbot got it wrong,
+it's the bot's fault. And that didn't fly in court. They said, no,
+you put that chatbot out there, your chatbot said that that was okay. Therefore, you must honor that
+discount and also additional damages. And then it looks bad, right? Because they're in the news, they're known as having been a mistake
+in AI, you don't want to be that. So you have to remember upfront, you don't get to just blame the bot and
+say it made a mistake, it's its fault. And no, I'm not going to honor it. No, I'm not going to do that. The law is going the opposite direction,
+but also reputationally, things are going the other direction. People expect you to stand behind your
+generative AI, your custom GPTs and your other things. So take that into account and
+know that ahead of time. When you're building this thing and
+you're deciding, are you going to put
+it out into the world? Are you going to use it internally? What is the use case? What is the scope of its functionality? These things are really, really important. The bigger the scope, the more
+consequential the things that it can do, the more it's representing your brand. Like this one that says Vanderbilt
+Travel Friendly, with this image, that the image itself may be problematic. So you have to think very, very carefully about is this what
+I want to represent my brand? Do I want it just going however
+it's going to go and do things? Have I really tested it enough? Really, really important questions. But at the end of the day, you are delegating your brand,
+you're delegating your identity, you're taking legal responsibility
+in many cases for what it does. And the example of this, Air Canada,
+it's potentially going to have ramifications for you being sued, or
+owing discounts, all kinds of things. So you need to really, really carefully
+think through these things and test them, particularly if they're
+going into the outside world.
