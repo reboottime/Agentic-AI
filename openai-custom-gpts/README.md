@@ -18,8 +18,8 @@
 
 ## Homework Examples
 
-- module 02: 
-- module03: I designed a [customer service representative for Custom Cleaning Solution based on real-world interaction experience](./module03/homework.xml)
+- [ ] module 02: design a evaluation GPT that generates test GPT test cases
+- [x] module03: I designed a [customer service representative for Custom Cleaning Solution based on real-world interaction experience](./module03/homework.xml), manual [recap](./module03/topics/09.homework.md) - what influences a problem to be solved properly.
 
 ## Course Content and My Progress
 
