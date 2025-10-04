@@ -23,7 +23,7 @@ See the same pattern:
   - Micro managing mentality: (5~10x)
     - Do not micromanage 1000 developers, inspire and challenge them.
     - example:
-  - think big: (1000x productivity improvement), looking things from heaven
+  - think big: (1000x productivity improvement), looking things from sky
     - Instead, command it building software from the real user's perspective
      example: Act like a typical user of this application, then create different ways of sorting , filtering, and displaying the expenses that are incredibly powerful and useful
   - why think big instead of micro managing: You are the bottle neck in the code domain, given the current AI capability. You should act as an innovator, entrepreneur, and take fully advantage of the AI labor
@@ -56,7 +56,7 @@ See the same pattern:
   - Does AI understand design principles? Yes—Claude Code generally follows software design principles, for example, SOLID principle.
 - process: T
   - traditional process:  talk with users/customers -> define & scope problem -> scope out requirements [prod -> software]-> code
-  - [chat -> craft, persona pattern] -> build. Chat, Craft, Scale: Spend More Time Designing & Innovating.
+  - [chat -> craft, persona pattern] -> build. Chat, Craft, Scale: Spend More Time on Designing & Innovating.
   - Chat:
     - Craft and Explore Requirements & Options ->
     - Rapid Prototyping & Personas.
@@ -98,13 +98,14 @@ More time is spent on designing the guide
 
 ### Module6 Improve Claude Code Scalability and Reasoning
 
-- provide feedback to Claude code at the situations it can't handle
+- provide feedback to Claude code at the situations it can't collect feedbacks automatically
 - Ensure Claude Code check its own work, enforce process / practices of yours:
-  - 1. Before you make any change, create and checkout a feature branch "namedfeature_some_short_name". Make and then commit your changes in this branch.
-  - 2. You must write automated tests for all code
-  - 3. You must compile the code and pass ALL tests before committing.3.
+  1. Before you make any change, create and checkout a feature branch "namedfeature_some_short_name". Make and then commit your changes in this branch.
+  2. You must write automated tests for all code
+  3. You must compile the code and pass ALL tests before committing.3.
 - Project Structure and File Naming is Critical Context for Claude Code Scalability
 - Start By Fixing the Process & Context, Not the Code.
+
  > Optimize the Claude.md and Commands to improve the overall process and scalability, not the Claude output artifacts(code)
 
 ## Other Learnings & Interesting findings
