@@ -9,6 +9,8 @@
   - Build Production Systems with AI Labor Economics - Understand how to leverage Claude Code's speed and cost advantages to prototype rapidly
 
   - Architect for AI-First Development - Design codebases, workflows, and processes that maximize AI productivity
+- Other Practices
+  - [Anthropic: Enabling Claude Code to work more autonomously](https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously) 
 
 ## Major Ideas
 
