@@ -2,6 +2,15 @@
 
 ## High Level Concepts
 
+AI Agents are designed to autonomously reason, plan, and take action. To operate effectively, building AI Agents should follow some fundamental principles that make AI agents more reliable, intelligent, and practical in real-world applications:
+
+- Role-playing
+- Focused tasks
+- Custom tools
+- Multi-agent collaboration
+- Agent constraints
+- Agent memory
+
 ### What is Agentic AI
 
  **Agentic AI**: Agentic AI refers to autonomous artificial intelligence systems capable of independently reasoning, planning, and executing multi-step tasks to achieve goals with reduced human oversight. Unlike reactive AI, agentic AI is proactive, learning, and adapting to changing environments by making informed decisions and taking initiative rather than simply responding to direct prompts or triggers. Below is a visualization of Agentic AI System. Bellow, shows how Agentic AI system works from a conceptual level:
