@@ -68,7 +68,7 @@ A tool is something an agent knows how to use and does not need to  understand h
 ## Software Implementation
 
 ## Engineering Practice
-
+- [A Hands-On Guide to Building Intelligent Systems](https://docs.google.com/document/d/1rsaK53T3Lg5KoGwvf8ukOUvbELRtH-V0LnOIFDxBryE/edit?tab=t.0)
 - [The Agent Development Life Cycle](https://sierra.ai/blog/agent-development-life-cycle)
 
 - [Designing AI-Intensive Applications - swyx](https://www.youtube.com/watch?v=IHkyFhU6JEY)
