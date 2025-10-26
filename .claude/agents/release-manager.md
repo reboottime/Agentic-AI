@@ -81,9 +81,13 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 1. Stage relevant files: `git add <specific-files>`
 2. Create descriptive commit message
-3. Commit: `git commit -m "..."`
-4. **ALWAYS push immediately after committing**: `git push`
-5. Verify: `git status`
+3. **Commit AND push in a single command sequence**: `git commit -m "..." && git push`
+   - NEVER commit without pushing in the same command
+   - Use `&&` to ensure push happens automatically after successful commit
+   - If branch doesn't track remote, use: `git commit -m "..." && git push -u origin <branch>`
+4. Verify: `git status`
+
+**CRITICAL**: Always chain commit and push together using `&&`. Never run them as separate commands.
 
 ### Pushing to Remote
 
@@ -95,9 +99,10 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 ## Example Commits for This Project
 
-**Good examples**:
+**Good examples** (note: always use `&&` to chain commit and push):
 
 ```sh
+git add lecture-5.md && git commit -m "$(cat <<'EOF'
 docs(lecture-5): add notes on multi-agent coordination
 
 Added detailed notes on agent orchestration patterns and
@@ -106,17 +111,23 @@ communication strategies from Lecture 5.
 🤖 Generated with [Claude Code](https://claude.com/claude-code)
 
 Co-Authored-By: Claude <noreply@anthropic.com>
+EOF
+)" && git push
 ```
 
 ```sh
+git add notes.md && git commit -m "$(cat <<'EOF'
 docs(notes): add reflection on LLM reasoning techniques
 
 🤖 Generated with [Claude Code](https://claude.com/claude-code)
 
 Co-Authored-By: Claude <noreply@anthropic.com>
+EOF
+)" && git push
 ```
 
 ```sh
+git add .claude/ && git commit -m "$(cat <<'EOF'
 chore(claude): clean up agents and commands for learning focus
 
 Removed Twitter-specific agents and commands, kept only
@@ -125,6 +136,8 @@ release-manager and commit-and-push for learning notes workflow.
 🤖 Generated with [Claude Code](https://claude.com/claude-code)
 
 Co-Authored-By: Claude <noreply@anthropic.com>
+EOF
+)" && git push
 ```
 
 ## Safety Guidelines
